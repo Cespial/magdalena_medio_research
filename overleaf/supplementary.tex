@@ -17,6 +17,10 @@
 
 \graphicspath{{./figures/}}
 
+% Prefix table and figure counters with "S" to match main text references
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
 \begin{document}
 
 \begin{frontmatter}
@@ -222,21 +226,23 @@ Scaling parameter ($z$) & 2.5 \\
 \begin{table}[ht!]
 \centering
 \caption{Water yield model parameters.\label{tab:s7_water}}
-\begin{tabular}{lcl}
+\begin{tabular}{lccl}
 \toprule
-Parameter & Value & Source \\
+Parameter & $K_c$ (FAO~56) & $K_\text{recharge}$ & Source \\
 \midrule
-Precipitation & CHIRPS Daily, annual sum & ${\sim}$5.5~km \\
-Evapotranspiration & MODIS MOD16A2 v061 & 500~m, 8-day \\
+\multicolumn{4}{l}{\textbf{Data sources}} \\
+Precipitation & \multicolumn{2}{c}{CHIRPS Daily, annual sum (${\sim}$5.5~km)} & \citet{Funk2015} \\
+AET (primary) & \multicolumn{2}{c}{TerraClimate (${\sim}$4~km, monthly)} & \citet{Abatzoglou2018} \\
+AET (cross-val.) & \multicolumn{2}{c}{ERA5-Land (${\sim}$9~km, monthly)} & ECMWF \\
 \hline
-\multicolumn{3}{l}{\textbf{Baseflow recharge coefficients ($K_c$)}} \\
-Dense forest & 0.80 & High infiltration \\
-Secondary forest & 0.65 & Moderate infiltration \\
-Pastures & 0.40 & Compacted soil \\
-Croplands & 0.35 & Moderate \\
-Water & 0.00 & Direct surface \\
-Urban & 0.10 & Mostly impervious \\
-Bare soil & 0.15 & Low organic matter \\
+\multicolumn{4}{l}{\textbf{LULC-specific coefficients}} \\
+Dense forest & 1.00 & 0.35 & High canopy interception \\
+Secondary forest & 0.85 & 0.30 & Moderate canopy cover \\
+Pastures & 0.60 & 0.15 & Compacted soil \\
+Croplands & 0.70 & 0.18 & Moderate infiltration \\
+Water & 1.20 & 0.00 & Direct surface \\
+Urban & 0.30 & 0.05 & Mostly impervious \\
+Bare soil & 0.15 & 0.10 & Low organic matter \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -481,6 +487,8 @@ Water        & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
 \toprule
 Period & Year & Total C (Tg~C) & SE (Tg~C) & 95\% CI (Tg~C) & Net $\Delta$C (Tg~C) & Net 95\% CI \\
 \midrule
+\multicolumn{7}{l}{\textbf{(a) Independent error propagation} (Eq.~1)} \\
+\hline
 T1 & 2013 & 435 & 39 & [358, 511] & -- & -- \\
 T2 & 2016 & 435 & 38 & [360, 510] & $+$0.3 & [$-$107, $+$107] \\
 T3 & 2020 & 412 & 38 & [337, 486] & $-$22.9 & [$-$128, $+$83] \\
@@ -488,10 +496,25 @@ T4 & 2024 & 374 & 38 & [300, 448] & $-$37.9 & [$-$143, $+$67] \\
 \hline
 \multicolumn{5}{l}{Cumulative (T1$\rightarrow$T4)} & $-$60.6 & [$-$167, $+$46] \\
 \multicolumn{5}{l}{CO$_2$ equivalent ($\times$3.667)} & $-$222 Mt & [$-$612, $+$169] \\
+\hline
+\multicolumn{7}{l}{\textbf{(b) Correlated error propagation} (Eq.~2; same $c_i$ across periods)} \\
+\hline
+T1$\rightarrow$T2 & -- & -- & -- & -- & $+$0.3 & [$-$66, $+$67] \\
+T2$\rightarrow$T3 & -- & -- & -- & -- & $-$22.9 & [$-$90, $+$44] \\
+T3$\rightarrow$T4 & -- & -- & -- & -- & $-$37.9 & [$-$109, $+$34] \\
+\hline
+\multicolumn{5}{l}{Cumulative (T1$\rightarrow$T4)} & $-$60.6 & [$-$133, $+$12] \\
+\multicolumn{5}{l}{CO$_2$ equivalent ($\times$3.667)} & $-$222 Mt & [$-$487, $+$43] \\
+\hline
+\multicolumn{7}{l}{\textbf{(c) Monte Carlo simulation} (10,000 draws, correlated $c_i$)} \\
+\hline
+\multicolumn{5}{l}{MC cumulative $\Delta$C (mean $\pm$ SE)} & $-$60.5 $\pm$ 37.2 & [$-$136, $+$11] \\
+\multicolumn{5}{l}{P(net loss)} & \multicolumn{2}{l}{0.953} \\
+\multicolumn{5}{l}{P(loss $>$ 10\% of baseline)} & \multicolumn{2}{l}{0.681} \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-\item Carbon densities: Tier~2 Colombia \citep{Alvarez2012}. Areas: Olofsson-adjusted with SE. Uncertainty propagation: $\text{Var}(C_i) = c_i^2 \text{Var}(A_i) + A_i^2 \text{Var}(c_i) + \text{Var}(A_i) \text{Var}(c_i)$ (Eq.~1 in main text). Net change: $\text{Var}(\Delta C) = \text{Var}(C_{t_1}) + \text{Var}(C_{t_2})$. All individual period-to-period changes have 95\% CIs encompassing zero. The cumulative 2013--2024 trajectory, interpreted alongside the monotonically declining forest area, provides the signal exceeding noise.
+\item Carbon densities: Tier~2 Colombia \citep{Alvarez2012}. Areas: Olofsson-adjusted with SE. Panel~(a): independent propagation assumes $\text{Var}(\Delta C) = \text{Var}(C_{t_1}) + \text{Var}(C_{t_2})$; all period-to-period changes have 95\% CIs encompassing zero. Panel~(b): correlated propagation (Eq.~2 in main text) recognizes that the same Tier~2 densities are used across periods, reducing the cumulative change SE from 54.5 to 36.9~Tg~C (32\% reduction) because the systematic density component cancels in the difference. Panel~(c): Monte Carlo with the same carbon density draw applied to all periods and independent area draws per period; seed = 42.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -585,22 +608,21 @@ Agreement & -- & No & Yes & Yes \\
 \caption{Multi-product forest area cross-validation. Forest area estimates ($\times 10^3$~ha) from five independent sources.\label{tab:s17_multiproduct}}
 \begin{tabular}{lccccc}
 \toprule
-Product & T1 (2013) & T2 (2016) & T3 (2020) & T4 (2024) & Direction \\
+Product & T1 (2013) & T2 (2016) & T3 (2020) & T4 (2024) & Net direction \\
 \midrule
-This study (Olofsson-adjusted) & -- & -- & -- & -- & -- \\
-MapBiomas Colombia Collection~1 & -- & -- & -- & -- & -- \\
-ESA WorldCover v200 (2021) & -- & -- & -- & -- & -- \\
-Google Dynamic World v1 & -- & -- & -- & -- & -- \\
-MODIS MCD12Q1 v061 & -- & -- & -- & -- & -- \\
+This study (Olofsson-adjusted) & 2{,}021 & 2{,}029 & 1{,}868 & 1{,}591 & Decline \\
+MapBiomas Colombia Coll.~1 & 1{,}483 & 1{,}421 & 1{,}400 & 1{,}313$^a$ & Decline \\
+Hansen GFC v1.12$^b$ & -- & -- & -- & -- & Decline \\
+ESA WorldCover v200$^c$ & -- & -- & 1{,}790$^c$ & -- & -- \\
+MODIS MCD12Q1 v061$^d$ & -- & -- & -- & -- & -- \\
 \hline
-\multicolumn{6}{l}{\textbf{Directional agreement}} \\
-T1$\rightarrow$T2 & \multicolumn{5}{l}{--/5 products agree on decline} \\
-T2$\rightarrow$T3 & \multicolumn{5}{l}{--/5 products agree on decline} \\
-T3$\rightarrow$T4 & \multicolumn{5}{l}{--/5 products agree on decline} \\
+\multicolumn{6}{l}{\textbf{Directional agreement (products with temporal coverage)}} \\
+\hline
+\multicolumn{6}{l}{This study + MapBiomas + Hansen GFC: 3/3 agree on net forest decline} \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-\item Values to be computed from \texttt{scripts/21\_multiproduct\_validation.py} output. Direction column indicates whether the product shows overall forest decline or stable area across the study period. ESA WorldCover is only available for 2020 and 2021; Google Dynamic World is available from 2015 onward; MODIS MCD12Q1 provides annual coverage. Not all products cover all time steps.
+\item $^a$MapBiomas 2022 used as closest proxy for T4 (Collection~1 ends 2022). $^b$Hansen GFC provides cumulative loss area (287,239~ha, 2001--2024) confirming persistent forest loss; annual loss data in Table~S10. $^c$ESA WorldCover available only for 2020/2021; single-year value shown for reference. $^d$MODIS MCD12Q1 at 500~m resolution; cross-validation not included due to spatial resolution mismatch. Forest-equivalent classes vary by product (see main text \S3.3). All products with multi-temporal coverage agree on net forest decline direction.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -611,8 +633,8 @@ T3$\rightarrow$T4 & \multicolumn{5}{l}{--/5 products agree on decline} \\
 
 \begin{figure}[ht!]
 \centering
-%\includegraphics[width=\textwidth]{fig_s4_multiproduct_forest.pdf}
-\caption{Forest area time series from five independent sources: this study (Olofsson-adjusted), MapBiomas Colombia, ESA WorldCover, Google Dynamic World, and MODIS MCD12Q1. All products show directional consistency in forest decline. Figure to be generated from \texttt{scripts/21\_multiproduct\_validation.py} output.\label{fig:s4_multiproduct}}
+\includegraphics[width=\textwidth]{fig_s4_multiproduct_forest.pdf}
+\caption{Forest area time series from independent sources: this study (Olofsson-adjusted, with 95\% CI bands), MapBiomas Colombia Collection~1, and Hansen GFC cumulative loss. All three products with multi-temporal coverage confirm net forest decline. ESA WorldCover provides a single-period (2020/2021) reference point. Numerical values in Table~S17.\label{fig:s4_multiproduct}}
 \end{figure}
 
 
@@ -627,18 +649,45 @@ T3$\rightarrow$T4 & \multicolumn{5}{l}{--/5 products agree on decline} \\
 \toprule
 Hypothesis & Test & Statistic & $p$-value & Result \\
 \midrule
-H1: Post-accord deforestation & Two-proportion & $z$ = -- & -- & -- \\
-\quad rate $>$ pre-accord rate & $z$-test & & & \\
-H2: Deforestation is spatially & Moran's $I$ & $I = 0.037$ & $< 0.001$ & Significant \\
-\quad clustered & permutation test & & & spatial clustering \\
-H3: Net carbon loss exceeds & One-sample $z$-test & $z$ = -- & -- & -- \\
-\quad 10\% threshold & + Monte Carlo $P$(net loss) & & & \\
-H4: GWR improves on OLS & Leung $F$-test / & $F$ = -- & -- & -- \\
-\quad (spatial non-stationarity) & AIC comparison & & & \\
+H1: Post-accord deforestation & Two-proportion & $z = 0.900$ & 0.184 & Not supported$^a$ \\
+\quad rate $>$ pre-accord rate & $z$-test (delta method) & & & \\
+H2: Deforestation is spatially & Moran's $I$ & $I = 0.037$, $z = 22.26$ & $< 0.001$ & Supported \\
+\quad clustered & permutation (999 iter.) & & & \\
+H3: Net carbon loss exceeds & One-sample $z$-test & $z = -0.315$ & 0.376 & Partially supported$^b$ \\
+\quad 10\% threshold & + Monte Carlo (10k draws) & P(net loss) $= 0.953$ & & \\
+H4: GWR improves on OLS & AIC comparison & $\Delta$AIC $= 4{,}711$ & -- & Supported \\
+\quad (spatial non-stationarity) & & & & \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-\item Values to be computed from \texttt{scripts/22\_hypothesis\_tests.py} output. H2 values (Moran's $I = 0.037$, $p < 0.001$) are already reported in the main text. Dashes indicate placeholder values pending script execution.
+\item $^a$Pre-agreement rate: $-$0.14\%~yr$^{-1}$ (SE: 2.94); post-agreement rate: 2.70\%~yr$^{-1}$ (SE: 1.13). The directional increase is large but Olofsson area uncertainties (propagated via the delta method) yield SE~$= 3.15$\% for the difference, precluding formal significance at $\alpha = 0.05$.
+\item $^b$Point estimate ($-$13.9\%) exceeds the 10\% threshold, but the one-sample $z$-test is not significant due to large propagated uncertainty. Monte Carlo simulation with correlated carbon densities yields P(net loss)~$= 0.953$ ($> 95$\%) and P(loss~$> 10$\%)~$= 0.681$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S19. TerraClimate Water Yield Results by Period}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{TerraClimate water yield results by period, cross-validated against ERA5-Land.\label{tab:s19_water}}
+\begin{tabular}{lcccccc}
+\toprule
+Period & Year & $P$ (mm) & AET$_\text{TC}$ (mm) & AET$_\text{ERA5}$ (mm) & WY$_\text{TC}$ (mm) & BF (mm) \\
+\midrule
+T1 & 2013 & 2{,}985 & 1{,}321 & 1{,}436 & 1{,}664 & 715 \\
+T2 & 2016 & 2{,}706 & 1{,}210 & 1{,}454 & 1{,}497 & 649 \\
+T3 & 2020 & 2{,}822 & 1{,}256 & 1{,}395 & 1{,}566 & 659 \\
+T4 & 2024 & 2{,}726 & 1{,}270 & 1{,}410 & 1{,}455 & 603 \\
+\hline
+\multicolumn{2}{l}{Change T1$\rightarrow$T4} & $-$260 ($-$8.7\%) & $-$51 & $-$26 & $-$209 ($-$12.6\%) & $-$112 ($-$15.7\%) \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item $P$: annual precipitation (CHIRPS). AET$_\text{TC}$: actual evapotranspiration from TerraClimate \citep{Abatzoglou2018}. AET$_\text{ERA5}$: actual evapotranspiration from ERA5-Land (cross-validation). WY$_\text{TC}$: water yield ($P - \text{AET}_\text{TC}$). BF: LULC-weighted baseflow recharge using class-specific infiltration coefficients (Table~S7). Cross-validation AET relative difference: 8--18\%. Aridity index (PET/$P$) increased from 0.46 (T1) to 0.54 (T4). The steeper decline in BF ($-$15.7\%) compared to $P$ ($-$8.7\%) reflects the amplifying effect of forest-to-pasture conversion on hydrological regulation.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}

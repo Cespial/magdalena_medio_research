@@ -2,8 +2,8 @@
   "pre_acuerdo": {
     "year": 2013,
     "carbon_Mg_C": 434506538.0,
-    "water_yield_mm": 0,
-    "baseflow_mm": 771.2,
+    "water_yield_mm": 1663.92,
+    "baseflow_mm": 714.55,
     "habitat_quality_mean": 0.234,
     "habitat_quality_std": 0.1015,
     "carbon_se": 38957736.0,
@@ -79,8 +79,8 @@
   "transicion": {
     "year": 2016,
     "carbon_Mg_C": 434762784.0,
-    "water_yield_mm": 0,
-    "baseflow_mm": 625.7,
+    "water_yield_mm": 1496.49,
+    "baseflow_mm": 649.38,
     "habitat_quality_mean": 0.2137,
     "habitat_quality_std": 0.1077,
     "carbon_se": 38153178.0,
@@ -156,8 +156,8 @@
   "post_acuerdo_1": {
     "year": 2020,
     "carbon_Mg_C": 411849500.0,
-    "water_yield_mm": 0,
-    "baseflow_mm": 618.9,
+    "water_yield_mm": 1565.51,
+    "baseflow_mm": 658.56,
     "habitat_quality_mean": 0,
     "habitat_quality_std": 0,
     "carbon_se": 37986281.0,
@@ -233,8 +233,8 @@
   "post_acuerdo_2": {
     "year": 2024,
     "carbon_Mg_C": 373952721.0,
-    "water_yield_mm": 1417.2,
-    "baseflow_mm": 743.8,
+    "water_yield_mm": 1455.13,
+    "baseflow_mm": 602.63,
     "habitat_quality_mean": 0.2839,
     "habitat_quality_std": 0.0812,
     "carbon_se": 37762874.0,
@@ -331,12 +331,95 @@
     "net_lower_ci95": -142880208.0,
     "net_upper_ci95": 67086650.0
   },
+  "carbon_change_correlated_2013_2016": {
+    "label": "2013-2016",
+    "method": "correlated (same c_i for both periods)",
+    "net_Mg_C": 256246.0,
+    "net_se": 33890175.0,
+    "net_ci95": 66424742.0,
+    "net_lower_ci95": -66168496.0,
+    "net_upper_ci95": 66680989.0
+  },
+  "carbon_change_correlated_2016_2020": {
+    "label": "2016-2020",
+    "method": "correlated (same c_i for both periods)",
+    "net_Mg_C": -22913284.0,
+    "net_se": 34132869.0,
+    "net_ci95": 66900424.0,
+    "net_lower_ci95": -89813708.0,
+    "net_upper_ci95": 43987139.0
+  },
+  "carbon_change_correlated_2020_2024": {
+    "label": "2020-2024",
+    "method": "correlated (same c_i for both periods)",
+    "net_Mg_C": -37896778.0,
+    "net_se": 36513866.0,
+    "net_ci95": 71567177.0,
+    "net_lower_ci95": -109463955.0,
+    "net_upper_ci95": 33670398.0
+  },
+  "cumulative_correlated": {
+    "label": "2013-2024",
+    "method": "correlated (same c_i for both periods)",
+    "net_Mg_C": -60553816.0,
+    "net_se": 36917279.0,
+    "net_ci95": 72357867.0,
+    "net_lower_ci95": -132911683.0,
+    "net_upper_ci95": 11804050.0
+  },
+  "monte_carlo": {
+    "n_draws": 10000,
+    "seed": 42,
+    "method": "Correlated Monte Carlo: same c_i draw for all periods, independent area draws per period",
+    "cumulative_change": {
+      "mean_Mg_C": -60485576.0,
+      "se_Mg_C": 37240565.0,
+      "ci95_lower": -135521131.0,
+      "ci95_upper": 11065669.0,
+      "p_net_loss": 0.9534,
+      "p_loss_gt_10pct": 0.6805
+    },
+    "period_changes": {
+      "2013-2016": {
+        "mean_Mg_C": -9265.0,
+        "se_Mg_C": 34126053.0,
+        "ci95_lower": -67008723.0,
+        "ci95_upper": 66634794.0,
+        "p_loss": 0.4977
+      },
+      "2016-2020": {
+        "mean_Mg_C": -22746935.0,
+        "se_Mg_C": 33881193.0,
+        "ci95_lower": -91256177.0,
+        "ci95_upper": 43715010.0,
+        "p_loss": 0.7464
+      },
+      "2020-2024": {
+        "mean_Mg_C": -37729376.0,
+        "se_Mg_C": 36890372.0,
+        "ci95_lower": -111127222.0,
+        "ci95_upper": 33615102.0,
+        "p_loss": 0.843
+      }
+    },
+    "period_carbon_means": {
+      "pre_acuerdo": 434775068.0,
+      "transicion": 434765803.0,
+      "post_acuerdo_1": 412018868.0,
+      "post_acuerdo_2": 374289492.0
+    }
+  },
   "_metadata": {
-    "generated": "2026-02-16 19:53",
+    "generated": "2026-02-16 21:58",
     "carbon_pool_source": "Tier 2 Colombia (Alvarez et al. 2012)",
     "area_source": "Olofsson et al. (2014) stratified estimators",
-    "uncertainty_method": "Error propagation for products of independent RVs: Var(C_i) = c_i^2*Var(A_i) + A_i^2*Var(c_i) + Var(A_i)*Var(c_i)",
-    "ci_level": "95% (z=1.96)",
-    "change_uncertainty": "Var(delta) = Var(C_t1) + Var(C_t2)"
+    "uncertainty_methods": {
+      "independent": "Var(C_i) = c_i^2*Var(A_i) + A_i^2*Var(c_i) + Var(A_i)*Var(c_i); Var(delta) = Var(C_t1) + Var(C_t2)",
+      "correlated": "Var(delta) = sum_i [c_i^2*(Var(A_t1)+Var(A_t2)) + dA_i^2*Var(c_i) + (Var(A_t1)+Var(A_t2))*Var(c_i)]",
+      "monte_carlo": "Same c_i draw for all periods, independent area draws, 10000 iterations"
+    },
+    "ci_level": "95% (z=1.96 for analytical, 2.5/97.5 percentiles for MC)",
+    "water_yield_source": "TerraClimate AET (IDAHO_EPSCOR/TERRACLIMATE), cross-validated with ERA5-Land",
+    "water_yield_updated": "2026-02-16 22:11"
   }
 }

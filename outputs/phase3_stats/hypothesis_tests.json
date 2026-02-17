@@ -1,0 +1,95 @@
+{
+  "H1": {
+    "hypothesis": "H1: Post-agreement deforestation rate > pre-agreement rate",
+    "test": "Two-proportion z-test (delta method for rate uncertainty)",
+    "pre_agreement": {
+      "period": "T1\u2192T2 (2013-2016)",
+      "annual_rate_pct": -0.136,
+      "annual_loss_ha": -2749.0,
+      "rate_se_pct": 2.9409
+    },
+    "post_agreement": {
+      "period": "T2\u2192T4 (2016-2024)",
+      "annual_rate_pct": 2.6989,
+      "annual_loss_ha": 54751.0,
+      "rate_se_pct": 1.1276
+    },
+    "recent_post": {
+      "period": "T3\u2192T4 (2020-2024)",
+      "annual_rate_pct": 3.7093,
+      "annual_loss_ha": 69281.0
+    },
+    "rate_difference_pct": 2.8349,
+    "se_difference": 3.1497,
+    "z_statistic": 0.9001,
+    "p_value_one_sided": 0.184043,
+    "alpha": 0.05,
+    "supported": false
+  },
+  "H2": {
+    "hypothesis": "H2: Deforestation exhibits significant spatial clustering",
+    "test": "Global Moran's I with permutation test (999 iterations)",
+    "morans_i": {
+      "I": 0.037209,
+      "z_score": 22.2609,
+      "p_value": 0.0,
+      "method": "Permutation (999 iterations) due to negative analytical variance"
+    },
+    "getis_ord_gi_star": {
+      "hotspots_99pct": 648,
+      "hotspots_95pct": 79,
+      "coldspots_99pct": 405
+    },
+    "lisa_clusters": {
+      "note": "LISA cluster map to be computed in 07_hotspot_analysis.py extension",
+      "expected_quadrants": [
+        "HH (high-high)",
+        "LH (low-high)",
+        "LL (low-low)",
+        "HL (high-low)"
+      ]
+    },
+    "supported": true
+  },
+  "H3": {
+    "hypothesis": "H3: Cumulative carbon loss exceeds 10% of baseline",
+    "test": "One-sample z-test against 10% threshold",
+    "baseline_carbon_Tg": 434.5,
+    "final_carbon_Tg": 374.0,
+    "net_change_Tg": -60.6,
+    "pct_change": -13.9,
+    "threshold_10pct_Tg": -43.5,
+    "z_statistic": -0.3152,
+    "p_value_one_sided": 0.376294,
+    "supported_10pct_threshold": false,
+    "monte_carlo_correlated": {
+      "n_draws": 10000,
+      "note": "Same carbon density draw for both periods (correlated)",
+      "mean_delta_Tg": -60.8,
+      "se_delta_Tg": 37.0,
+      "ci95_lower_Tg": -135.0,
+      "ci95_upper_Tg": 10.4,
+      "p_net_loss": 0.9514,
+      "p_loss_gt_10pct": 0.685
+    }
+  },
+  "H4": {
+    "hypothesis": "H4: Deforestation drivers exhibit spatial heterogeneity",
+    "test": "AIC comparison (OLS vs GWR) \u2014 Leung F-test requires MGWR results",
+    "ols_r2": 0.12098668258834866,
+    "ols_aic": -4096.9272613198455,
+    "gwr_mean_local_r2": 0.188,
+    "gwr_aic": -8808.145560811947,
+    "aic_improvement": 4711.2,
+    "n": 1470,
+    "k": 8,
+    "enp_gwr": 330,
+    "supported": true,
+    "note": "Run 10c_mgwr_analysis.py --stage 2 for formal Leung F-test"
+  },
+  "_metadata": {
+    "generated": "2026-02-16 22:17",
+    "alpha": 0.05,
+    "note": "Pre/post design documents temporal coincidence, not causality"
+  }
+}

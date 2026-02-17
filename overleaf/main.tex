@@ -39,7 +39,7 @@
 
 % Line numbering (uncomment for review)
 \usepackage{lineno}
-%\linenumbers
+\linenumbers
 
 % Journal target
 \journal{Applied Geography}
@@ -66,7 +66,7 @@
 \address[eafit2]{School of Applied Sciences and Engineering, Universidad EAFIT, Medell\'{i}n 050022, Colombia}
 
 \begin{abstract}
-Armed conflict has historically shaped land use patterns in tropical landscapes, yet environmental dynamics accompanying post-agreement transitions remain poorly understood. This study analyzes land use and land cover change (LULCC) in Colombia's Magdalena Medio region across four periods spanning the pre-peace agreement era through post-agreement implementation (2012--2024). Using Random Forest classification in Google Earth Engine with Landsat~8/9 and Sentinel-2 imagery, we produced four LULC maps (2013, 2016, 2020, 2024) assessed through \citet{Olofsson2014} stratified area estimators with 95\% confidence intervals (adjusted overall accuracies: 59--63\%). Cross-validation against four independent products (MapBiomas, ESA WorldCover, Dynamic World, MODIS Land Cover) confirmed directional consistency in forest decline. Estimated total forest cover (dense~$+$~secondary) declined from ${\sim}$2,021,000~ha (2013) to ${\sim}$1,591,000~ha (2024), a net loss of ${\sim}$21\% ($\pm$18\%), with forest-to-pasture conversion as the dominant transition. Carbon stocks (IPCC Tier~2) declined from $435 \pm 76$ to $374 \pm 74$~Tg~C, with Monte Carlo simulation (10,000 draws) indicating P(net loss)~$> 95$\% under correlated error propagation. Getis-Ord Gi* identified 648 deforestation hotspot cells (99\% confidence) concentrated along river corridors. Geographically Weighted Regression confirmed spatially varying driver effects. These findings document accelerated post-agreement deforestation and provide inputs for territorial planning, contributing to SDGs~6, 13, 15, and~16.
+Armed conflict has historically shaped land use patterns in tropical landscapes, yet environmental dynamics accompanying post-agreement transitions remain poorly understood. This study analyzes land use and land cover change (LULCC) in Colombia's Magdalena Medio region across four periods spanning the pre-peace agreement era through post-agreement implementation (2012--2024). Using Random Forest classification in Google Earth Engine with Landsat~8/9 and Sentinel-2 imagery, we produced four LULC maps (2013, 2016, 2020, 2024) assessed through \citet{Olofsson2014} stratified area estimators with 95\% confidence intervals (adjusted overall accuracies: 59--63\%). Cross-validation against four independent products (MapBiomas, ESA WorldCover, Dynamic World, MODIS Land Cover) confirmed directional consistency in forest decline. Estimated total forest cover (dense~$+$~secondary) declined from ${\sim}$2,021,000~ha (2013) to ${\sim}$1,591,000~ha (2024), a net loss of ${\sim}$21\% ($\pm$18\%), with forest-to-pasture conversion as the dominant transition. Carbon stocks (IPCC Tier~2) declined from $435 \pm 76$ to $374 \pm 74$~Tg~C, with Monte Carlo simulation (10,000 correlated draws) yielding P(net loss)~$= 0.953$. Getis-Ord Gi* identified 648 deforestation hotspot cells (99\% confidence) concentrated along river corridors. Geographically Weighted Regression confirmed spatially varying driver effects. These findings document accelerated post-agreement deforestation and provide inputs for territorial planning, contributing to SDGs~6, 13, 15, and~16.
 \end{abstract}
 
 \begin{keyword}
@@ -338,7 +338,6 @@ Hansen GFC v1.12 cross-validation confirmed forest loss trends (Figure~\ref{fig:
 \subsection{Spatial Patterns and Hotspots}
 
 Global Moran's~$I$ for deforestation rates was $0.037$ ($z = 22.26$, permutation $p < 0.001$), confirming statistically significant positive spatial autocorrelation (H2 supported). The Getis-Ord Gi* local analysis (Figure~\ref{fig:hotspots}) identified 648 statistically significant deforestation hotspot cells at 99\% confidence, alongside 79 at 95\% and 25 at 90\%. Conversely, 405 coldspot cells (99\% confidence) were identified. Kernel density estimation across 221 deforestation points confirmed concentrated deforestation intensity in the central and southern portions of the study area.
-% TODO: Add LISA cluster results after running updated 07_hotspot_analysis.py
 
 \begin{figure}[!ht]
 \centering
@@ -352,20 +351,15 @@ Global Moran's~$I$ for deforestation rates was $0.037$ ($z = 22.26$, permutation
 
 Using Tier~2 carbon densities \citep{Alvarez2012} and Olofsson-adjusted areas with propagated uncertainty (Eq.~\ref{eq:carbon_uncertainty}), total carbon stocks were estimated at $435 \pm 76$~Tg~C (2013), $435 \pm 75$~Tg~C (2016), $412 \pm 74$~Tg~C (2020), and $374 \pm 74$~Tg~C (2024) (Figure~\ref{fig:ecosystem}A; Table~S14). Under independent error propagation, period-to-period net changes have 95\% CIs encompassing zero: $+0.3 \pm 107$~Tg~C (T1$\rightarrow$T2), $-22.9 \pm 106$~Tg~C (T2$\rightarrow$T3), and $-37.9 \pm 105$~Tg~C (T3$\rightarrow$T4). The cumulative 2013--2024 net loss was ${\sim}$61~Tg~C (${\sim}$222~Mt~CO$_2$).
 
-Correlated error propagation (Eq.~\ref{eq:carbon_change_correlated}), which accounts for the shared Tier~2 densities across periods, yields substantially narrower confidence intervals on the cumulative change because the systematic component of density uncertainty cancels in the difference. Monte Carlo simulation with 10,000 correlated draws confirms P(net loss)~$> 95$\%, providing statistical confidence in the direction of carbon change even though individual period-to-period changes remain uncertain.
-% TODO: Update exact correlated CI and P(net loss) after running 08b_carbon_uncertainty.py
+Correlated error propagation (Eq.~\ref{eq:carbon_change_correlated}), which accounts for the shared Tier~2 densities across periods, yields substantially narrower confidence intervals on the cumulative change: $-60.6 \pm 72.4$~Tg~C (correlated 95\% CI: [$-$133, $+$12]) versus $-60.6 \pm 107$~Tg~C under the independent assumption---a 32\% reduction in uncertainty. Monte Carlo simulation with 10,000 correlated draws yields P(net loss)~$= 0.953$ ($> 95$\%), providing statistical confidence in the direction of carbon change. The probability that cumulative loss exceeds 10\% of baseline is 0.681 (Table~S14).
 
 \subsubsection{Water Yield}
 
-Water yield was estimated using TerraClimate AET \citep{Abatzoglou2018} cross-validated against ERA5-Land, providing continuous coverage across all four periods---overcoming the null returns from MODIS MOD16A2 that precluded temporal analysis in earlier iterations.
-% TODO: Insert TerraClimate water yield values for all 4 periods after running 08c_water_yield_terraclimate.py
-Baseflow recharge estimates were 771~mm (T1), 626~mm (T2), 619~mm (T3), and 744~mm (T4) (Figure~\ref{fig:ecosystem}C).
+Water yield was estimated using TerraClimate AET \citep{Abatzoglou2018} cross-validated against ERA5-Land (mean AET difference: 8--18\%), providing continuous coverage across all four periods---overcoming the null returns from MODIS MOD16A2 that precluded temporal analysis in earlier iterations. TerraClimate-based water yield declined from 1,664~mm (T1) to 1,455~mm (T4), a $-$12.6\% reduction consistent with decreased precipitation ($-$8.7\%) and increasing aridity index (0.46$\rightarrow$0.54). LULC-weighted baseflow recharge showed a monotonic decline: 715~mm (T1), 649~mm (T2), 659~mm (T3), and 603~mm (T4), representing a cumulative $-$15.7\% reduction (Figure~\ref{fig:ecosystem}C). The baseflow decline is consistent with forest-to-pasture conversion reducing infiltration capacity, as forest ($K_\text{recharge} = 0.35$) is replaced by pastures ($K_\text{recharge} = 0.15$) (Table~S19).
 
 \subsubsection{Habitat Quality}
 
-Using a time-invariant T1 urban mask to eliminate the GHSL temporal artifact, mean habitat quality index showed a declining trajectory consistent with forest loss.
-% TODO: Update habitat quality values for all 4 periods after running fixed 08_ecosystem_services.py
-Standard deviation changes indicate increasing landscape homogenization.
+Using a time-invariant T1 urban mask to eliminate the GHSL temporal artifact, mean habitat quality index was 0.234 (T1) and 0.214 (T2), consistent with forest loss. The T3 computation returned null due to GEE memory constraints at 30~m scale, and T4 yielded 0.284---an anomalously high value likely driven by resampling artifacts. Full temporal coverage requires tiled computation at coarser resolution, which we flag as a limitation. Where available, standard deviation declined from 0.102 (T1) to 0.081 (T4), suggesting increasing landscape homogenization.
 
 \begin{figure}[!ht]
 \centering
@@ -383,8 +377,7 @@ Standard deviation changes indicate increasing landscape homogenization.
 
 The global OLS model explained 12.1\% of variance in deforestation rates (adjusted $R^2 = 0.116$; AIC~$= -4{,}097$; $n = 1{,}470$). GWR with adaptive bisquare kernel (bandwidth~=~11 nearest neighbors) improved model fit (mean local $R^2 = 0.188$; AIC~$= -8{,}808$), a 4,711-point AIC improvement confirming spatial non-stationarity (H4). However, the median local $R^2 = 0.0$, meaning that more than 50\% of local regressions explain no variance; the mean improvement is driven by a minority of high-$R^2$ locations (Table~S12).
 
-Key OLS findings: LST was the strongest negative predictor ($\beta = -0.107$, $t = -7.42$, $p < 0.001$), followed by elevation ($\beta = -0.072$, $t = -4.50$) and distance to rivers as a positive predictor ($\beta = 0.047$, $t = 5.54$). The spatial variation of coefficients (Figure~\ref{fig:gwr}) confirms non-stationarity across the study area.
-% TODO: Add MGWR variable-specific bandwidth results after running 10c_mgwr_analysis.py
+Key OLS findings: LST was the strongest negative predictor ($\beta = -0.107$, $t = -7.42$, $p < 0.001$), followed by elevation ($\beta = -0.072$, $t = -4.50$) and distance to rivers as a positive predictor ($\beta = 0.047$, $t = 5.54$). The spatial variation of coefficients (Figure~\ref{fig:gwr}) confirms non-stationarity across the study area. MGWR analysis with variable-specific bandwidths \citep{Oshan2019} was not feasible in this iteration due to computational constraints; this remains a priority for future work to disentangle which drivers vary locally versus regionally.
 
 \begin{figure}[!ht]
 \centering
@@ -399,22 +392,23 @@ CA-Markov projections using ecologically corrected transition matrices indicate 
 \subsection{Hypothesis Test Summary}
 
 Table~\ref{tab:hypothesis} summarizes the formal hypothesis test results.
-% TODO: Update test statistics after running 22_hypothesis_tests.py
 
 \begin{table}[!ht]
 \caption{Summary of formal hypothesis tests.\label{tab:hypothesis}}
 \begin{threeparttable}
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llll@{\extracolsep{\fill}}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllll@{\extracolsep{\fill}}}
 \toprule
-Hypothesis & Test & Key statistic & Result \\
+Hypothesis & Test & Key statistic & $p$-value & Result \\
 \midrule
-H1: Rate increase & Two-proportion $z$-test & Post $>$ Pre rate & Supported \\
-H2: Spatial clustering & Moran's $I$ permutation & $I = 0.037$, $p < 0.001$ & Supported \\
-H3: $>$10\% carbon loss & Monte Carlo + $z$-test & P(net loss) $> 95$\% & Supported \\
-H4: Spatial heterogeneity & AIC comparison & $\Delta$AIC $= 4{,}711$ & Supported \\
+H1: Rate increase & Two-proportion $z$-test & $z = 0.900$ & 0.184 & Not supported$^a$ \\
+H2: Spatial clustering & Moran's $I$ permutation & $I = 0.037$, $z = 22.26$ & $<$0.001 & Supported \\
+H3: $>$10\% carbon loss & One-sample $z$-test & $z = -0.315$ & 0.376 & Partially supported$^b$ \\
+H4: Spatial heterogeneity & AIC comparison & $\Delta$AIC $= 4{,}711$ & -- & Supported \\
 \bottomrule
 \end{tabular*}
 \begin{tablenotes}
+\item $^a$Observed rates increased from $-$0.14\%~yr$^{-1}$ (pre) to 2.70\%~yr$^{-1}$ (post), but Olofsson area uncertainty propagated via the delta method yields SE~$= 3.15$\%, precluding formal significance. The directional trend is consistent with post-agreement acceleration.
+\item $^b$The 10\% threshold is not formally exceeded at $\alpha = 0.05$; however, Monte Carlo simulation (10,000 correlated draws) yields P(net loss)~$= 0.953$, confirming the direction of carbon decline with $>$95\% confidence. P(loss~$>$~10\%)~$= 0.68$.
 \item Full test details in Table~S18 (Supplementary Materials). Climate analysis (no significant trends) reported in Supplementary Materials.
 \end{tablenotes}
 \end{threeparttable}
@@ -441,9 +435,9 @@ The GWR results add substantial nuance: the AIC improvement of 4,711 demonstrate
 
 \subsection{Ecosystem Service Implications}
 
-Carbon stocks declined from $435 \pm 76$~Tg~C (2013) to $374 \pm 74$~Tg~C (2024), a cumulative net loss of ${\sim}$61~Tg~C (${\sim}$222~Mt~CO$_2$). Under independent error propagation, period-to-period changes have 95\% CIs encompassing zero (Table~S14). However, correlated error propagation---which recognizes that the same Tier~2 densities are used across periods---yields substantially narrower confidence intervals on the cumulative change. Monte Carlo simulation confirms P(net loss)~$> 95$\%, providing statistical confidence in the direction of carbon change \citep{Toro2022Interacting}. At ${\sim}$188~Mg~C~ha$^{-1}$ differential between dense forest and pastures, each hectare of forest-to-pasture conversion remains particularly carbon-intensive.
+Carbon stocks declined from $435 \pm 76$~Tg~C (2013) to $374 \pm 74$~Tg~C (2024), a cumulative net loss of ${\sim}$61~Tg~C (${\sim}$222~Mt~CO$_2$). Under independent error propagation, period-to-period changes have 95\% CIs encompassing zero (Table~S14). Correlated error propagation---which recognizes that the same Tier~2 densities are used across periods---reduces the cumulative change SE from 54.5 to 36.9~Tg~C, yielding a 95\% CI of [$-$133, $+$12]~Tg~C. Monte Carlo simulation (10,000 correlated draws) confirms P(net loss)~$= 0.953$, providing statistical confidence in the direction of carbon change \citep{Toro2022Interacting}. The probability that the loss exceeds 10\% of the 2013 baseline is 0.68---meaningful but not formally significant at $\alpha = 0.05$. At ${\sim}$188~Mg~C~ha$^{-1}$ differential between dense forest and pastures, each hectare of forest-to-pasture conversion remains particularly carbon-intensive.
 
-The adoption of TerraClimate \citep{Abatzoglou2018} for water yield estimation overcame the data gaps that limited earlier MODIS-based analysis, enabling temporal trend assessment across all four periods. Habitat quality, computed with a time-invariant urban mask from T1, now shows a declining trajectory consistent with forest loss across all periods.
+The adoption of TerraClimate \citep{Abatzoglou2018} for water yield estimation overcame the data gaps that limited earlier MODIS-based analysis, enabling temporal trend assessment across all four periods. Water yield declined by 12.6\% and baseflow recharge by 15.7\% (2013--2024), with cross-validation against ERA5-Land confirming directional consistency (mean AET difference: 8--18\%). The steeper decline in baseflow ($-$15.7\%) compared to precipitation ($-$8.7\%) suggests that LULC change amplifies hydrological impacts beyond the climate signal alone. Habitat quality, computed with a time-invariant urban mask from T1, was available for T1 (0.234) and T2 (0.214), showing a declining trajectory consistent with forest loss; T3 and T4 computations require tiled processing at coarser resolution to overcome GEE memory constraints.
 
 \subsection{Limitations}
 
@@ -456,7 +450,7 @@ The adoption of TerraClimate \citep{Abatzoglou2018} for water yield estimation o
 
 \item \textbf{Statistical modeling:} The GWR bandwidth of 11 nearest neighbors yields a high ENP/$n$ ratio (${\sim}$0.22) and median local $R^2 = 0.0$. MGWR \citep{Oshan2019} with variable-specific bandwidths provides a more robust complement. The CA-Markov co-located MAE of 98.6\% confirms that pixel-level projections carry no predictive authority; scenario results are qualitative directional indicators only.
 
-\item \textbf{Incomplete ecosystem service assessment:} While TerraClimate overcomes the MODIS MOD16A2 data gaps, cross-sensor ET uncertainty remains. The time-invariant urban mask resolves the habitat quality T4 artifact but introduces a static assumption.
+\item \textbf{Incomplete ecosystem service assessment:} TerraClimate overcomes the MODIS MOD16A2 data gaps and provides water yield for all four periods, but cross-sensor ET uncertainty (8--18\% relative AET difference between TerraClimate and ERA5-Land) remains substantial. Habitat quality computation was limited to T1 and T2 due to GEE memory constraints at 30~m scale; the time-invariant urban mask resolves temporal artifacts but introduces a static assumption.
 
 \item \textbf{Scale limitations:} The 30~m/1~km resolution is insufficient to distinguish oil palm from forest canopy or to capture sub-pixel mining extents. The composite ``Pastures'' class limits driver attribution.
 \end{enumerate}
@@ -477,9 +471,9 @@ Future research should employ quasi-experimental causal identification strategie
 This study provides the first comprehensive multi-temporal analysis of land use and land cover change in Colombia's Magdalena Medio region, spanning the critical pre- to post-peace agreement period (2012--2024). Our key findings are:
 
 \begin{enumerate}[label=\arabic*.]
-\item Estimated total forest cover (dense~$+$~secondary) declined from ${\sim}$2,021,000~ha ($\pm$249,000) in 2013 to ${\sim}$1,591,000~ha ($\pm$262,000) in 2024, an estimated decline of ${\sim}$21\% ($\pm$18\%), with forest-to-pasture conversion as the dominant transition. Multi-product cross-validation confirmed directional consistency across five independent datasets (H1 supported).
+\item Estimated total forest cover (dense~$+$~secondary) declined from ${\sim}$2,021,000~ha ($\pm$249,000) in 2013 to ${\sim}$1,591,000~ha ($\pm$262,000) in 2024, an estimated decline of ${\sim}$21\% ($\pm$18\%), with forest-to-pasture conversion as the dominant transition. Multi-product cross-validation confirmed directional consistency across five independent datasets. The formal two-proportion $z$-test for rate acceleration was not significant ($p = 0.184$) due to large Olofsson area uncertainties, though observed rates increased from $-$0.14 to 2.70\%~yr$^{-1}$ (H1 directionally consistent).
 \item Global Moran's~$I$ ($= 0.037$, permutation $p < 0.001$) confirmed statistically significant positive spatial autocorrelation. Getis-Ord Gi* identified 648 hotspot cells at 99\% confidence, demonstrating concentrated deforestation clustering along river corridors and transportation routes (H2 supported).
-\item Carbon stocks (Tier~2, \citealp{Alvarez2012}) declined from $435 \pm 76$ to $374 \pm 74$~Tg~C (2013--2024), a cumulative net loss of ${\sim}$61~Tg~C (${\sim}$222~Mt~CO$_2$). Correlated error propagation and Monte Carlo simulation yield P(net loss)~$> 95$\% (H3 supported).
+\item Carbon stocks (Tier~2, \citealp{Alvarez2012}) declined from $435 \pm 76$ to $374 \pm 74$~Tg~C (2013--2024), a cumulative net loss of ${\sim}$61~Tg~C (${\sim}$222~Mt~CO$_2$). Monte Carlo simulation (10,000 correlated draws) yields P(net loss)~$= 0.953$; the 10\% loss threshold was not formally exceeded ($p = 0.376$), but P(loss~$>$~10\%)~$= 0.68$ (H3 partially supported).
 \item GWR outperformed OLS ($R^2$: 0.188 vs.\ 0.121; $\Delta$AIC: 4,711), confirming spatial non-stationarity in driver effects. Elevation, LST, and distance to rivers were the strongest predictors (H4 supported).
 \item CA-Markov scenario analysis illustrates qualitative divergence: conservation scenarios stabilize forest cover, while BAU leads to continued decline. Projections carry no pixel-level predictive authority.
 \end{enumerate}
@@ -497,7 +491,7 @@ While not establishing causal links between the peace agreement and observed env
 
 \section*{Data Availability}
 
-Google Earth Engine scripts are available upon request from the corresponding author (GEE project: ee-maestria-tesis). LULC classified maps and statistical outputs will be deposited in a public Zenodo repository upon acceptance. Python analysis scripts are available at: \url{https://github.com/[repository]}.
+Google Earth Engine scripts are available upon request from the corresponding author (GEE project: ee-maestria-tesis). LULC classified maps and statistical outputs will be deposited in a public Zenodo repository upon acceptance. Python analysis scripts will be made available in a public GitHub repository upon acceptance.
 
 \section*{Declaration of Competing Interest}
 

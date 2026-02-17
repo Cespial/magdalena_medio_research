@@ -1,0 +1,142 @@
+{
+  "periods": {
+    "pre_acuerdo": {
+      "year": 2013,
+      "label": "T1: Pre-acuerdo (conflicto activo)",
+      "precipitation_mm": 2985.06,
+      "aet_terraclimate_mm": 1321.14,
+      "aet_era5_mm": 1436.4,
+      "water_yield_terraclimate_mm": 1663.92,
+      "water_yield_era5_mm": 1548.66,
+      "pet_terraclimate_mm": 1383.34,
+      "aridity_index": 0.4636,
+      "lulc_weighted_wy_mm": 1959.33,
+      "baseflow_mm": 714.55,
+      "cross_validation": {
+        "aet_difference_mm": -115.26,
+        "aet_mean_mm": 1378.77,
+        "aet_relative_diff_pct": 8.36
+      }
+    },
+    "transicion": {
+      "year": 2016,
+      "label": "T2: Transicion (post-cese al fuego)",
+      "precipitation_mm": 2706.25,
+      "aet_terraclimate_mm": 1209.76,
+      "aet_era5_mm": 1454.04,
+      "water_yield_terraclimate_mm": 1496.49,
+      "water_yield_era5_mm": 1252.21,
+      "pet_terraclimate_mm": 1343.55,
+      "aridity_index": 0.4966,
+      "lulc_weighted_wy_mm": 1765.25,
+      "baseflow_mm": 649.38,
+      "cross_validation": {
+        "aet_difference_mm": -244.28,
+        "aet_mean_mm": 1331.9,
+        "aet_relative_diff_pct": 18.34
+      }
+    },
+    "post_acuerdo_1": {
+      "year": 2020,
+      "label": "T3: Post-acuerdo temprano",
+      "precipitation_mm": 2821.62,
+      "aet_terraclimate_mm": 1256.11,
+      "aet_era5_mm": 1394.79,
+      "water_yield_terraclimate_mm": 1565.51,
+      "water_yield_era5_mm": 1426.83,
+      "pet_terraclimate_mm": 1539.41,
+      "aridity_index": 0.5458,
+      "lulc_weighted_wy_mm": 1860.64,
+      "baseflow_mm": 658.56,
+      "cross_validation": {
+        "aet_difference_mm": -138.68,
+        "aet_mean_mm": 1325.45,
+        "aet_relative_diff_pct": 10.46
+      }
+    },
+    "post_acuerdo_2": {
+      "year": 2024,
+      "label": "T4: Post-acuerdo reciente",
+      "precipitation_mm": 2725.47,
+      "aet_terraclimate_mm": 1270.34,
+      "aet_era5_mm": 1410.09,
+      "water_yield_terraclimate_mm": 1455.13,
+      "water_yield_era5_mm": 1315.38,
+      "pet_terraclimate_mm": 1478.05,
+      "aridity_index": 0.5425,
+      "lulc_weighted_wy_mm": 1770.67,
+      "baseflow_mm": 602.63,
+      "cross_validation": {
+        "aet_difference_mm": -139.75,
+        "aet_mean_mm": 1340.21,
+        "aet_relative_diff_pct": 10.43
+      }
+    }
+  },
+  "temporal_trend": {
+    "precipitation_change_mm": -259.59,
+    "precipitation_change_pct": -8.7,
+    "wy_terraclimate_change_mm": -208.79,
+    "wy_terraclimate_change_pct": -12.55,
+    "wy_era5_change_mm": -233.28,
+    "wy_era5_change_pct": -15.06,
+    "baseflow_change_mm": -111.92,
+    "baseflow_change_pct": -15.66,
+    "period_changes_wy_tc": [
+      {
+        "from_year": 2013,
+        "to_year": 2016,
+        "change_mm": -167.43
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2020,
+        "change_mm": 69.02
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2024,
+        "change_mm": -110.38
+      }
+    ]
+  },
+  "_metadata": {
+    "generated": "2026-02-16 22:11",
+    "script": "08c_water_yield_terraclimate.py",
+    "description": "Water yield estimation using TerraClimate + ERA5-Land cross-validation. Replaces non-functional MODIS MOD16A2 approach (null for T1-T3).",
+    "precipitation_source": "CHIRPS Daily (UCSB-CHG/CHIRPS/DAILY)",
+    "aet_source_primary": "TerraClimate (IDAHO_EPSCOR/TERRACLIMATE), ~4km monthly",
+    "aet_source_secondary": "ERA5-Land (ECMWF/ERA5_LAND/MONTHLY_AGGR), ~11km monthly",
+    "lulc_areas": "Olofsson et al. (2014) stratified area estimates",
+    "kc_reference": "FAO Irrigation and Drainage Paper 56",
+    "kc_coefficients": {
+      "1": 1.0,
+      "2": 0.85,
+      "3": 0.6,
+      "4": 0.7,
+      "5": 1.2,
+      "6": 0.3,
+      "7": 0.15
+    },
+    "recharge_coefficients": {
+      "1": 0.35,
+      "2": 0.3,
+      "3": 0.15,
+      "4": 0.18,
+      "5": 0.0,
+      "6": 0.05,
+      "7": 0.1
+    },
+    "water_yield_formula": "WY = P - AET (simple water balance)",
+    "lulc_weighted_formula": "WY_weighted = sum(area_frac_i * (P - AET * Kc_i))",
+    "baseflow_formula": "BF = sum(area_frac_i * P * recharge_coeff_i)",
+    "cross_validation_note": "AET from TerraClimate and ERA5-Land are compared; relative difference provides inter-source agreement metric.",
+    "units": {
+      "precipitation_mm": "mm/year",
+      "aet_mm": "mm/year",
+      "water_yield_mm": "mm/year",
+      "baseflow_mm": "mm/year",
+      "aridity_index": "dimensionless (PET/P)"
+    }
+  }
+}
