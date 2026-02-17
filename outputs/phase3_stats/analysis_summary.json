@@ -1,0 +1,38 @@
+{
+  "date": "2026-02-16T17:22:00.074938",
+  "time_min": 5.2,
+  "area_km2": 36816.67241818712,
+  "stages": 7,
+  "classification": {
+    "pre_acuerdo": {
+      "OA": 0.6923,
+      "kappa": 0.616
+    },
+    "transicion": {
+      "OA": 0.7175,
+      "kappa": 0.6462
+    },
+    "post_acuerdo_1": {
+      "OA": 0.6777,
+      "kappa": 0.5957
+    },
+    "post_acuerdo_2": {
+      "OA": 0.6674,
+      "kappa": 0.5855
+    }
+  },
+  "files": [
+    "analysis_summary.json",
+    "ca_markov_config.json",
+    "ca_markov_results.json",
+    "ca_markov_validation.json",
+    "change_detection_results.json",
+    "classification_metrics.json",
+    "climate_analysis_results.json",
+    "ecosystem_services_results.json",
+    "feature_importance.json",
+    "gwr_drivers_results.json",
+    "hotspot_analysis_results.json",
+    "olofsson_area_estimates.json"
+  ]
+}

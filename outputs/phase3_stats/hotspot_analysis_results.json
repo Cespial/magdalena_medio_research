@@ -1,0 +1,29 @@
+{
+  "morans_i": {
+    "I": 0.037209,
+    "expected_I": -0.000667,
+    "variance": -1.598e-05,
+    "z_score": 22.2609,
+    "p_value": 0.0,
+    "significant": "True"
+  },
+  "gi_star": {
+    "hotspot_99": 648,
+    "hotspot_95": 79,
+    "hotspot_90": 25,
+    "not_significant": 270,
+    "coldspot_90": 16,
+    "coldspot_95": 57,
+    "coldspot_99": 405
+  },
+  "gi_z_stats": {
+    "mean": 0.4471,
+    "max": 6.7905,
+    "min": -7.2082
+  },
+  "deforestation_rate_mean": 0.1473,
+  "kde": {
+    "n_points": 221,
+    "max_density": 5.9e-05
+  }
+}

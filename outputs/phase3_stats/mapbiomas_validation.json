@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "generated": "2026-02-16 20:20",
+    "purpose": "Independent cross-validation of study forest area estimates against MapBiomas Colombia Collection 1",
+    "mapbiomas_asset": "projects/mapbiomas-public/assets/colombia/collection1/mapbiomas_colombia_collection1_integration_v1",
+    "study_bbox": [
+      -75.0,
+      6.0,
+      -73.5,
+      8.0
+    ],
+    "mapbiomas_scale_m": 30,
+    "reclassification": {
+      "Forest": "MapBiomas codes [1, 2, 3, 4, 5, 6, 49]",
+      "Pastures": "MapBiomas codes [12, 15, 18, 19, 20, 21, 36, 39, 41, 46, 47, 48]",
+      "Urban": "MapBiomas codes [24]",
+      "Water": "MapBiomas codes [26, 33]",
+      "Other": "All remaining codes"
+    },
+    "note_t4_proxy": "MapBiomas year 2022 used as proxy for study T4 (2024) because Collection 1 may not include 2024.",
+    "olofsson_source": "/Users/cristianespinal/Documents/magdalena_medio_research/outputs/phase3_stats/olofsson_area_estimates.json"
+  },
+  "mapbiomas_areas": {
+    "2013": {
+      "year": 2013,
+      "band": "classification_2013",
+      "area_ha": {
+        "Forest": 1483230.3,
+        "Pastures": 1997449.1,
+        "Urban": 3360.9,
+        "Water": 69684.2,
+        "Other": 112322.5
+      },
+      "total_ha": 3666047.0,
+      "forest_ha": 1483230.0,
+      "pastures_ha": 1997449.0,
+      "urban_ha": 3361.0,
+      "water_ha": 69684.0,
+      "other_ha": 112322.0
+    },
+    "2016": {
+      "year": 2016,
+      "band": "classification_2016",
+      "area_ha": {
+        "Forest": 1420678.6,
+        "Pastures": 2059690.5,
+        "Urban": 3695.8,
+        "Water": 66490.2,
+        "Other": 115491.9
+      },
+      "total_ha": 3666047.0,
+      "forest_ha": 1420679.0,
+      "pastures_ha": 2059690.0,
+      "urban_ha": 3696.0,
+      "water_ha": 66490.0,
+      "other_ha": 115492.0
+    },
+    "2020": {
+      "year": 2020,
+      "band": "classification_2020",
+      "area_ha": {
+        "Forest": 1399557.5,
+        "Pastures": 2053496.2,
+        "Urban": 4134.5,
+        "Water": 70506.8,
+        "Other": 138352.0
+      },
+      "total_ha": 3666047.0,
+      "forest_ha": 1399558.0,
+      "pastures_ha": 2053496.0,
+      "urban_ha": 4134.0,
+      "water_ha": 70507.0,
+      "other_ha": 138352.0
+    },
+    "2022": {
+      "year": 2022,
+      "band": "classification_2022",
+      "area_ha": {
+        "Forest": 1313490.3,
+        "Pastures": 2112708.1,
+        "Urban": 4227.8,
+        "Water": 94734.6,
+        "Other": 140886.2
+      },
+      "total_ha": 3666047.0,
+      "forest_ha": 1313490.0,
+      "pastures_ha": 2112708.0,
+      "urban_ha": 4228.0,
+      "water_ha": 94735.0,
+      "other_ha": 140886.0
+    }
+  },
+  "olofsson_forest": {
+    "pre_acuerdo": {
+      "year": 2013,
+      "label": "T1: Pre-acuerdo (conflicto activo)",
+      "forest_ha": 2020409.0,
+      "forest_se_ha": 127129.0,
+      "forest_ci95_ha": 249172.0,
+      "forest_lower_ha": 1771237.0,
+      "forest_upper_ha": 2269581.0,
+      "bosque_denso_ha": 1095836.0,
+      "bosque_secundario_ha": 924573.0
+    },
+    "transicion": {
+      "year": 2016,
+      "label": "T2: Transicion (post-cese al fuego)",
+      "forest_ha": 2028655.0,
+      "forest_se_ha": 124954.0,
+      "forest_ci95_ha": 244910.0,
+      "forest_lower_ha": 1783745.0,
+      "forest_upper_ha": 2273565.0,
+      "bosque_denso_ha": 1088953.0,
+      "bosque_secundario_ha": 939702.0
+    },
+    "post_acuerdo_1": {
+      "year": 2020,
+      "label": "T3: Post-acuerdo temprano",
+      "forest_ha": 1867772.0,
+      "forest_se_ha": 129211.0,
+      "forest_ci95_ha": 253254.0,
+      "forest_lower_ha": 1614518.0,
+      "forest_upper_ha": 2121026.0,
+      "bosque_denso_ha": 985243.0,
+      "bosque_secundario_ha": 882529.0
+    },
+    "post_acuerdo_2": {
+      "year": 2024,
+      "label": "T4: Post-acuerdo reciente",
+      "forest_ha": 1590648.0,
+      "forest_se_ha": 133703.0,
+      "forest_ci95_ha": 262057.0,
+      "forest_lower_ha": 1328591.0,
+      "forest_upper_ha": 1852705.0,
+      "bosque_denso_ha": 836858.0,
+      "bosque_secundario_ha": 753790.0
+    }
+  },
+  "concordance": {
+    "n_intervals": 3,
+    "direction_agreement_count": 2,
+    "direction_agreement_pct": 66.7,
+    "interval_directions": [
+      {
+        "from_year": 2013,
+        "to_year": 2016,
+        "mapbiomas_direction": "decrease",
+        "olofsson_direction": "increase",
+        "agree": false
+      },
+      {
+        "from_year": 2016,
+        "to_year": 2020,
+        "mapbiomas_direction": "decrease",
+        "olofsson_direction": "decrease",
+        "agree": true
+      },
+      {
+        "from_year": 2020,
+        "to_year": 2022,
+        "mapbiomas_direction": "decrease",
+        "olofsson_direction": "decrease",
+        "agree": true
+      }
+    ],
+    "overall_trend": {
+      "mapbiomas_change_ha": -169740.0,
+      "olofsson_change_ha": -429761.0,
+      "mapbiomas_pct_change": -11.44,
+      "olofsson_pct_change": -21.27,
+      "direction_agree": true
+    },
+    "ci_overlap": [
+      {
+        "mb_year": 2013,
+        "ol_year": 2013,
+        "mb_forest_ha": 1483230.0,
+        "ol_forest_ha": 2020409.0,
+        "ol_lower_ha": 1771237.0,
+        "ol_upper_ha": 2269581.0,
+        "within_olofsson_ci95": false
+      },
+      {
+        "mb_year": 2016,
+        "ol_year": 2016,
+        "mb_forest_ha": 1420679.0,
+        "ol_forest_ha": 2028655.0,
+        "ol_lower_ha": 1783745.0,
+        "ol_upper_ha": 2273565.0,
+        "within_olofsson_ci95": false
+      },
+      {
+        "mb_year": 2020,
+        "ol_year": 2020,
+        "mb_forest_ha": 1399558.0,
+        "ol_forest_ha": 1867772.0,
+        "ol_lower_ha": 1614518.0,
+        "ol_upper_ha": 2121026.0,
+        "within_olofsson_ci95": false
+      },
+      {
+        "mb_year": 2022,
+        "ol_year": 2024,
+        "mb_forest_ha": 1313490.0,
+        "ol_forest_ha": 1590648.0,
+        "ol_lower_ha": 1328591.0,
+        "ol_upper_ha": 1852705.0,
+        "within_olofsson_ci95": false
+      }
+    ],
+    "n_within_olofsson_ci95": 0,
+    "pct_within_olofsson_ci95": 0.0
+  }
+}

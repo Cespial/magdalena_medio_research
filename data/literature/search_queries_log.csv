@@ -1,0 +1,9 @@
+Query_ID,Database,Search_Query,Date,Results_Found,Notes
+1,WebSearch,"land use change post-conflict Colombia deforestation peace agreement 2020-2025",2026-02-13,10,Key papers on end-of-conflict deforestation found
+2,WebSearch,"Magdalena Medio deforestation land use environment Colombia research",2026-02-13,10,Magdalena Medio identified as deforestation hotspot in multiple studies
+3,WebSearch,"ecosystem services remote sensing land use change Colombia tropical InVEST carbon 2020-2025",2026-02-13,10,GEE+InVEST integration papers found; Colombia peatland/carbon studies
+4,WebSearch,"Google Earth Engine Random Forest land cover classification Colombia tropical Landsat Sentinel accuracy 2020-2025",2026-02-13,10,RF on GEE achieves 84-91% OA; Colombia-specific Sentinel fusion study found
+5,WebSearch,"geographically weighted regression OR Markov chain land use change deforestation drivers tropical prediction 2020-2025",2026-02-13,10,GWR+RF and CA-Markov papers found; Ecuadorian Amazon study highly relevant
+6,WebSearch,"LandTrendr BFAST change detection tropical forest Colombia deforestation time series analysis",2026-02-13,10,LandTrendr validated for Colombian Amazon; BFAST seasonal component critical for tropics
+7,WebSearch,"FRAGSTATS landscape metrics tropical deforestation fragmentation connectivity habitat 2020-2025",2026-02-13,10,Science 2025 paper: 58-80% tropical forests more fragmented 2000-2020
+8,WebSearch,"Getis-Ord OR Moran spatial autocorrelation deforestation hotspot analysis Colombia tropical 2020-2025",2026-02-13,10,Magdalena Medio confirmed as deforestation hotspot via Getis-Ord; narcodeforestation LISA analysis

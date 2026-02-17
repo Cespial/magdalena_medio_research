@@ -1,0 +1,70 @@
+{
+  "markov_chain": {
+    "calibration_interval": "2020-2024 (4 years)",
+    "n_classes_original": 7,
+    "n_classes_active": 5,
+    "class_names_active": [
+      "BDen",
+      "BSec",
+      "Past",
+      "Agua",
+      "Urb"
+    ],
+    "ecological_corrections": [
+      "BSec->BDen",
+      "Urb->BDen",
+      "Urb->BSec",
+      "Past->BDen",
+      "Urb->Agua"
+    ]
+  },
+  "cellular_automata": {
+    "neighborhood": "5x5 Moore (uniform filter)",
+    "ca_weight": 0.5,
+    "n_iterations": 10,
+    "stochastic": true
+  },
+  "suitability_variables": [
+    "elevation",
+    "slope",
+    "dist_rivers",
+    "dist_roads",
+    "pop_density"
+  ],
+  "scenarios": {
+    "BAU": {
+      "description": "Tendencia actual continua sin intervencion",
+      "deforestation_reduction": "0%",
+      "recovery_increase": "0%"
+    },
+    "Conservation": {
+      "description": "Implementacion agresiva de areas protegidas",
+      "deforestation_reduction": "50%",
+      "recovery_increase": "30%",
+      "assumptions": "Refuerzo de areas protegidas, PSA, REDD+"
+    },
+    "PDET": {
+      "description": "Implementacion plena de planes territoriales",
+      "deforestation_reduction": "30%",
+      "recovery_increase": "15%",
+      "assumptions": "Diversificacion productiva, sustitucion cultivos ilicitos"
+    }
+  },
+  "projection_years": [
+    2030,
+    2040
+  ],
+  "validation": {
+    "method": "Area-based hindcast using Olofsson-adjusted areas",
+    "hindcasts": [
+      "T1->T2 rates to predict T3 from T2",
+      "T2->T3 rates to predict T4 from T3",
+      "Corrected matrix to reproduce T4 from T3"
+    ],
+    "metrics": [
+      "Overall Accuracy (approx)",
+      "Figure of Merit (approx)"
+    ],
+    "reference": "Pontius et al. 2011"
+  }
+}

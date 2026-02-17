@@ -1,0 +1,290 @@
+{
+  "transition_matrix": [
+    [
+      0.6766666666666666,
+      0.0,
+      0.3233333333333333,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.8366666666666667,
+      0.0033333333333333335,
+      0.03666666666666667,
+      0.0,
+      0.08,
+      0.043333333333333335,
+      0.0
+    ],
+    [
+      0.52,
+      0.03333333333333333,
+      0.42,
+      0.0,
+      0.02666666666666667,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.53,
+      0.03666666666666667,
+      0.023333333333333334,
+      0.0,
+      0.27666666666666667,
+      0.13333333333333333,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "areas_2024": {
+    "BDen": 769,
+    "BSec": 22,
+    "Past": 241,
+    "Cult": 0,
+    "Agua": 299,
+    "Urb": 53,
+    "Suel": 0
+  },
+  "BAU_2030": {
+    "BDen": {
+      "pct": 50.01,
+      "change_pct": -9.99
+    },
+    "BSec": {
+      "pct": 0.73,
+      "change_pct": -54.32
+    },
+    "Past": {
+      "pct": 25.43,
+      "change_pct": 46.02
+    },
+    "Cult": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    },
+    "Agua": {
+      "pct": 23.26,
+      "change_pct": 7.64
+    },
+    "Urb": {
+      "pct": 0.58,
+      "change_pct": -84.87
+    },
+    "Suel": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    }
+  },
+  "BAU_2040": {
+    "BDen": {
+      "pct": 46.7,
+      "change_pct": -15.95
+    },
+    "BSec": {
+      "pct": 0.9,
+      "change_pct": -43.4
+    },
+    "Past": {
+      "pct": 26.58,
+      "change_pct": 52.64
+    },
+    "Cult": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    },
+    "Agua": {
+      "pct": 25.77,
+      "change_pct": 19.29
+    },
+    "Urb": {
+      "pct": 0.05,
+      "change_pct": -98.8
+    },
+    "Suel": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    }
+  },
+  "Conservation_2030": {
+    "BDen": {
+      "pct": 57.29,
+      "change_pct": 3.11
+    },
+    "BSec": {
+      "pct": 0.89,
+      "change_pct": -43.8
+    },
+    "Past": {
+      "pct": 18.08,
+      "change_pct": 3.81
+    },
+    "Cult": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    },
+    "Agua": {
+      "pct": 23.19,
+      "change_pct": 7.35
+    },
+    "Urb": {
+      "pct": 0.55,
+      "change_pct": -85.69
+    },
+    "Suel": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    }
+  },
+  "Conservation_2040": {
+    "BDen": {
+      "pct": 55.63,
+      "change_pct": 0.11
+    },
+    "BSec": {
+      "pct": 0.81,
+      "change_pct": -49.34
+    },
+    "Past": {
+      "pct": 18.6,
+      "change_pct": 6.8
+    },
+    "Cult": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    },
+    "Agua": {
+      "pct": 24.95,
+      "change_pct": 15.48
+    },
+    "Urb": {
+      "pct": 0.02,
+      "change_pct": -99.4
+    },
+    "Suel": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    }
+  },
+  "PDET_2030": {
+    "BDen": {
+      "pct": 54.12,
+      "change_pct": -2.6
+    },
+    "BSec": {
+      "pct": 0.73,
+      "change_pct": -54.3
+    },
+    "Past": {
+      "pct": 21.37,
+      "change_pct": 22.74
+    },
+    "Cult": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    },
+    "Agua": {
+      "pct": 23.22,
+      "change_pct": 7.49
+    },
+    "Urb": {
+      "pct": 0.56,
+      "change_pct": -85.34
+    },
+    "Suel": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    }
+  },
+  "PDET_2040": {
+    "BDen": {
+      "pct": 51.34,
+      "change_pct": -7.6
+    },
+    "BSec": {
+      "pct": 0.76,
+      "change_pct": -52.17
+    },
+    "Past": {
+      "pct": 22.55,
+      "change_pct": 29.48
+    },
+    "Cult": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    },
+    "Agua": {
+      "pct": 25.32,
+      "change_pct": 17.21
+    },
+    "Urb": {
+      "pct": 0.03,
+      "change_pct": -99.24
+    },
+    "Suel": {
+      "pct": 0.0,
+      "change_pct": 0.0
+    }
+  },
+  "validation": {
+    "method": "Hindcast 2016->2020 matrix, predict 2024",
+    "relative_MAE_pct": 98.57,
+    "by_class": {
+      "BDen": {
+        "observed": 769,
+        "simulated": 206.0
+      },
+      "BSec": {
+        "observed": 22,
+        "simulated": 326.0
+      },
+      "Past": {
+        "observed": 241,
+        "simulated": 551.0
+      },
+      "Cult": {
+        "observed": 0,
+        "simulated": 0.0
+      },
+      "Agua": {
+        "observed": 299,
+        "simulated": 180.0
+      },
+      "Urb": {
+        "observed": 53,
+        "simulated": 121.0
+      },
+      "Suel": {
+        "observed": 0,
+        "simulated": 0.0
+      }
+    }
+  }
+}

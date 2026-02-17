@@ -1,0 +1,139 @@
+{
+  "vif": {
+    "elevation": 6.17,
+    "slope": 1.75,
+    "dist_rivers": 1.69,
+    "dist_roads": 1.66,
+    "dist_urban": 1.75,
+    "pop_density": 1.03,
+    "precip_annual": 1.61,
+    "lst_mean": 4.95
+  },
+  "ols": {
+    "r2": 0.12098668258834866,
+    "adj_r2": 0.11617346798239847,
+    "aic": -4096.9272613198455,
+    "n": 1470,
+    "coefficients": {
+      "intercept": 0.07483,
+      "elevation": -0.0722,
+      "slope": 0.02067,
+      "dist_rivers": 0.046537,
+      "dist_roads": -0.013928,
+      "dist_urban": -0.011201,
+      "pop_density": -0.007717,
+      "precip_annual": 0.017647,
+      "lst_mean": -0.106625
+    },
+    "t_statistics": {
+      "intercept": 11.5946,
+      "elevation": -4.5031,
+      "slope": 2.4185,
+      "dist_rivers": 5.5405,
+      "dist_roads": -1.6732,
+      "dist_urban": -1.3122,
+      "pop_density": -1.1772,
+      "precip_annual": 2.1553,
+      "lst_mean": -7.4241
+    }
+  },
+  "gwr": {
+    "bandwidth": 11,
+    "mean_r2": 0.18842520680421432,
+    "median_r2": 0.0,
+    "aic": -8808.145560811947,
+    "summary": {
+      "intercept": {
+        "mean": 2.089162,
+        "median": 0.0,
+        "std": 41.229503,
+        "min": -441.274275,
+        "max": 593.113397,
+        "pct_positive": 12.4,
+        "pct_negative": 8.8
+      },
+      "elevation": {
+        "mean": -0.071605,
+        "median": 0.0,
+        "std": 2.743286,
+        "min": -31.849309,
+        "max": 37.623098,
+        "pct_positive": 8.6,
+        "pct_negative": 12.7
+      },
+      "slope": {
+        "mean": -0.053021,
+        "median": 0.0,
+        "std": 0.835068,
+        "min": -13.066299,
+        "max": 8.676442,
+        "pct_positive": 10.4,
+        "pct_negative": 10.9
+      },
+      "dist_rivers": {
+        "mean": 0.209536,
+        "median": 0.0,
+        "std": 6.741087,
+        "min": -81.118765,
+        "max": 142.880526,
+        "pct_positive": 9.9,
+        "pct_negative": 11.4
+      },
+      "dist_roads": {
+        "mean": -0.784517,
+        "median": 0.0,
+        "std": 18.771483,
+        "min": -262.81771,
+        "max": 175.098769,
+        "pct_positive": 12.2,
+        "pct_negative": 9.0
+      },
+      "dist_urban": {
+        "mean": 1.237623,
+        "median": 0.0,
+        "std": 31.598817,
+        "min": -335.972446,
+        "max": 509.076441,
+        "pct_positive": 10.3,
+        "pct_negative": 11.0
+      },
+      "pop_density": {
+        "mean": 0.843917,
+        "median": 0.0,
+        "std": 29.895738,
+        "min": -516.034219,
+        "max": 839.0448,
+        "pct_positive": 12.2,
+        "pct_negative": 9.1
+      },
+      "precip_annual": {
+        "mean": 0.240116,
+        "median": 0.0,
+        "std": 2.269429,
+        "min": -8.846064,
+        "max": 30.402967,
+        "pct_positive": 11.4,
+        "pct_negative": 9.9
+      },
+      "lst_mean": {
+        "mean": -0.085526,
+        "median": 0.0,
+        "std": 1.215437,
+        "min": -22.06969,
+        "max": 9.151652,
+        "pct_positive": 8.9,
+        "pct_negative": 12.4
+      }
+    }
+  },
+  "comparison": {
+    "ols_r2": 0.12098668258834866,
+    "ols_adj_r2": 0.11617346798239847,
+    "ols_aic": -4096.9272613198455,
+    "gwr_mean_r2": 0.18842520680421432,
+    "gwr_aic": -8808.145560811947,
+    "r2_improvement": 0.0674,
+    "aic_improvement": 4711.22,
+    "gwr_preferred": true
+  }
+}

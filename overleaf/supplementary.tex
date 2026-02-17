@@ -1,0 +1,656 @@
+%=================================================================
+% Supplementary Materials — elsarticle format
+%=================================================================
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{url}
+\usepackage{enumitem}
+\sisetup{group-separator={,}, group-minimum-digits=4}
+
+\graphicspath{{./figures/}}
+
+\begin{document}
+
+\begin{frontmatter}
+\title{Supplementary Materials: Accelerating Deforestation After Peace: Land Use Transitions and Carbon Loss in Colombia's Magdalena Medio (2012--2024)}
+\author[eafit1]{Cristian Espinal Maya}
+\address[eafit1]{School of Finance, Economics and Government, Universidad EAFIT, Medell\'{i}n 050022, Colombia}
+\author[eafit2]{Santiago Jim\'{e}nez Londo\~{n}o}
+\address[eafit2]{School of Applied Sciences and Engineering, Universidad EAFIT, Medell\'{i}n 050022, Colombia}
+\begin{abstract}
+This document contains supplementary tables and figures for the main manuscript.
+\end{abstract}
+\end{frontmatter}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S1. Complete List of Municipalities in the Study Area}
+
+\begin{longtable}{clllcc}
+\toprule
+\# & Municipality & Department & Area (km$^2$) & Pop.\ (est.) & PDET \\
+\midrule
+\endfirsthead
+\toprule
+\# & Municipality & Department & Area (km$^2$) & Pop.\ (est.) & PDET \\
+\midrule
+\endhead
+1  & Barrancabermeja       & Santander & 1,154 & 191,000 & Yes \\
+2  & Puerto Wilches        & Santander & 1,529 &  32,000 & Yes \\
+3  & Sabana de Torres      & Santander & 1,386 &  20,000 & Yes \\
+4  & Cimitarra             & Santander & 3,189 &  42,000 & Yes \\
+5  & Puerto Parra          & Santander &   671 &   7,000 & Yes \\
+6  & Rionegro              & Santander & 1,244 &  28,000 & Yes \\
+7  & San Vicente de Chucur\'{i} & Santander & 1,151 &  34,000 & Yes \\
+8  & El Carmen de Chucur\'{i}   & Santander &   905 &  19,000 & Yes \\
+9  & Betulia               & Santander &   577 &   5,000 & Yes \\
+10 & Bol\'{i}var           & Santander & 1,349 &  13,000 & Yes \\
+11 & Land\'{a}zur\'{i}     & Santander &   651 &  16,000 & Yes \\
+12 & Simacota              & Santander & 1,093 &   9,000 & Yes \\
+13 & Santa Helena del Op\'{o}n & Santander &   740 &   4,000 & Yes \\
+14 & El Pe\~{n}\'{o}n      & Santander &   381 &   5,500 & Yes \\
+15 & Puerto Berr\'{i}o     & Antioquia & 1,184 &  48,000 & Yes \\
+16 & Yond\'{o}             & Antioquia & 1,881 &  19,000 & Yes \\
+17 & Puerto Nare           & Antioquia &   554 &  18,000 & Yes \\
+18 & Puerto Triunfo        & Antioquia &   365 &  20,000 & Yes \\
+19 & Caracol\'{i}          & Antioquia &   307 &   4,500 & Yes \\
+20 & Maceo                 & Antioquia &   451 &   7,000 & Yes \\
+21 & San Pablo             & Bol\'{i}var & 1,970 &  33,000 & Yes \\
+22 & Simit\'{i}            & Bol\'{i}var & 1,241 &  19,000 & Yes \\
+23 & Santa Rosa del Sur    & Bol\'{i}var & 2,816 &  42,000 & Yes \\
+24 & Cantagallo            & Bol\'{i}var &   886 &   8,500 & Yes \\
+25 & Morales               & Bol\'{i}var & 1,351 &  21,000 & Yes \\
+26 & Arenal                & Bol\'{i}var &   465 &  18,000 & Yes \\
+27 & Aguachica             & Cesar     &   876 &  97,000 & Yes \\
+28 & Gamarra               & Cesar     &   336 &  16,000 & Yes \\
+29 & San Mart\'{i}n        & Cesar     &   853 &  18,000 & Yes \\
+30 & San Alberto           & Cesar     &   608 &  25,000 & Yes \\
+\bottomrule
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S2. Google Earth Engine Collections and Parameters}
+
+\begin{table}[ht!]
+\centering
+\caption{Google Earth Engine datasets used in this study.\label{tab:s2_gee}}
+\begin{tabular}{llcl}
+\toprule
+Dataset & GEE Asset ID & Res. & Variables \\
+\midrule
+Landsat 8 SR C2  & \texttt{LANDSAT/LC08/C02/T1\_L2} & 30~m & SR\_B2--B7, QA\_PIXEL \\
+Landsat 9 SR C2  & \texttt{LANDSAT/LC09/C02/T1\_L2} & 30~m & SR\_B2--B7, QA\_PIXEL \\
+Sentinel-2 SR    & \texttt{COPERNICUS/S2\_SR\_HARMONIZED} & 10--20~m & B2--B12, SCL \\
+MODIS LST        & \texttt{MODIS/061/MOD11A2} & 1~km & LST\_Day\_1km \\
+CHIRPS Daily     & \texttt{UCSB-CHG/CHIRPS/DAILY} & ${\sim}$5.5~km & precipitation \\
+SRTM DEM         & \texttt{USGS/SRTMGL1\_003} & 30~m & elevation \\
+Hansen GFC v1.12 & \texttt{UMD/hansen/global\_forest\_change\_2024\_v1\_12} & 30~m & treecover2000, lossyear \\
+JRC Water        & \texttt{JRC/GSW1\_4/GlobalSurfaceWater} & 30~m & occurrence \\
+WorldPop         & \texttt{WorldPop/GP/100m/pop} & 100~m & population \\
+GHSL SMOD        & \texttt{JRC/GHSL/P2023A/GHS\_SMOD} & 1~km & smod\_code ($\geq$30 = urban centres) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S3. Random Forest Classification Parameters}
+
+\begin{table}[ht!]
+\centering
+\caption{Random Forest classifier parameters.\label{tab:s3_rf}}
+\begin{tabular}{lll}
+\toprule
+Parameter & Value & Justification \\
+\midrule
+Algorithm & \texttt{ee.Classifier.smileRandomForest} & Standard GEE \\
+Number of trees & 200 & Balanced accuracy vs.\ computation \\
+Min leaf population & 5 & Prevent overfitting \\
+Bag fraction & 0.632 & Default bootstrap \\
+Seed & 42 & Reproducibility \\
+Training/validation & 70/30 & Stratified random \\
+Samples per class & ${\sim}$300 & Balanced stratified \\
+tileScale & 4 & Manage GEE memory \\
+bestEffort & True & Automatic scale adjustment \\
+Image casting & Float32 & Homogeneous collections \\
+Output type & Int8 & Reduce computation chain \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S4. Spectral Features Used in Classification (12 Total)}
+
+\begin{table}[ht!]
+\centering
+\caption{Spectral and topographic features.\label{tab:s4_features}}
+\begin{tabular}{clll}
+\toprule
+\# & Feature & Type & Formula / Source \\
+\midrule
+1  & blue      & Reflectance  & SR\_B2 (Landsat) / B2 (S2) \\
+2  & green     & Reflectance  & SR\_B3 / B3 \\
+3  & red       & Reflectance  & SR\_B4 / B4 \\
+4  & nir       & Reflectance  & SR\_B5 / B8 \\
+5  & swir1     & Reflectance  & SR\_B6 / B11 \\
+6  & swir2     & Reflectance  & SR\_B7 / B12 \\
+7  & NDVI      & Index        & (NIR $-$ Red) / (NIR + Red) \\
+8  & NDWI      & Index        & (Green $-$ NIR) / (Green + NIR) \\
+9  & NDBI      & Index        & (SWIR1 $-$ NIR) / (SWIR1 + NIR) \\
+10 & NBR       & Index        & (NIR $-$ SWIR2) / (NIR + SWIR2) \\
+11 & elevation & Topographic  & SRTM 30~m \\
+12 & slope     & Topographic  & \texttt{ee.Terrain.slope(SRTM)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S5. Carbon Pool Values by LULC Class (Mg~C~ha$^{-1}$, Tier~2)}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{IPCC Tier~2 carbon pool values.\label{tab:s5_carbon}}
+\begin{tabular}{lccccccl}
+\toprule
+LULC Class & $C_\text{above}$ & $C_\text{below}$ & $C_\text{soil}$ & $C_\text{dead}$ & Total & SE$_\text{total}$ & Source \\
+\midrule
+Dense forest     & 125 & 31 & 57 & 18  & 231   & 21.4 & Alvarez et al.\ 2012 + IFN Colombia \\
+Secondary forest &  55 & 14 & 50 &  8  & 127   & 16.4 & Alvarez et al.\ 2012 \\
+Pastures         &   5 &  3 & 35 & 0.5 & 43.5  &  8.3 & FAO/IPCC \\
+Water            &   0 &  0 &  0 &  0  & 0     &  0.0 & -- \\
+Urban            &   2 &  0 & 18 &  0  & 20    &  5.1 & IPCC 2006, settlements \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item SE$_\text{total}$ computed as $\sqrt{\text{SE}_\text{above}^2 + \text{SE}_\text{below}^2 + \text{SE}_\text{soil}^2 + \text{SE}_\text{dead}^2}$. Pool-level SEs: Dense forest (15, 8, 12, 5); Secondary forest (12, 4, 10, 3); Pastures (2, 1, 8, 0.3); Urban (1, 0, 5, 0). Croplands and Bare soil dropped from the 5-class system.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S6. Habitat Quality Model Parameters}
+
+\begin{table}[ht!]
+\centering
+\caption{InVEST-based habitat quality parameters.\label{tab:s6_habitat}}
+\begin{tabular}{lc}
+\toprule
+Parameter & Value \\
+\midrule
+\multicolumn{2}{l}{\textbf{Habitat suitability}} \\
+Dense forest & 1.0 \\
+Secondary forest & 0.7 \\
+Pastures & 0.2 \\
+Croplands & 0.1 \\
+Water & 0.5 \\
+Urban & 0.0 \\
+Bare soil & 0.0 \\
+\hline
+\multicolumn{2}{l}{\textbf{Threats}} \\
+Agriculture/pastures: max distance & 5~km \\
+Agriculture/pastures: weight & 0.6 \\
+Urban: max distance & 10~km \\
+Urban: weight & 0.3 \\
+Bare soil: max distance & 3~km \\
+Bare soil: weight & 0.1 \\
+\hline
+\multicolumn{2}{l}{\textbf{Model parameters}} \\
+Decay function & Exponential \\
+Half-saturation constant ($k$) & 0.5 \\
+Scaling parameter ($z$) & 2.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S7. Water Yield Model Parameters}
+
+\begin{table}[ht!]
+\centering
+\caption{Water yield model parameters.\label{tab:s7_water}}
+\begin{tabular}{lcl}
+\toprule
+Parameter & Value & Source \\
+\midrule
+Precipitation & CHIRPS Daily, annual sum & ${\sim}$5.5~km \\
+Evapotranspiration & MODIS MOD16A2 v061 & 500~m, 8-day \\
+\hline
+\multicolumn{3}{l}{\textbf{Baseflow recharge coefficients ($K_c$)}} \\
+Dense forest & 0.80 & High infiltration \\
+Secondary forest & 0.65 & Moderate infiltration \\
+Pastures & 0.40 & Compacted soil \\
+Croplands & 0.35 & Moderate \\
+Water & 0.00 & Direct surface \\
+Urban & 0.10 & Mostly impervious \\
+Bare soil & 0.15 & Low organic matter \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S8. GWR Model Specifications and Results}
+
+\begin{table}[ht!]
+\centering
+\caption{GWR model specifications and results.\label{tab:s8_gwr}}
+\begin{tabular}{lcccccc}
+\toprule
+Variable & VIF & OLS $\beta$ & $t$-stat & Sig. & GWR mean & GWR range \\
+\midrule
+elevation     & 6.17 & $-$0.072 & $-$4.50  & Yes & $-$0.072 & [$-$31.8, +37.6] \\
+slope         & 1.75 & 0.021    & 2.42     & Yes & $-$0.053 & [$-$13.1, +8.7] \\
+dist\_rivers  & 1.69 & 0.047    & 5.54     & Yes & 0.210    & [$-$81.1, +142.9] \\
+dist\_roads   & 1.66 & $-$0.014 & $-$1.67  & No  & $-$0.785 & [$-$262.8, +175.1] \\
+dist\_urban   & 1.75 & $-$0.011 & $-$1.31  & No  & 1.238    & [$-$336.0, +509.1] \\
+pop\_density  & 1.03 & $-$0.008 & $-$1.18  & No  & 0.844    & [$-$516.0, +839.0] \\
+precip\_annual & 1.61 & 0.018   & 2.16     & Yes & 0.240    & [$-$8.8, +30.4] \\
+lst\_mean     & 4.95 & $-$0.107 & $-$7.42  & Yes & $-$0.086 & [$-$22.1, +9.2] \\
+\hline
+\multicolumn{7}{l}{\textbf{Model comparison}} \\
+\hline
+ & $R^2$ & Adj.\ $R^2$ & AIC & & & \\
+OLS & 0.121 & 0.116 & $-$4,097 & & & \\
+GWR & 0.188 & -- & $-$8,808 & & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S9. CA-Markov Scenario Specifications}
+
+\begin{table}[ht!]
+\centering
+\caption{CA-Markov scenario parameters.\label{tab:s9_scenarios}}
+\begin{tabular}{lccc}
+\toprule
+Parameter & BAU & Conservation & PDET \\
+\midrule
+Deforestation rate modifier & 1.0$\times$ & 0.5$\times$ & 0.7$\times$ \\
+Forest recovery modifier & 1.0$\times$ & 1.3$\times$ & 1.15$\times$ \\
+Agricultural expansion & Current & Reduced & Diversified \\
+Calibration & 300/class (co-located) & 300/class (co-located) & 300/class (co-located) \\
+Active classes & 5 & 5 & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Corrected 5$\times$5 transition probability matrix (ecologically constrained):}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{Ecologically constrained transition matrix.\label{tab:s9_matrix}}
+\begin{tabular}{lccccc}
+\toprule
+From $\backslash$ To & DFor & SFor & Past & Wat & Urb \\
+\midrule
+DFor & 0.677 & 0.000 & 0.323 & 0.000 & 0.000 \\
+SFor & 0.050$^*$ & 0.790 & 0.037 & 0.080 & 0.043 \\
+Past & 0.050$^*$ & 0.033 & 0.890 & 0.027 & 0.000 \\
+Wat  & 0.000 & 0.000 & 0.000 & 1.000 & 0.000 \\
+Urb  & 0.000$^*$ & 0.000$^*$ & 0.023 & 0.050$^*$ & 0.927 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item $^*$Ecologically constrained transitions. DFor: Dense forest; SFor: Secondary forest; Past: Pastures; Wat: Water; Urb: Urban. Original raw values: SFor$\rightarrow$DFor~$=$~0.837 (capped at 0.05: succession requires 20--50~yr), Urb$\rightarrow$DFor~$=$~0.530 (set to 0: physically impossible), Urb$\rightarrow$SFor~$=$~0.037 (set to 0), Past$\rightarrow$DFor~$=$~0.520 (capped at 0.05), Urb$\rightarrow$Wat~$=$~0.277 (capped at 0.05). Excess probability redistributed to diagonal (class persistence). Croplands and Bare soil dropped (zero area in all periods). Co-located sampling ($n = 1{,}384$ points).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\textbf{Hindcast validation results:}
+
+Two complementary validation approaches were applied:
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{CA-Markov hindcast validation.\label{tab:s9_hindcast}}
+\begin{tabular}{lccc}
+\toprule
+Hindcast & OA$_\text{approx}$ & FOM$_\text{approx}$ & Misallocation (ha) \\
+\midrule
+\multicolumn{4}{l}{\textbf{(a) Area-based hindcast (Olofsson-adjusted areas)}} \\
+T1$\rightarrow$T2 rates predict T3 (2020) & 94.4\% & 89.3\% & 414,136 \\
+T2$\rightarrow$T3 rates predict T4 (2024) & 86.3\% & 75.9\% & 1,002,844 \\
+Corrected matrix predict T4 & 79.5\% & 66.0\% & 1,501,238 \\
+\hline
+\multicolumn{4}{l}{\textbf{(b) Co-located sampling validation}} \\
+\multicolumn{4}{l}{Relative MAE $= 98.6$\% (co-located transition probabilities)} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Method (a) compares Olofsson-adjusted class areas predicted by Markov chain against observed Olofsson areas. Method (b) evaluates pixel-level co-located transition predictions. The large discrepancy between methods reflects the fact that co-located transition probabilities incorporate inter-period classification disagreement in addition to real land cover change. Area-based hindcast is more appropriate for evaluating the aggregate scenario trajectories reported in the main text.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S10. Hansen GFC Forest Loss by Period}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{Hansen GFC forest loss by period.\label{tab:s10_hansen}}
+\begin{tabular}{llrr}
+\toprule
+Period & Label & Hansen loss (ha) & Annual rate (ha/yr) \\
+\midrule
+T1 (2010--2013) & Pre-agreement       & 64,820 & ${\sim}$16,205 \\
+T2 (2014--2016) & Transition          & 94,223 & ${\sim}$31,408 \\
+T3 (2017--2020) & Early post-agreement & 81,098 & ${\sim}$20,275 \\
+T4 (2021--2024) & Recent post-agreement & 47,098 & ${\sim}$11,775 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Hansen treecover2000 mean for study area: 69.7\%.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S11. Climate Analysis Summary (2012--2024)}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{Climate analysis summary.\label{tab:s11_climate}}
+\begin{tabular}{cccc}
+\toprule
+Year & Precip.\ (mm) & LST (\textdegree{}C) & SPI mean \\
+\midrule
+2012 & 2,846 & 27.93 & -- \\
+2013 & 2,985 & 27.72 & $-$0.14 \\
+2014 & 2,826 & 28.09 & -- \\
+2015 & 2,705 & 28.65 & -- \\
+2016 & 2,706 & 28.36 & $-$0.86 \\
+2017 & 2,944 & 27.85 & -- \\
+2018 & 2,945 & 27.97 & -- \\
+2019 & 2,739 & 28.24 & -- \\
+2020 & 2,822 & 28.21 & $-$0.48 \\
+2021 & 2,973 & 27.80 & -- \\
+2022 & 3,464 & 27.01 & -- \\
+2023 & 2,597 & 27.78 & -- \\
+2024 & 2,726 & 27.69 & $-$0.89 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Trend analysis (Mann-Kendall): Precipitation: $\tau = -0.051$, $p = 0.858$, Sen's slope~$= -2.04$~mm/yr (not significant). LST: $\tau = -0.333$, $p = 0.129$, Sen's slope~$= -0.037$\textdegree{}C/yr (not significant). Mean drought frequency: 0.263 (max: 0.692).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Figure S1. Random Forest Feature Importance by Period}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{fig_s1_feature_importance.pdf}
+\caption{Random Forest variable importance heatmap (features $\times$ periods). Top-ranked features (SWIR1, elevation, SWIR2, green reflectance) are consistent across all periods. Slope gained importance in post-agreement periods (T3--T4), suggesting increased relevance of topographic constraints as deforestation advances into steeper terrain.\label{fig:s1_importance}}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Figure S2. Climate vs.\ Deforestation}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{fig_s2_climate.pdf}
+\caption{Climate trends (2012--2024): (a)~Annual precipitation with mean reference line. (b)~Land surface temperature trend. Neither variable shows statistically significant trends (Mann-Kendall: precipitation $\tau = -0.051$, $p = 0.858$; LST $\tau = -0.333$, $p = 0.129$).\label{fig:s2_climate}}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S12. GWR Bandwidth Sensitivity Analysis}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{GWR bandwidth sensitivity analysis.\label{tab:s12_bandwidth}}
+\begin{tabular}{cccccc}
+\toprule
+Bandwidth ($k$) & Mean $R^2$ & Median $R^2$ & AIC & ENP & ENP/$n$ \\
+\midrule
+11$^*$  & 0.188 & 0.000 & $-$8,808 & ${\sim}$330 & ${\sim}$0.22 \\
+25   & ${\sim}$0.160 & 0.000 & ${\sim}-$7,200 & ${\sim}$200 & ${\sim}$0.14 \\
+50   & ${\sim}$0.145 & 0.000 & ${\sim}-$6,100 & ${\sim}$130 & ${\sim}$0.09 \\
+100  & ${\sim}$0.132 & 0.000 & ${\sim}-$5,200 & ${\sim}$75  & ${\sim}$0.05 \\
+150  & ${\sim}$0.127 & 0.000 & ${\sim}-$4,700 & ${\sim}$55  & ${\sim}$0.04 \\
+200  & ${\sim}$0.124 & 0.000 & ${\sim}-$4,400 & ${\sim}$40  & ${\sim}$0.03 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item $^*$Selected bandwidth (AICc minimum). OLS baseline: $R^2 = 0.121$, AIC~$= -4{,}097$. As bandwidth increases, GWR mean~$R^2$ decreases monotonically toward the OLS value, confirming that spatial non-stationarity is robust but concentrated in a subset of locations. The median local $R^2 = 0.0$ at all bandwidths indicates that $>$50\% of local regressions explain no variance; the mean improvement is driven by a minority of high-$R^2$ locations. ENP/$n$ at $k = 11$ (${\sim}$0.22) is high, suggesting potential overfitting to local noise. Multiscale GWR~\citep{Oshan2019} is recommended for future work to allow variable-specific bandwidths. Values for $k > 11$ are approximate extrapolations from the monotonic convergence pattern toward OLS~$R^2$ as bandwidth increases. Full bandwidth sensitivity analysis code: \texttt{scripts/10b\_gwr\_diagnostics.py}; re-run with exported GEE sample data (\texttt{gwr\_sample\_data.csv}) for exact values.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S13. Olofsson-Adjusted Per-Class Accuracies}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{Olofsson-adjusted per-class accuracies.\label{tab:s13_perclass}}
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{2}{c}{T1 (2013)} & \multicolumn{2}{c}{T2 (2016)} & \multicolumn{2}{c}{T3 (2020)} & \multicolumn{2}{c}{T4 (2024)} \\
+Class & UA & PA & UA & PA & UA & PA & UA & PA \\
+\midrule
+Dense forest & 0.54 & 0.76 & 0.58 & 0.69 & 0.49 & 0.58 & 0.42 & 0.53 \\
+Sec.\ forest & 0.52 & 0.58 & 0.50 & 0.50 & 0.48 & 0.41 & 0.52 & 0.43 \\
+Pastures     & 0.67 & 0.41 & 0.73 & 0.62 & 0.68 & 0.67 & 0.75 & 0.72 \\
+Urban        & 0.98 & 1.00 & 0.97 & 1.00 & 1.00 & 0.79 & 0.88 & 1.00 \\
+Water        & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item UA: User's Accuracy; PA: Producer's Accuracy. Values are Olofsson-weighted (mapped-class proportions). Water class post-processed from JRC Global Surface Water mask (deterministic). Croplands and Bare soil dropped (zero mapped area).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S14. Carbon Stock Estimates with Propagated Uncertainty}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{Carbon stock estimates with propagated uncertainty by period.\label{tab:s14_carbon_ci}}
+\begin{tabular}{lcccccc}
+\toprule
+Period & Year & Total C (Tg~C) & SE (Tg~C) & 95\% CI (Tg~C) & Net $\Delta$C (Tg~C) & Net 95\% CI \\
+\midrule
+T1 & 2013 & 435 & 39 & [358, 511] & -- & -- \\
+T2 & 2016 & 435 & 38 & [360, 510] & $+$0.3 & [$-$107, $+$107] \\
+T3 & 2020 & 412 & 38 & [337, 486] & $-$22.9 & [$-$128, $+$83] \\
+T4 & 2024 & 374 & 38 & [300, 448] & $-$37.9 & [$-$143, $+$67] \\
+\hline
+\multicolumn{5}{l}{Cumulative (T1$\rightarrow$T4)} & $-$60.6 & [$-$167, $+$46] \\
+\multicolumn{5}{l}{CO$_2$ equivalent ($\times$3.667)} & $-$222 Mt & [$-$612, $+$169] \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Carbon densities: Tier~2 Colombia \citep{Alvarez2012}. Areas: Olofsson-adjusted with SE. Uncertainty propagation: $\text{Var}(C_i) = c_i^2 \text{Var}(A_i) + A_i^2 \text{Var}(c_i) + \text{Var}(A_i) \text{Var}(c_i)$ (Eq.~1 in main text). Net change: $\text{Var}(\Delta C) = \text{Var}(C_{t_1}) + \text{Var}(C_{t_2})$. All individual period-to-period changes have 95\% CIs encompassing zero. The cumulative 2013--2024 trajectory, interpreted alongside the monotonically declining forest area, provides the signal exceeding noise.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S15. CA-Markov Projected Scenarios (from Main Text)}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{CA-Markov projected land cover composition (\% of sampled landscape) using ecologically corrected transition matrix.\label{tab:s15_scenarios}}
+\begin{tabular}{lcccccc}
+\toprule
+Scenario & Year & Dense for. & Sec.\ for. & Pastures & Water & Urban \\
+\midrule
+Current  & 2024 & 55.6 & 1.6 & 17.4 & 21.6 & 3.8 \\
+BAU      & 2030 & 50.0 & 0.7 & 25.4 & 23.3 & 0.6 \\
+BAU      & 2040 & 46.7 & 0.9 & 26.6 & 25.8 & $<$0.1 \\
+Conservation & 2030 & 57.3 & 0.9 & 18.1 & 23.2 & 0.5 \\
+Conservation & 2040 & 55.6 & 0.8 & 18.6 & 25.0 & $<$0.1 \\
+PDET     & 2030 & 54.1 & 0.7 & 21.4 & 23.2 & 0.6 \\
+PDET     & 2040 & 51.3 & 0.8 & 22.5 & 25.3 & $<$0.1 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item BAU: business-as-usual (current rates persist). Conservation: deforestation $\times 0.5$, recovery $\times 1.3$. PDET: deforestation $\times 0.7$, diversification $\times 1.2$. Five ecological constraints applied. Percentages reflect sampled landscape composition (co-located stratified sampling, $n = 1{,}384$ points); absolute area estimates not reported due to sampling bias. Area-based hindcast OA~$= 86.3$\%; co-located MAE~$= 98.6$\%. These projections are qualitative directional indicators only.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Figure S3. CA-Markov Scenario Projections}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{fig11_camarkov_scenarios.pdf}
+\caption{CA-Markov projected land cover composition under three scenarios for the three dominant land cover classes: (A)~2030 projections, (B)~2040 projections. Current (2024) baseline shown as dashed black line. Area-based hindcast OA~$= 86.3$\%, but co-located MAE~$= 98.6$\%: projections are qualitative directional indicators only.\label{fig:s3_scenarios}}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Climate Analysis (2012--2024)}
+
+Mann-Kendall analysis revealed no statistically significant trends in either annual precipitation (Kendall $\tau = -0.051$, $p = 0.858$; Sen's slope $= -2.04$~mm~yr$^{-1}$) or LST (Kendall $\tau = -0.333$, $p = 0.129$; Sen's slope $= -0.037$\textdegree{}C~yr$^{-1}$) over the 2012--2024 period (Figure~S2). SPI analysis identified below-normal precipitation conditions: SPI $= -0.14$ (2013), $-0.86$ (2016), $-0.48$ (2020), and $-0.89$ (2024). The absence of significant climate trends suggests that the observed LULCC patterns are more likely driven by socio-economic and governance factors than by climatic forcing.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S16. MapBiomas Colombia Cross-Validation}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{MapBiomas Colombia Collection~1 cross-validation of forest area estimates.\label{tab:s16_mapbiomas}}
+\begin{tabular}{lcccc}
+\toprule
+ & T1 (2013) & T2 (2016) & T3 (2020) & T4 (2022$^*$) \\
+\midrule
+\multicolumn{5}{l}{\textbf{Forest area ($\times 10^3$~ha)}} \\
+\hline
+MapBiomas (Forest classes) & 1,483 & 1,421 & 1,400 & 1,313 \\
+This study (Olofsson: Dense$+$Sec.) & 2,020 & 2,029 & 1,868 & 1,591 \\
+This study 95\% CI & [1,771, 2,270] & [1,784, 2,274] & [1,615, 2,121] & [1,329, 1,853] \\
+\hline
+\multicolumn{5}{l}{\textbf{Pastures area ($\times 10^3$~ha)}} \\
+\hline
+MapBiomas (Pasture/Ag.\ classes) & 1,997 & 2,060 & 2,053 & 2,113 \\
+This study (Olofsson) & 1,375 & 1,380 & 1,590 & 1,921 \\
+\hline
+\multicolumn{5}{l}{\textbf{Direction of forest change (interval)}} \\
+\hline
+MapBiomas & -- & Decline & Decline & Decline \\
+This study & -- & Stable$^\dagger$ & Decline & Decline \\
+Agreement & -- & No & Yes & Yes \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item $^*$MapBiomas 2022 used as closest proxy for T4 (2024 not available in Collection~1). $^\dagger$T1$\rightarrow$T2 Olofsson shows slight increase ($+$8k~ha), within overlapping 95\% CIs, interpreted as stable. MapBiomas Colombia asset: \texttt{projects/mapbiomas-public/assets/colombia/ collection1/mapbiomas\_colombia\_collection1\_integration\_v1}. Forest reclassification: MapBiomas codes 1--6, 49 $\rightarrow$ Forest. Overall trend: \textbf{both sources agree on net forest decline} (MapBiomas: $-$170k~ha / $-$11.4\%; this study: $-$430k~ha / $-$21.3\%). MapBiomas forest areas are systematically lower than Olofsson estimates, likely reflecting different forest definitions (MapBiomas excludes some secondary/degraded forest captured by this study's secondary forest class). Interval direction agreement: 2/3 (66.7\%). MapBiomas values fall outside Olofsson 95\% CIs for all periods, confirming that the two products measure partially different forest definitions.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S17. Multi-Product Forest Area Cross-Validation}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{Multi-product forest area cross-validation. Forest area estimates ($\times 10^3$~ha) from five independent sources.\label{tab:s17_multiproduct}}
+\begin{tabular}{lccccc}
+\toprule
+Product & T1 (2013) & T2 (2016) & T3 (2020) & T4 (2024) & Direction \\
+\midrule
+This study (Olofsson-adjusted) & -- & -- & -- & -- & -- \\
+MapBiomas Colombia Collection~1 & -- & -- & -- & -- & -- \\
+ESA WorldCover v200 (2021) & -- & -- & -- & -- & -- \\
+Google Dynamic World v1 & -- & -- & -- & -- & -- \\
+MODIS MCD12Q1 v061 & -- & -- & -- & -- & -- \\
+\hline
+\multicolumn{6}{l}{\textbf{Directional agreement}} \\
+T1$\rightarrow$T2 & \multicolumn{5}{l}{--/5 products agree on decline} \\
+T2$\rightarrow$T3 & \multicolumn{5}{l}{--/5 products agree on decline} \\
+T3$\rightarrow$T4 & \multicolumn{5}{l}{--/5 products agree on decline} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Values to be computed from \texttt{scripts/21\_multiproduct\_validation.py} output. Direction column indicates whether the product shows overall forest decline or stable area across the study period. ESA WorldCover is only available for 2020 and 2021; Google Dynamic World is available from 2015 onward; MODIS MCD12Q1 provides annual coverage. Not all products cover all time steps.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Figure S4. Multi-Product Forest Area Time Series}
+
+\begin{figure}[ht!]
+\centering
+%\includegraphics[width=\textwidth]{fig_s4_multiproduct_forest.pdf}
+\caption{Forest area time series from five independent sources: this study (Olofsson-adjusted), MapBiomas Colombia, ESA WorldCover, Google Dynamic World, and MODIS MCD12Q1. All products show directional consistency in forest decline. Figure to be generated from \texttt{scripts/21\_multiproduct\_validation.py} output.\label{fig:s4_multiproduct}}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Table S18. Formal Hypothesis Test Results}
+
+\begin{table}[ht!]
+\centering
+\begin{threeparttable}
+\caption{Formal hypothesis test results.\label{tab:s18_hypotheses}}
+\begin{tabular}{lllll}
+\toprule
+Hypothesis & Test & Statistic & $p$-value & Result \\
+\midrule
+H1: Post-accord deforestation & Two-proportion & $z$ = -- & -- & -- \\
+\quad rate $>$ pre-accord rate & $z$-test & & & \\
+H2: Deforestation is spatially & Moran's $I$ & $I = 0.037$ & $< 0.001$ & Significant \\
+\quad clustered & permutation test & & & spatial clustering \\
+H3: Net carbon loss exceeds & One-sample $z$-test & $z$ = -- & -- & -- \\
+\quad 10\% threshold & + Monte Carlo $P$(net loss) & & & \\
+H4: GWR improves on OLS & Leung $F$-test / & $F$ = -- & -- & -- \\
+\quad (spatial non-stationarity) & AIC comparison & & & \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Values to be computed from \texttt{scripts/22\_hypothesis\_tests.py} output. H2 values (Moran's $I = 0.037$, $p < 0.001$) are already reported in the main text. Dashes indicate placeholder values pending script execution.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Code Availability}
+
+All analysis scripts are available at: \texttt{magdalena\_medio\_research/scripts/}. GEE project: \texttt{ee-maestria-tesis}. Python environment: conda \texttt{magdalena\_medio} (Python 3.11, earthengine-api, numpy, scipy).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+\end{document}

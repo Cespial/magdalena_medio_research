@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "generated": "2026-02-16 17:16",
+    "method": "Olofsson et al. (2014) stratified area estimators",
+    "total_area_ha": 3665888.0,
+    "reported_classes": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "class_names": {
+      "1": "Bosque denso",
+      "2": "Bosque secundario",
+      "3": "Pasturas",
+      "5": "Agua",
+      "6": "Urbano"
+    },
+    "olofsson_strata": [
+      "BDen",
+      "BSec",
+      "Past",
+      "Urb"
+    ],
+    "note_agua": "Agua (class 5) post-processed from JRC water mask; reported as deterministic area",
+    "note_suel_merge": "Suel (class 7, zero mapped area) reference samples merged into Pasturas",
+    "note_cm_indexing": "CM indices: 0=background, 1=BDen, 2=BSec, 3=Past, 4=Cult, 5=Urb, 6=Suel",
+    "note_transposition": "CM stored as rows=reference, transposed to rows=mapped for Olofsson",
+    "disagreement_method": "Pontius & Millones (2011)"
+  },
+  "periods": {
+    "pre_acuerdo": {
+      "year": 2013,
+      "label": "T1: Pre-acuerdo (conflicto activo)",
+      "n_validation_olofsson": 348,
+      "n_validation_original": 429,
+      "pixel_counted_oa": 0.6923,
+      "pixel_counted_kappa": 0.616,
+      "adjusted_oa": 0.5927,
+      "oa_se": 0.0296,
+      "quantity_disagreement": 0.1508,
+      "allocation_disagreement": 0.2565,
+      "overall_disagreement": 0.4073,
+      "agua_area_ha": 64195.0,
+      "total_adjusted_area_ha": 3665888.0,
+      "area_sum_check_pct": 100.0,
+      "confusion_matrix_4x4_mapped_rows": [
+        [
+          57,
+          15,
+          33,
+          0
+        ],
+        [
+          17,
+          58,
+          36,
+          0
+        ],
+        [
+          6,
+          9,
+          31,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          84
+        ]
+      ],
+      "per_class": {
+        "1": {
+          "name": "Bosque denso",
+          "mapped_area_ha": 1527871.0,
+          "adjusted_area_ha": 1095836.0,
+          "area_se_ha": 92569.0,
+          "area_ci95_ha": 181436.0,
+          "area_lower_ha": 914400.0,
+          "area_upper_ha": 1277272.0,
+          "adjusted_ua": 0.5429,
+          "ua_se": 0.0488,
+          "adjusted_pa": 0.7569,
+          "pa_se": 0.0845
+        },
+        "2": {
+          "name": "Bosque secundario",
+          "mapped_area_ha": 1030672.0,
+          "adjusted_area_ha": 924573.0,
+          "area_se_ha": 87136.0,
+          "area_ci95_ha": 170787.0,
+          "area_lower_ha": 753786.0,
+          "area_upper_ha": 1095360.0,
+          "adjusted_ua": 0.5225,
+          "ua_se": 0.0476,
+          "adjusted_pa": 0.5825,
+          "pa_se": 0.0942
+        },
+        "3": {
+          "name": "Pasturas",
+          "mapped_area_ha": 832368.0,
+          "adjusted_area_ha": 1375403.0,
+          "area_se_ha": 101671.0,
+          "area_ci95_ha": 199275.0,
+          "area_lower_ha": 1176128.0,
+          "area_upper_ha": 1574679.0,
+          "adjusted_ua": 0.6739,
+          "ua_se": 0.0699,
+          "adjusted_pa": 0.4078,
+          "pa_se": 0.0739
+        },
+        "6": {
+          "name": "Urbano",
+          "mapped_area_ha": 210782.0,
+          "adjusted_area_ha": 205881.0,
+          "area_se_ha": 3446.0,
+          "area_ci95_ha": 6754.0,
+          "area_lower_ha": 199127.0,
+          "area_upper_ha": 212634.0,
+          "adjusted_ua": 0.9767,
+          "ua_se": 0.0163,
+          "adjusted_pa": 1.0,
+          "pa_se": 0.0167
+        },
+        "5": {
+          "name": "Agua",
+          "mapped_area_ha": 64195.0,
+          "adjusted_area_ha": 64195.0,
+          "area_se_ha": 0,
+          "area_ci95_ha": 0,
+          "area_lower_ha": 64195.0,
+          "area_upper_ha": 64195.0,
+          "adjusted_ua": 1.0,
+          "ua_se": 0.0,
+          "adjusted_pa": 1.0,
+          "pa_se": 0.0,
+          "note": "Post-processed from JRC water mask; not classified by RF"
+        }
+      }
+    },
+    "transicion": {
+      "year": 2016,
+      "label": "T2: Transicion (post-cese al fuego)",
+      "n_validation_olofsson": 384,
+      "n_validation_original": 492,
+      "pixel_counted_oa": 0.7175,
+      "pixel_counted_kappa": 0.6462,
+      "adjusted_oa": 0.6316,
+      "oa_se": 0.0291,
+      "quantity_disagreement": 0.0566,
+      "allocation_disagreement": 0.3118,
+      "overall_disagreement": 0.3684,
+      "agua_area_ha": 65063.0,
+      "total_adjusted_area_ha": 3665888.0,
+      "area_sum_check_pct": 100.0,
+      "confusion_matrix_4x4_mapped_rows": [
+        [
+          62,
+          20,
+          24,
+          0
+        ],
+        [
+          32,
+          61,
+          29,
+          0
+        ],
+        [
+          4,
+          10,
+          38,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          101
+        ]
+      ],
+      "per_class": {
+        "1": {
+          "name": "Bosque denso",
+          "mapped_area_ha": 1284500.0,
+          "adjusted_area_ha": 1088953.0,
+          "area_se_ha": 84622.0,
+          "area_ci95_ha": 165859.0,
+          "area_lower_ha": 923094.0,
+          "area_upper_ha": 1254812.0,
+          "adjusted_ua": 0.5849,
+          "ua_se": 0.0481,
+          "adjusted_pa": 0.6899,
+          "pa_se": 0.0777
+        },
+        "2": {
+          "name": "Bosque secundario",
+          "mapped_area_ha": 942362.0,
+          "adjusted_area_ha": 939702.0,
+          "area_se_ha": 91938.0,
+          "area_ci95_ha": 180198.0,
+          "area_lower_ha": 759504.0,
+          "area_upper_ha": 1119900.0,
+          "adjusted_ua": 0.5,
+          "ua_se": 0.0455,
+          "adjusted_pa": 0.5014,
+          "pa_se": 0.0978
+        },
+        "3": {
+          "name": "Pasturas",
+          "mapped_area_ha": 1176047.0,
+          "adjusted_area_ha": 1379962.0,
+          "area_se_ha": 97100.0,
+          "area_ci95_ha": 190316.0,
+          "area_lower_ha": 1189646.0,
+          "area_upper_ha": 1570278.0,
+          "adjusted_ua": 0.7308,
+          "ua_se": 0.0621,
+          "adjusted_pa": 0.6228,
+          "pa_se": 0.0704
+        },
+        "6": {
+          "name": "Urbano",
+          "mapped_area_ha": 197917.0,
+          "adjusted_area_ha": 192207.0,
+          "area_se_ha": 3264.0,
+          "area_ci95_ha": 6397.0,
+          "area_lower_ha": 185810.0,
+          "area_upper_ha": 198605.0,
+          "adjusted_ua": 0.9712,
+          "ua_se": 0.0165,
+          "adjusted_pa": 1.0,
+          "pa_se": 0.017
+        },
+        "5": {
+          "name": "Agua",
+          "mapped_area_ha": 65063.0,
+          "adjusted_area_ha": 65063.0,
+          "area_se_ha": 0,
+          "area_ci95_ha": 0,
+          "area_lower_ha": 65063.0,
+          "area_upper_ha": 65063.0,
+          "adjusted_ua": 1.0,
+          "ua_se": 0.0,
+          "adjusted_pa": 1.0,
+          "pa_se": 0.0,
+          "note": "Post-processed from JRC water mask; not classified by RF"
+        }
+      }
+    },
+    "post_acuerdo_1": {
+      "year": 2020,
+      "label": "T3: Post-acuerdo temprano",
+      "n_validation_olofsson": 410,
+      "n_validation_original": 484,
+      "pixel_counted_oa": 0.6777,
+      "pixel_counted_kappa": 0.5957,
+      "adjusted_oa": 0.5871,
+      "oa_se": 0.0307,
+      "quantity_disagreement": 0.0495,
+      "allocation_disagreement": 0.3634,
+      "overall_disagreement": 0.4129,
+      "agua_area_ha": 57132.0,
+      "total_adjusted_area_ha": 3665888.0,
+      "area_sum_check_pct": 100.0,
+      "confusion_matrix_4x4_mapped_rows": [
+        [
+          68,
+          33,
+          37,
+          0
+        ],
+        [
+          23,
+          49,
+          29,
+          1
+        ],
+        [
+          10,
+          10,
+          44,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          105
+        ]
+      ],
+      "per_class": {
+        "1": {
+          "name": "Bosque denso",
+          "mapped_area_ha": 1163703.0,
+          "adjusted_area_ha": 985243.0,
+          "area_se_ha": 92045.0,
+          "area_ci95_ha": 180409.0,
+          "area_lower_ha": 804835.0,
+          "area_upper_ha": 1165652.0,
+          "adjusted_ua": 0.4928,
+          "ua_se": 0.0427,
+          "adjusted_pa": 0.582,
+          "pa_se": 0.0934
+        },
+        "2": {
+          "name": "Bosque secundario",
+          "mapped_area_ha": 754906.0,
+          "adjusted_area_ha": 882529.0,
+          "area_se_ha": 90682.0,
+          "area_ci95_ha": 177736.0,
+          "area_lower_ha": 704792.0,
+          "area_upper_ha": 1060265.0,
+          "adjusted_ua": 0.4804,
+          "ua_se": 0.0497,
+          "adjusted_pa": 0.4109,
+          "pa_se": 0.1028
+        },
+        "3": {
+          "name": "Pasturas",
+          "mapped_area_ha": 1570405.0,
+          "adjusted_area_ha": 1589681.0,
+          "area_se_ha": 107308.0,
+          "area_ci95_ha": 210324.0,
+          "area_lower_ha": 1379356.0,
+          "area_upper_ha": 1800005.0,
+          "adjusted_ua": 0.6769,
+          "ua_se": 0.0585,
+          "adjusted_pa": 0.6687,
+          "pa_se": 0.0675
+        },
+        "6": {
+          "name": "Urbano",
+          "mapped_area_ha": 119742.0,
+          "adjusted_area_ha": 151303.0,
+          "area_se_ha": 25268.0,
+          "area_ci95_ha": 49526.0,
+          "area_lower_ha": 101777.0,
+          "area_upper_ha": 200829.0,
+          "adjusted_ua": 1.0,
+          "ua_se": 0.0,
+          "adjusted_pa": 0.7914,
+          "pa_se": 0.167
+        },
+        "5": {
+          "name": "Agua",
+          "mapped_area_ha": 57132.0,
+          "adjusted_area_ha": 57132.0,
+          "area_se_ha": 0,
+          "area_ci95_ha": 0,
+          "area_lower_ha": 57132.0,
+          "area_upper_ha": 57132.0,
+          "adjusted_ua": 1.0,
+          "ua_se": 0.0,
+          "adjusted_pa": 1.0,
+          "pa_se": 0.0,
+          "note": "Post-processed from JRC water mask; not classified by RF"
+        }
+      }
+    },
+    "post_acuerdo_2": {
+      "year": 2024,
+      "label": "T4: Post-acuerdo reciente",
+      "n_validation_olofsson": 371,
+      "n_validation_original": 454,
+      "pixel_counted_oa": 0.6674,
+      "pixel_counted_kappa": 0.5855,
+      "adjusted_oa": 0.6184,
+      "oa_se": 0.0328,
+      "quantity_disagreement": 0.0641,
+      "allocation_disagreement": 0.3174,
+      "overall_disagreement": 0.3816,
+      "agua_area_ha": 87522.0,
+      "total_adjusted_area_ha": 3665888.0,
+      "area_sum_check_pct": 100.0,
+      "confusion_matrix_4x4_mapped_rows": [
+        [
+          48,
+          27,
+          39,
+          0
+        ],
+        [
+          18,
+          48,
+          26,
+          0
+        ],
+        [
+          9,
+          6,
+          46,
+          0
+        ],
+        [
+          2,
+          4,
+          7,
+          91
+        ]
+      ],
+      "per_class": {
+        "1": {
+          "name": "Bosque denso",
+          "mapped_area_ha": 1056931.0,
+          "adjusted_area_ha": 836858.0,
+          "area_se_ha": 100474.0,
+          "area_ci95_ha": 196928.0,
+          "area_lower_ha": 639930.0,
+          "area_upper_ha": 1033787.0,
+          "adjusted_ua": 0.4211,
+          "ua_se": 0.0464,
+          "adjusted_pa": 0.5318,
+          "pa_se": 0.1201
+        },
+        "2": {
+          "name": "Bosque secundario",
+          "mapped_area_ha": 614094.0,
+          "adjusted_area_ha": 753790.0,
+          "area_se_ha": 88212.0,
+          "area_ci95_ha": 172895.0,
+          "area_lower_ha": 580895.0,
+          "area_upper_ha": 926686.0,
+          "adjusted_ua": 0.5217,
+          "ua_se": 0.0524,
+          "adjusted_pa": 0.425,
+          "pa_se": 0.117
+        },
+        "3": {
+          "name": "Pasturas",
+          "mapped_area_ha": 1831548.0,
+          "adjusted_area_ha": 1921398.0,
+          "area_se_ha": 115915.0,
+          "area_ci95_ha": 227193.0,
+          "area_lower_ha": 1694206.0,
+          "area_upper_ha": 2148591.0,
+          "adjusted_ua": 0.7541,
+          "ua_se": 0.0556,
+          "adjusted_pa": 0.7188,
+          "pa_se": 0.0603
+        },
+        "6": {
+          "name": "Urbano",
+          "mapped_area_ha": 75793.0,
+          "adjusted_area_ha": 66319.0,
+          "area_se_ha": 2470.0,
+          "area_ci95_ha": 4841.0,
+          "area_lower_ha": 61478.0,
+          "area_upper_ha": 71159.0,
+          "adjusted_ua": 0.875,
+          "ua_se": 0.0326,
+          "adjusted_pa": 1.0,
+          "pa_se": 0.0372
+        },
+        "5": {
+          "name": "Agua",
+          "mapped_area_ha": 87522.0,
+          "adjusted_area_ha": 87522.0,
+          "area_se_ha": 0,
+          "area_ci95_ha": 0,
+          "area_lower_ha": 87522.0,
+          "area_upper_ha": 87522.0,
+          "adjusted_ua": 1.0,
+          "ua_se": 0.0,
+          "adjusted_pa": 1.0,
+          "pa_se": 0.0,
+          "note": "Post-processed from JRC water mask; not classified by RF"
+        }
+      }
+    }
+  }
+}

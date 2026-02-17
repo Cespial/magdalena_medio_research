@@ -1,0 +1,342 @@
+{
+  "pre_acuerdo": {
+    "year": 2013,
+    "carbon_Mg_C": 434506538.0,
+    "water_yield_mm": 0,
+    "baseflow_mm": 771.2,
+    "habitat_quality_mean": 0.234,
+    "habitat_quality_std": 0.1015,
+    "carbon_se": 38957736.0,
+    "carbon_ci95": 76357163.0,
+    "carbon_lower_ci95": 358149375.0,
+    "carbon_upper_ci95": 510863700.0,
+    "carbon_per_class": {
+      "1": {
+        "name": "Bosque denso",
+        "c_density_MgC_ha": 231,
+        "c_density_se_MgC_ha": 21.4,
+        "area_ha": 1095836.0,
+        "area_se_ha": 92569.0,
+        "carbon_Mg_C": 253138116.0,
+        "carbon_se_Mg_C": 31798874.0
+      },
+      "2": {
+        "name": "Bosque secundario",
+        "c_density_MgC_ha": 127,
+        "c_density_se_MgC_ha": 16.4,
+        "area_ha": 924573.0,
+        "area_se_ha": 87136.0,
+        "carbon_Mg_C": 117420771.0,
+        "carbon_se_Mg_C": 18826988.0
+      },
+      "3": {
+        "name": "Pasturas",
+        "c_density_MgC_ha": 43.5,
+        "c_density_se_MgC_ha": 8.31,
+        "area_ha": 1375403.0,
+        "area_se_ha": 101671.0,
+        "carbon_Mg_C": 59830030.0,
+        "carbon_se_Mg_C": 12287157.0
+      },
+      "4": {
+        "name": "Cultivos",
+        "c_density_MgC_ha": 45.5,
+        "c_density_se_MgC_ha": 8.61,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "5": {
+        "name": "Agua",
+        "c_density_MgC_ha": 0,
+        "c_density_se_MgC_ha": 0.0,
+        "area_ha": 64195.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "6": {
+        "name": "Urbano",
+        "c_density_MgC_ha": 20,
+        "c_density_se_MgC_ha": 5.1,
+        "area_ha": 205881.0,
+        "area_se_ha": 3446.0,
+        "carbon_Mg_C": 4117620.0,
+        "carbon_se_Mg_C": 1052198.0
+      },
+      "7": {
+        "name": "Suelo desnudo",
+        "c_density_MgC_ha": 15,
+        "c_density_se_MgC_ha": 4.0,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      }
+    }
+  },
+  "transicion": {
+    "year": 2016,
+    "carbon_Mg_C": 434762784.0,
+    "water_yield_mm": 0,
+    "baseflow_mm": 625.7,
+    "habitat_quality_mean": 0.2137,
+    "habitat_quality_std": 0.1077,
+    "carbon_se": 38153178.0,
+    "carbon_ci95": 74780229.0,
+    "carbon_lower_ci95": 359982555.0,
+    "carbon_upper_ci95": 509543013.0,
+    "carbon_per_class": {
+      "1": {
+        "name": "Bosque denso",
+        "c_density_MgC_ha": 231,
+        "c_density_se_MgC_ha": 21.4,
+        "area_ha": 1088953.0,
+        "area_se_ha": 84622.0,
+        "carbon_Mg_C": 251548143.0,
+        "carbon_se_Mg_C": 30471240.0
+      },
+      "2": {
+        "name": "Bosque secundario",
+        "c_density_MgC_ha": 127,
+        "c_density_se_MgC_ha": 16.4,
+        "area_ha": 939702.0,
+        "area_se_ha": 91938.0,
+        "carbon_Mg_C": 119342154.0,
+        "carbon_se_Mg_C": 19394416.0
+      },
+      "3": {
+        "name": "Pasturas",
+        "c_density_MgC_ha": 43.5,
+        "c_density_se_MgC_ha": 8.31,
+        "area_ha": 1379962.0,
+        "area_se_ha": 97100.0,
+        "carbon_Mg_C": 60028347.0,
+        "carbon_se_Mg_C": 12249901.0
+      },
+      "4": {
+        "name": "Cultivos",
+        "c_density_MgC_ha": 45.5,
+        "c_density_se_MgC_ha": 8.61,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "5": {
+        "name": "Agua",
+        "c_density_MgC_ha": 0,
+        "c_density_se_MgC_ha": 0.0,
+        "area_ha": 65063.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "6": {
+        "name": "Urbano",
+        "c_density_MgC_ha": 20,
+        "c_density_se_MgC_ha": 5.1,
+        "area_ha": 192207.0,
+        "area_se_ha": 3264.0,
+        "carbon_Mg_C": 3844140.0,
+        "carbon_se_Mg_C": 982380.0
+      },
+      "7": {
+        "name": "Suelo desnudo",
+        "c_density_MgC_ha": 15,
+        "c_density_se_MgC_ha": 4.0,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      }
+    }
+  },
+  "post_acuerdo_1": {
+    "year": 2020,
+    "carbon_Mg_C": 411849500.0,
+    "water_yield_mm": 0,
+    "baseflow_mm": 618.9,
+    "habitat_quality_mean": 0,
+    "habitat_quality_std": 0,
+    "carbon_se": 37986281.0,
+    "carbon_ci95": 74453111.0,
+    "carbon_lower_ci95": 337396388.0,
+    "carbon_upper_ci95": 486302611.0,
+    "carbon_per_class": {
+      "1": {
+        "name": "Bosque denso",
+        "c_density_MgC_ha": 231,
+        "c_density_se_MgC_ha": 21.4,
+        "area_ha": 985243.0,
+        "area_se_ha": 92045.0,
+        "carbon_Mg_C": 227591133.0,
+        "carbon_se_Mg_C": 30009200.0
+      },
+      "2": {
+        "name": "Bosque secundario",
+        "c_density_MgC_ha": 127,
+        "c_density_se_MgC_ha": 16.4,
+        "area_ha": 882529.0,
+        "area_se_ha": 90682.0,
+        "carbon_Mg_C": 112081183.0,
+        "carbon_se_Mg_C": 18556861.0
+      },
+      "3": {
+        "name": "Pasturas",
+        "c_density_MgC_ha": 43.5,
+        "c_density_se_MgC_ha": 8.31,
+        "area_ha": 1589681.0,
+        "area_se_ha": 107308.0,
+        "carbon_Mg_C": 69151124.0,
+        "carbon_se_Mg_C": 14042122.0
+      },
+      "4": {
+        "name": "Cultivos",
+        "c_density_MgC_ha": 45.5,
+        "c_density_se_MgC_ha": 8.61,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "5": {
+        "name": "Agua",
+        "c_density_MgC_ha": 0,
+        "c_density_se_MgC_ha": 0.0,
+        "area_ha": 57132.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "6": {
+        "name": "Urbano",
+        "c_density_MgC_ha": 20,
+        "c_density_se_MgC_ha": 5.1,
+        "area_ha": 151303.0,
+        "area_se_ha": 25268.0,
+        "carbon_Mg_C": 3026060.0,
+        "carbon_se_Mg_C": 931234.0
+      },
+      "7": {
+        "name": "Suelo desnudo",
+        "c_density_MgC_ha": 15,
+        "c_density_se_MgC_ha": 4.0,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      }
+    }
+  },
+  "post_acuerdo_2": {
+    "year": 2024,
+    "carbon_Mg_C": 373952721.0,
+    "water_yield_mm": 1417.2,
+    "baseflow_mm": 743.8,
+    "habitat_quality_mean": 0.2839,
+    "habitat_quality_std": 0.0812,
+    "carbon_se": 37762874.0,
+    "carbon_ci95": 74015234.0,
+    "carbon_lower_ci95": 299937487.0,
+    "carbon_upper_ci95": 447967955.0,
+    "carbon_per_class": {
+      "1": {
+        "name": "Bosque denso",
+        "c_density_MgC_ha": 231,
+        "c_density_se_MgC_ha": 21.4,
+        "area_ha": 836858.0,
+        "area_se_ha": 100474.0,
+        "carbon_Mg_C": 193314198.0,
+        "carbon_se_Mg_C": 29394827.0
+      },
+      "2": {
+        "name": "Bosque secundario",
+        "c_density_MgC_ha": 127,
+        "c_density_se_MgC_ha": 16.4,
+        "area_ha": 753790.0,
+        "area_se_ha": 88212.0,
+        "carbon_Mg_C": 95731330.0,
+        "carbon_se_Mg_C": 16746472.0
+      },
+      "3": {
+        "name": "Pasturas",
+        "c_density_MgC_ha": 43.5,
+        "c_density_se_MgC_ha": 8.31,
+        "area_ha": 1921398.0,
+        "area_se_ha": 115915.0,
+        "carbon_Mg_C": 83580813.0,
+        "carbon_se_Mg_C": 16775504.0
+      },
+      "4": {
+        "name": "Cultivos",
+        "c_density_MgC_ha": 45.5,
+        "c_density_se_MgC_ha": 8.61,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "5": {
+        "name": "Agua",
+        "c_density_MgC_ha": 0,
+        "c_density_se_MgC_ha": 0.0,
+        "area_ha": 87522.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      },
+      "6": {
+        "name": "Urbano",
+        "c_density_MgC_ha": 20,
+        "c_density_se_MgC_ha": 5.1,
+        "area_ha": 66319.0,
+        "area_se_ha": 2470.0,
+        "carbon_Mg_C": 1326380.0,
+        "carbon_se_Mg_C": 341983.0
+      },
+      "7": {
+        "name": "Suelo desnudo",
+        "c_density_MgC_ha": 15,
+        "c_density_se_MgC_ha": 4.0,
+        "area_ha": 0.0,
+        "area_se_ha": 0.0,
+        "carbon_Mg_C": 0.0,
+        "carbon_se_Mg_C": 0.0
+      }
+    }
+  },
+  "carbon_change_2013_2016": {
+    "label": "2013-2016",
+    "net_Mg_C": 256246.0,
+    "net_se": 54528618.0,
+    "net_ci95": 106876091.0,
+    "net_lower_ci95": -106619845.0,
+    "net_upper_ci95": 107132337.0
+  },
+  "carbon_change_2016_2020": {
+    "label": "2016-2020",
+    "net_Mg_C": -22913284.0,
+    "net_se": 53838857.0,
+    "net_ci95": 105524160.0,
+    "net_lower_ci95": -128437444.0,
+    "net_upper_ci95": 82610876.0
+  },
+  "carbon_change_2020_2024": {
+    "label": "2020-2024",
+    "net_Mg_C": -37896779.0,
+    "net_se": 53562974.0,
+    "net_ci95": 104983429.0,
+    "net_lower_ci95": -142880208.0,
+    "net_upper_ci95": 67086650.0
+  },
+  "_metadata": {
+    "generated": "2026-02-16 19:53",
+    "carbon_pool_source": "Tier 2 Colombia (Alvarez et al. 2012)",
+    "area_source": "Olofsson et al. (2014) stratified estimators",
+    "uncertainty_method": "Error propagation for products of independent RVs: Var(C_i) = c_i^2*Var(A_i) + A_i^2*Var(c_i) + Var(A_i)*Var(c_i)",
+    "ci_level": "95% (z=1.96)",
+    "change_uncertainty": "Var(delta) = Var(C_t1) + Var(C_t2)"
+  }
+}

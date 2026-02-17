@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "generated": "2026-02-13 12:40",
+    "description": "Hindcast validation for CA-Markov projections",
+    "method": "Area-based hindcast using Olofsson-adjusted areas",
+    "reference": "Pontius et al. 2011 for FOM concept",
+    "class_order": [
+      "BDen",
+      "BSec",
+      "Past",
+      "Agua",
+      "Urb"
+    ]
+  },
+  "olofsson_areas_by_period": {
+    "T1_2013": {
+      "BDen": 1154154.0,
+      "BSec": 855515.0,
+      "Past": 1209560.0,
+      "Agua": 62246.0,
+      "Urb": 384413.0
+    },
+    "T2_2016": {
+      "BDen": 1006149.0,
+      "BSec": 826095.0,
+      "Past": 1458041.0,
+      "Agua": 53770.0,
+      "Urb": 321834.0
+    },
+    "T3_2020": {
+      "BDen": 1025792.0,
+      "BSec": 785498.0,
+      "Past": 1480309.0,
+      "Agua": 85587.0,
+      "Urb": 288703.0
+    },
+    "T4_2024": {
+      "BDen": 759729.0,
+      "BSec": 622197.0,
+      "Past": 1994202.0,
+      "Agua": 123235.0,
+      "Urb": 166525.0
+    }
+  },
+  "hindcast_results": {
+    "hindcast_T2_to_T3": {
+      "OA_approx": 0.9435,
+      "FOM_approx": 0.8931,
+      "total_misallocation_ha": 414136.0,
+      "per_class": {
+        "BDen": {
+          "observed_ha": 1025792.0,
+          "simulated_ha": 877124.0,
+          "difference_ha": -148668.0,
+          "relative_error_pct": 14.49
+        },
+        "BSec": {
+          "observed_ha": 785498.0,
+          "simulated_ha": 797687.0,
+          "difference_ha": 12189.0,
+          "relative_error_pct": 1.55
+        },
+        "Past": {
+          "observed_ha": 1480309.0,
+          "simulated_ha": 1675188.0,
+          "difference_ha": 194879.0,
+          "relative_error_pct": 13.16
+        },
+        "Agua": {
+          "observed_ha": 85587.0,
+          "simulated_ha": 46448.0,
+          "difference_ha": -39139.0,
+          "relative_error_pct": 45.73
+        },
+        "Urb": {
+          "observed_ha": 288703.0,
+          "simulated_ha": 269442.0,
+          "difference_ha": -19261.0,
+          "relative_error_pct": 6.67
+        }
+      },
+      "description": "T1->T2 rates applied to T2 to predict T3 (2020)",
+      "transition_matrix_used": "estimated from T1(2013)->T2(2016) area changes"
+    },
+    "hindcast_T3_to_T4": {
+      "OA_approx": 0.8632,
+      "FOM_approx": 0.7594,
+      "total_misallocation_ha": 1002844.0,
+      "per_class": {
+        "BDen": {
+          "observed_ha": 759729.0,
+          "simulated_ha": 1043995.0,
+          "difference_ha": 284266.0,
+          "relative_error_pct": 37.42
+        },
+        "BSec": {
+          "observed_ha": 622197.0,
+          "simulated_ha": 746896.0,
+          "difference_ha": 124699.0,
+          "relative_error_pct": 20.04
+        },
+        "Past": {
+          "observed_ha": 1994202.0,
+          "simulated_ha": 1500944.0,
+          "difference_ha": -493258.0,
+          "relative_error_pct": 24.73
+        },
+        "Agua": {
+          "observed_ha": 123235.0,
+          "simulated_ha": 115071.0,
+          "difference_ha": -8164.0,
+          "relative_error_pct": 6.62
+        },
+        "Urb": {
+          "observed_ha": 166525.0,
+          "simulated_ha": 258983.0,
+          "difference_ha": 92458.0,
+          "relative_error_pct": 55.52
+        }
+      },
+      "description": "T2->T3 rates applied to T3 to predict T4 (2024)",
+      "transition_matrix_used": "estimated from T2(2016)->T3(2020) area changes"
+    },
+    "corrected_matrix_T3_to_T4": {
+      "OA_approx": 0.7952,
+      "FOM_approx": 0.6601,
+      "total_misallocation_ha": 1501238.0,
+      "per_class": {
+        "BDen": {
+          "observed_ha": 759729.0,
+          "simulated_ha": 945647.0,
+          "difference_ha": 185918.0,
+          "relative_error_pct": 24.47
+        },
+        "BSec": {
+          "observed_ha": 622197.0,
+          "simulated_ha": 1063904.0,
+          "difference_ha": 441707.0,
+          "relative_error_pct": 70.99
+        },
+        "Past": {
+          "observed_ha": 1994202.0,
+          "simulated_ha": 1250147.0,
+          "difference_ha": -744055.0,
+          "relative_error_pct": 37.31
+        },
+        "Agua": {
+          "observed_ha": 123235.0,
+          "simulated_ha": 116672.0,
+          "difference_ha": -6563.0,
+          "relative_error_pct": 5.33
+        },
+        "Urb": {
+          "observed_ha": 166525.0,
+          "simulated_ha": 289519.0,
+          "difference_ha": 122994.0,
+          "relative_error_pct": 73.86
+        }
+      },
+      "description": "Corrected T3->T4 matrix applied to T3 to reproduce T4 (2024)",
+      "transition_matrix_used": "corrected 5x5 matrix (ecologically constrained)"
+    }
+  }
+}

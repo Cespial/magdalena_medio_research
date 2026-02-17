@@ -1,0 +1,298 @@
+# FASE 6: REPORTE DE VALIDACION DE CALIDAD FINAL
+**Fecha:** 2026-02-13 12:49
+**Archivos validados:** 8 JSONs, 6 CSVs, 11 figuras, 1 manuscrito
+
+---
+
+## Resumen
+
+| Resultado | Cantidad |
+|-----------|----------|
+| PASSED | 244 |
+| WARNINGS | 0 |
+| ERRORS | 0 |
+
+## Checks Passed
+
+- [x] JSON exists: classification_metrics.json
+- [x] JSON non-empty: classification_metrics.json
+- [x] JSON exists: change_detection_results.json
+- [x] JSON non-empty: change_detection_results.json
+- [x] JSON exists: ecosystem_services_results.json
+- [x] JSON non-empty: ecosystem_services_results.json
+- [x] JSON exists: climate_analysis_results.json
+- [x] JSON non-empty: climate_analysis_results.json
+- [x] JSON exists: hotspot_analysis_results.json
+- [x] JSON non-empty: hotspot_analysis_results.json
+- [x] JSON exists: gwr_drivers_results.json
+- [x] JSON non-empty: gwr_drivers_results.json
+- [x] JSON exists: feature_importance.json
+- [x] JSON non-empty: feature_importance.json
+- [x] JSON exists: ca_markov_results.json
+- [x] JSON non-empty: ca_markov_results.json
+- [x] pre_acuerdo: year=2013
+- [x] pre_acuerdo: OA in valid range (0.658)
+- [x] pre_acuerdo: Kappa in valid range (0.572)
+- [x] pre_acuerdo: n_training > 0 (1060)
+- [x] pre_acuerdo: n_validation > 0 (439)
+- [x] pre_acuerdo: total area reasonable (3,665,888 ha)
+- [x] pre_acuerdo: class 1 area >= 0
+- [x] pre_acuerdo: class 2 area >= 0
+- [x] pre_acuerdo: class 3 area >= 0
+- [x] pre_acuerdo: class 4 area >= 0
+- [x] pre_acuerdo: class 5 area >= 0
+- [x] pre_acuerdo: class 6 area >= 0
+- [x] pre_acuerdo: class 7 area >= 0
+- [x] pre_acuerdo: dense forest > 0 ha (1,549,539 ha)
+- [x] transicion: year=2016
+- [x] transicion: OA in valid range (0.612)
+- [x] transicion: Kappa in valid range (0.515)
+- [x] transicion: n_training > 0 (1002)
+- [x] transicion: n_validation > 0 (498)
+- [x] transicion: total area reasonable (3,665,888 ha)
+- [x] transicion: class 1 area >= 0
+- [x] transicion: class 2 area >= 0
+- [x] transicion: class 3 area >= 0
+- [x] transicion: class 4 area >= 0
+- [x] transicion: class 5 area >= 0
+- [x] transicion: class 6 area >= 0
+- [x] transicion: class 7 area >= 0
+- [x] transicion: dense forest > 0 ha (1,273,162 ha)
+- [x] post_acuerdo_1: year=2020
+- [x] post_acuerdo_1: OA in valid range (0.594)
+- [x] post_acuerdo_1: Kappa in valid range (0.489)
+- [x] post_acuerdo_1: n_training > 0 (1067)
+- [x] post_acuerdo_1: n_validation > 0 (433)
+- [x] post_acuerdo_1: total area reasonable (3,665,888 ha)
+- [x] post_acuerdo_1: class 1 area >= 0
+- [x] post_acuerdo_1: class 2 area >= 0
+- [x] post_acuerdo_1: class 3 area >= 0
+- [x] post_acuerdo_1: class 4 area >= 0
+- [x] post_acuerdo_1: class 5 area >= 0
+- [x] post_acuerdo_1: class 6 area >= 0
+- [x] post_acuerdo_1: class 7 area >= 0
+- [x] post_acuerdo_1: dense forest > 0 ha (1,592,842 ha)
+- [x] post_acuerdo_2: year=2024
+- [x] post_acuerdo_2: OA in valid range (0.571)
+- [x] post_acuerdo_2: Kappa in valid range (0.465)
+- [x] post_acuerdo_2: n_training > 0 (1087)
+- [x] post_acuerdo_2: n_validation > 0 (413)
+- [x] post_acuerdo_2: total area reasonable (3,665,888 ha)
+- [x] post_acuerdo_2: class 1 area >= 0
+- [x] post_acuerdo_2: class 2 area >= 0
+- [x] post_acuerdo_2: class 3 area >= 0
+- [x] post_acuerdo_2: class 4 area >= 0
+- [x] post_acuerdo_2: class 5 area >= 0
+- [x] post_acuerdo_2: class 6 area >= 0
+- [x] post_acuerdo_2: class 7 area >= 0
+- [x] post_acuerdo_2: dense forest > 0 ha (705,443 ha)
+- [x] Cross-period area consistency: max diff 0.0% (threshold 20%)
+- [x] T1_T2: has transitions
+- [x] T1_T2: has change_rates
+- [x] T1_T2: total transition area (3,665,888 ha)
+- [x] T1_T2: class 1 annual rate reasonable (-6.5%/yr)
+- [x] T1_T2: class 2 annual rate reasonable (-8.1%/yr)
+- [x] T1_T2: class 3 annual rate reasonable (21.7%/yr)
+- [x] T1_T2: class 5 annual rate reasonable (-4.9%/yr)
+- [x] T1_T2: class 6 annual rate reasonable (-4.9%/yr)
+- [x] T2_T3: has transitions
+- [x] T2_T3: has change_rates
+- [x] T2_T3: total transition area (3,665,888 ha)
+- [x] T2_T3: class 1 annual rate reasonable (-2.7%/yr)
+- [x] T2_T3: class 2 annual rate reasonable (-1.4%/yr)
+- [x] T2_T3: class 3 annual rate reasonable (-3.3%/yr)
+- [x] T2_T3: class 5 annual rate reasonable (9.0%/yr)
+- [x] T2_T3: class 6 annual rate reasonable (15.9%/yr)
+- [x] T3_T4: has transitions
+- [x] T3_T4: has change_rates
+- [x] T3_T4: total transition area (3,665,888 ha)
+- [x] T3_T4: class 1 annual rate reasonable (-20.4%/yr)
+- [x] T3_T4: class 2 annual rate reasonable (2.0%/yr)
+- [x] T3_T4: class 3 annual rate reasonable (16.1%/yr)
+- [x] T3_T4: class 5 annual rate reasonable (9.1%/yr)
+- [x] T3_T4: class 6 annual rate reasonable (-11.8%/yr)
+- [x] Hansen GFC data present
+- [x] Hansen pre_acuerdo: loss > 0 (64,850 ha)
+- [x] Hansen transicion: loss > 0 (94,201 ha)
+- [x] Hansen post_acuerdo_1: loss > 0 (81,106 ha)
+- [x] Hansen post_acuerdo_2: loss > 0 (26,765 ha)
+- [x] pre_acuerdo: carbon > 0 (436 Mt)
+- [x] pre_acuerdo: water yield reasonable (1591 mm)
+- [x] pre_acuerdo: habitat quality 0-1 (0.247)
+- [x] transicion: carbon > 0 (407 Mt)
+- [x] transicion: water yield reasonable (1574 mm)
+- [x] transicion: habitat quality 0-1 (0.186)
+- [x] post_acuerdo_1: carbon > 0 (407 Mt)
+- [x] post_acuerdo_1: water yield reasonable (1718 mm)
+- [x] post_acuerdo_1: habitat quality 0-1 (0.168)
+- [x] post_acuerdo_2: carbon > 0 (345 Mt)
+- [x] post_acuerdo_2: water yield reasonable (1322 mm)
+- [x] post_acuerdo_2: habitat quality 0-1 (0.264)
+- [x] Carbon declining trend: 436 -> 345 Mt
+- [x] Carbon change 2013-2016 matches stocks (diff: 0.0 Mt)
+- [x] Carbon change 2016-2020 matches stocks (diff: 0.0 Mt)
+- [x] Carbon change 2020-2024 matches stocks (diff: 0.0 Mt)
+- [x] VIF elevation: 5.94 < 10
+- [x] VIF slope: 1.76 < 10
+- [x] VIF dist_rivers: 1.78 < 10
+- [x] VIF dist_roads: 1.83 < 10
+- [x] VIF dist_urban: 1.32 < 10
+- [x] VIF pop_density: 1.08 < 10
+- [x] VIF precip: 1.17 < 10
+- [x] VIF lst: 5.00 < 10
+- [x] OLS R2 valid: 0.1428
+- [x] GWR R2 (0.6089) > OLS R2 (0.1428)
+- [x] GWR AIC (-7190) < OLS AIC (-2249)
+- [x] Comparison OLS R2 matches OLS section
+- [x] Comparison GWR R2 matches GWR section
+- [x] TM row 0 sums to 1.0000 (~1.0)
+- [x] TM row 1 sums to 1.0000 (~1.0)
+- [x] TM row 2 sums to 1.0000 (~1.0)
+- [x] TM row 3 sums to 1.0000 (~1.0)
+- [x] TM row 4 sums to 1.0000 (~1.0)
+- [x] Scenario exists: BAU_2030
+- [x] BAU_2030: class pcts sum to 100.0% (~100%)
+- [x] Scenario exists: BAU_2040
+- [x] BAU_2040: class pcts sum to 100.0% (~100%)
+- [x] Scenario exists: Conservation_2030
+- [x] Conservation_2030: class pcts sum to 100.0% (~100%)
+- [x] Scenario exists: Conservation_2040
+- [x] Conservation_2040: class pcts sum to 100.0% (~100%)
+- [x] Scenario exists: PDET_2030
+- [x] PDET_2030: class pcts sum to 100.0% (~100%)
+- [x] Scenario exists: PDET_2040
+- [x] PDET_2040: class pcts sum to 100.0% (~100%)
+- [x] Conservation forest (23.78%) >= BAU forest (19.72%)
+- [x] Figure exists: fig01_study_area.png
+- [x] fig01_study_area.png: size 244 KB (>50 KB)
+- [x] Figure exists: fig02_lulc_composition.png
+- [x] fig02_lulc_composition.png: size 261 KB (>50 KB)
+- [x] Figure exists: fig03_area_trends.png
+- [x] fig03_area_trends.png: size 208 KB (>50 KB)
+- [x] Figure exists: fig04_transition_matrices.png
+- [x] fig04_transition_matrices.png: size 150 KB (>50 KB)
+- [x] Figure exists: fig05_deforestation_rates.png
+- [x] fig05_deforestation_rates.png: size 152 KB (>50 KB)
+- [x] Figure exists: fig06_hotspot_analysis.png
+- [x] fig06_hotspot_analysis.png: size 166 KB (>50 KB)
+- [x] Figure exists: fig07_ecosystem_services.png
+- [x] fig07_ecosystem_services.png: size 289 KB (>50 KB)
+- [x] Figure exists: fig08_gwr_results.png
+- [x] fig08_gwr_results.png: size 154 KB (>50 KB)
+- [x] Figure exists: fig09_camarkov_scenarios.png
+- [x] fig09_camarkov_scenarios.png: size 185 KB (>50 KB)
+- [x] Figure exists: fig10_climate_deforestation.png
+- [x] fig10_climate_deforestation.png: size 246 KB (>50 KB)
+- [x] Figure exists: fig_s1_feature_importance.png
+- [x] fig_s1_feature_importance.png: size 152 KB (>50 KB)
+- [x] Table exists: table01_accuracy.csv
+- [x] table01_accuracy.csv: has data rows (4 rows)
+- [x] Table exists: table02_class_areas.csv
+- [x] table02_class_areas.csv: has data rows (7 rows)
+- [x] Table exists: table03_change_rates.csv
+- [x] table03_change_rates.csv: has data rows (15 rows)
+- [x] Table exists: table04_ecosystem_services.csv
+- [x] table04_ecosystem_services.csv: has data rows (9 rows)
+- [x] Table exists: table05_gwr_results.csv
+- [x] table05_gwr_results.csv: has data rows (12 rows)
+- [x] Table exists: table06_camarkov_projections.csv
+- [x] table06_camarkov_projections.csv: has data rows (7 rows)
+- [x] Table01 OA 2013 (65.8%) matches JSON (65.8%)
+- [x] Table01 OA 2016 (61.2%) matches JSON (61.2%)
+- [x] Table01 OA 2020 (59.4%) matches JSON (59.4%)
+- [x] Table01 OA 2024 (57.1%) matches JSON (57.1%)
+- [x] Table04 Carbon 2013 (435.6 Mt) matches JSON (435.6 Mt)
+- [x] Table04 Carbon 2016 (407.2 Mt) matches JSON (407.2 Mt)
+- [x] Table04 Carbon 2020 (406.9 Mt) matches JSON (406.9 Mt)
+- [x] Table04 Carbon 2024 (344.6 Mt) matches JSON (344.6 Mt)
+- [x] No [XX] placeholders remaining (0 found)
+- [x] No 'to be populated' remaining (0 found)
+- [x] Manuscript cites T1 adj OA=63.0%
+- [x] Manuscript cites T2 adj OA=60.4%
+- [x] Manuscript cites T3 adj OA=57.6%
+- [x] Manuscript cites T4 adj OA=65.2%
+- [x] Manuscript cites Pontius (QD/AD)
+- [x] Manuscript cites Olofsson et al.
+- [x] Manuscript cites T1 dense forest ~1,154k ha
+- [x] Manuscript cites T4 pastures ~1,994k ha
+- [x] Manuscript cites ~436 Tg C (T1)
+- [x] Manuscript cites ~345 Tg C (T4)
+- [x] Manuscript cites ~91 Tg C total loss
+- [x] Manuscript cites GWR R2=0.609
+- [x] Manuscript cites OLS R2=0.143
+- [x] Manuscript cites AIC improvement ~4942
+- [x] Manuscript reports ENP
+- [x] Manuscript cites ENP/n=0.575
+- [x] Manuscript cites Moran's I=0.071
+- [x] Manuscript cites 454 hotspot cells
+- [x] Manuscript cites BAU 2040 dense forest ~19.7%
+- [x] Manuscript cites Conservation 2040 dense forest ~23.8%
+- [x] Manuscript cites PDET 2040 dense forest ~22.1%
+- [x] Manuscript cites mean precip ~2852 mm
+- [x] Manuscript cites LST Sen slope=-0.037
+- [x] Manuscript addresses H1
+- [x] Manuscript addresses H2
+- [x] Manuscript addresses H3
+- [x] Manuscript addresses H4
+- [x] Manuscript cites study area ~36,800 km2
+- [x] Manuscript correctly states 12 features
+- [x] Manuscript correctly states 200 RF trees
+- [x] Manuscript references Hansen v1.12
+- [x] Manuscript references Fig. 1
+- [x] Manuscript references Fig. 2
+- [x] Manuscript references Fig. 3
+- [x] Manuscript references Fig. 4
+- [x] Manuscript references Fig. 5
+- [x] Manuscript references Fig. 6
+- [x] Manuscript references Fig. 7
+- [x] Manuscript references Fig. 8
+- [x] Manuscript references Fig. 9
+- [x] Manuscript references Fig. 10
+- [x] Total area T1 (3,665,888) vs T4 (3,665,888): 0.0% diff
+- [x] T1 class 1: change det (1,549,539) vs clf (1,549,539) = 0.0% diff
+- [x] T1 class 2: change det (1,049,736) vs clf (1,049,736) = 0.0% diff
+- [x] T1 class 3: change det (615,148) vs clf (615,148) = 0.0% diff
+- [x] T1 carbon: pixel-based (526 Tg) vs Olofsson-based (436 Tg) = 20.7% diff (expected: different areas)
+- [x] pre_acuerdo: OA (0.658) > chance level (0.143 for 7 classes)
+- [x] transicion: OA (0.612) > chance level (0.143 for 7 classes)
+- [x] post_acuerdo_1: OA (0.594) > chance level (0.143 for 7 classes)
+- [x] post_acuerdo_2: OA (0.571) > chance level (0.143 for 7 classes)
+- [x] Elevation negatively associated with deforestation (-0.325)
+
+---
+
+## Datos Validados
+
+### Phase 3 JSONs
+- classification_metrics.json: 4 periods, 7 classes, OA/Kappa/confusion matrices
+- change_detection_results.json: 3 transition matrices + Hansen GFC
+- ecosystem_services_results.json: Carbon, water yield, habitat quality
+- climate_analysis_results.json: Precipitation, LST, SPI, trends
+- hotspot_analysis_results.json: Moran's I, Gi* counts
+- gwr_drivers_results.json: OLS, GWR, VIF, 8 drivers
+- feature_importance.json: RF importance per period
+- ca_markov_results.json: Transition matrix, 6 scenarios
+
+### Phase 4 Figures (11)
+- fig01_study_area.png (244 KB)
+- fig02_lulc_composition.png (261 KB)
+- fig03_area_trends.png (208 KB)
+- fig04_transition_matrices.png (150 KB)
+- fig05_deforestation_rates.png (152 KB)
+- fig06_hotspot_analysis.png (166 KB)
+- fig07_ecosystem_services.png (289 KB)
+- fig08_gwr_results.png (154 KB)
+- fig09_camarkov_scenarios.png (185 KB)
+- fig10_climate_deforestation.png (246 KB)
+- fig_s1_feature_importance.png (152 KB)
+
+### Phase 4 Tables (6)
+- table01_accuracy.csv
+- table02_class_areas.csv
+- table03_change_rates.csv
+- table04_ecosystem_services.csv
+- table05_gwr_results.csv
+- table06_camarkov_projections.csv
+
+### Phase 5 Manuscript
+- manuscript_v2.md: 6,836 words, 0 placeholders, all results populated

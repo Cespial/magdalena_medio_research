@@ -1,0 +1,2165 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{Ahmed2025}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b9c390e25da1440273dadb8f778a3ae5}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f7601bcecac1e8d05de79572b5bab3c3}
+      \strng{fullhash}{f7601bcecac1e8d05de79572b5bab3c3}
+      \strng{bibnamehash}{f7601bcecac1e8d05de79572b5bab3c3}
+      \strng{authorbibnamehash}{f7601bcecac1e8d05de79572b5bab3c3}
+      \strng{authornamehash}{f7601bcecac1e8d05de79572b5bab3c3}
+      \strng{authorfullhash}{f7601bcecac1e8d05de79572b5bab3c3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environ. Monit. Assess.}
+      \field{title}{{CA-Markov} chain analysis for land use and land cover change prediction}
+      \field{volume}{197}
+      \field{year}{2025}
+      \field{pages}{115634}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.envmonass.2024.115634
+      \endverb
+    \endentry
+    \entry{Alvarez2012}{article}{}
+      \name{author}{10}{}{%
+        {{un=1,uniquepart=given,hash=98b70121fe6468a38dffe04da46a97c5}{%
+           family={Alvarez},
+           familyi={A\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=310335d21174fa521a31841b06e95880}{%
+           family={Duque},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=477880c9af810d146828b9731de7ea03}{%
+           family={Saldarriaga},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c1ae1e3e2d0ce6618bada1ab83f0dad}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cb9c7a5daf40124c7954ce2d3f99eb4}{%
+           family={Salas},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0,
+           prefix={de\bibnamedelima las},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=cc322f6eccc32c541fbcd68549e5369c}{%
+           family={Valle},
+           familyi={V\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0,
+           prefix={del},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a619c9c0ded8f7ac2558d6315afd77dd}{%
+           family={Lema},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=125db056462d3f1f8d26c68df3444d64}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=928abdde5904bf87b16bf797c89875bf}{%
+           family={Orrego},
+           familyi={O\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a896fa629bd8ece6f70475ac05adb829}{%
+           family={Rodríguez},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1288ade063a46c203bb8550b1674c991}
+      \strng{fullhash}{0183d70269ac0411db8bf457e6d5b003}
+      \strng{bibnamehash}{0183d70269ac0411db8bf457e6d5b003}
+      \strng{authorbibnamehash}{0183d70269ac0411db8bf457e6d5b003}
+      \strng{authornamehash}{1288ade063a46c203bb8550b1674c991}
+      \strng{authorfullhash}{0183d70269ac0411db8bf457e6d5b003}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{For. Ecol. Manage.}
+      \field{title}{Tree above-ground biomass allometries for carbon stocks estimation in the natural forests of {Colombia}}
+      \field{volume}{267}
+      \field{year}{2012}
+      \field{pages}{297\bibrangedash 308}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.foreco.2011.12.013
+      \endverb
+    \endentry
+    \entry{Alvarez2003}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=a274be5a052ee2530040e9fa3fb5b604}{%
+           family={Alvarez},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{a274be5a052ee2530040e9fa3fb5b604}
+      \strng{fullhash}{a274be5a052ee2530040e9fa3fb5b604}
+      \strng{bibnamehash}{a274be5a052ee2530040e9fa3fb5b604}
+      \strng{authorbibnamehash}{a274be5a052ee2530040e9fa3fb5b604}
+      \strng{authornamehash}{a274be5a052ee2530040e9fa3fb5b604}
+      \strng{authorfullhash}{a274be5a052ee2530040e9fa3fb5b604}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Sustain. For.}
+      \field{number}{3--4}
+      \field{title}{Forests in the time of violence: conservation implications of the {Colombian} war}
+      \field{volume}{16}
+      \field{year}{2003}
+      \field{pages}{47\bibrangedash 68}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1300/J091v16n03_03
+      \endverb
+    \endentry
+    \entry{Anselin1995}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=65372592f26aa9cc4bf8662fcc03e788}{%
+           family={Anselin},
+           familyi={A\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{65372592f26aa9cc4bf8662fcc03e788}
+      \strng{fullhash}{65372592f26aa9cc4bf8662fcc03e788}
+      \strng{bibnamehash}{65372592f26aa9cc4bf8662fcc03e788}
+      \strng{authorbibnamehash}{65372592f26aa9cc4bf8662fcc03e788}
+      \strng{authornamehash}{65372592f26aa9cc4bf8662fcc03e788}
+      \strng{authorfullhash}{65372592f26aa9cc4bf8662fcc03e788}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geogr. Anal.}
+      \field{number}{2}
+      \field{title}{Local Indicators of Spatial Association---{LISA}}
+      \field{volume}{27}
+      \field{year}{1995}
+      \field{pages}{93\bibrangedash 115}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1111/j.1538-4632.1995.tb00338.x
+      \endverb
+    \endentry
+    \entry{Botero2023}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6a024304e79c0419b86fe1789dc56b82}{%
+           family={Botero},
+           familyi={B\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8c6a4713d4fd3ddd236c760ad87ccaf1}
+      \strng{fullhash}{8c6a4713d4fd3ddd236c760ad87ccaf1}
+      \strng{bibnamehash}{8c6a4713d4fd3ddd236c760ad87ccaf1}
+      \strng{authorbibnamehash}{8c6a4713d4fd3ddd236c760ad87ccaf1}
+      \strng{authornamehash}{8c6a4713d4fd3ddd236c760ad87ccaf1}
+      \strng{authorfullhash}{8c6a4713d4fd3ddd236c760ad87ccaf1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Appl. Geogr.}
+      \field{title}{Spatial analysis of deforestation and coca cultivation in {Colombia}}
+      \field{volume}{155}
+      \field{year}{2023}
+      \field{pages}{103124}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.apgeog.2023.103124
+      \endverb
+    \endentry
+    \entry{Breiman2001}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c4de625aef3b09e83edf76c200750fc6}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{fullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{bibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorbibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authornamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorfullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mach. Learn.}
+      \field{number}{1}
+      \field{title}{Random Forests}
+      \field{volume}{45}
+      \field{year}{2001}
+      \field{pages}{5\bibrangedash 32}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1023/A:1010933404324
+      \endverb
+    \endentry
+    \entry{CastroNunez2022}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1edeb0cca1f192f3b9d36641d9ac95f6}{%
+           family={Castro-Nunez},
+           familyi={C\bibinithyphendelim N\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b59e194a9541c80e2547f18c4d7287ca}
+      \strng{fullhash}{b59e194a9541c80e2547f18c4d7287ca}
+      \strng{bibnamehash}{b59e194a9541c80e2547f18c4d7287ca}
+      \strng{authorbibnamehash}{b59e194a9541c80e2547f18c4d7287ca}
+      \strng{authornamehash}{b59e194a9541c80e2547f18c4d7287ca}
+      \strng{authorfullhash}{b59e194a9541c80e2547f18c4d7287ca}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Front. Sustain. Food Syst.}
+      \field{title}{Livestock and deforestation in post-conflict {Colombia}}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{pages}{788095}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fsufs.2022.788095
+      \endverb
+    \endentry
+    \entry{Chazdon2016}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5cf81f735037fa0486bd895b0b3f8a51}{%
+           family={Chazdon},
+           familyi={C\bibinitperiod},
+           given={R.\bibnamedelimi L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1fb986f06254576beb9d4c2d1cfcdeff}
+      \strng{fullhash}{1fb986f06254576beb9d4c2d1cfcdeff}
+      \strng{bibnamehash}{1fb986f06254576beb9d4c2d1cfcdeff}
+      \strng{authorbibnamehash}{1fb986f06254576beb9d4c2d1cfcdeff}
+      \strng{authornamehash}{1fb986f06254576beb9d4c2d1cfcdeff}
+      \strng{authorfullhash}{1fb986f06254576beb9d4c2d1cfcdeff}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sci. Adv.}
+      \field{number}{5}
+      \field{title}{Carbon sequestration potential of second-growth forest regeneration in the {Latin American} tropics}
+      \field{volume}{2}
+      \field{year}{2016}
+      \field{pages}{e1501639}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/sciadv.1501639
+      \endverb
+    \endentry
+    \entry{Clerici2020}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2557bdba8801561b6be32c2a2321e54b}{%
+           family={Clerici},
+           familyi={C\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77472d4aaabc1d8dc13119ff78b96cce}
+      \strng{fullhash}{77472d4aaabc1d8dc13119ff78b96cce}
+      \strng{bibnamehash}{77472d4aaabc1d8dc13119ff78b96cce}
+      \strng{authorbibnamehash}{77472d4aaabc1d8dc13119ff78b96cce}
+      \strng{authornamehash}{77472d4aaabc1d8dc13119ff78b96cce}
+      \strng{authorfullhash}{77472d4aaabc1d8dc13119ff78b96cce}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sci. Rep.}
+      \field{title}{Deforestation in {Colombian} protected areas increased during post-conflict periods}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{4971}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-020-61861-y
+      \endverb
+    \endentry
+    \entry{Congalton1991}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=96a4fe59f1e619108d89f3698f38f77f}{%
+           family={Congalton},
+           familyi={C\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{96a4fe59f1e619108d89f3698f38f77f}
+      \strng{fullhash}{96a4fe59f1e619108d89f3698f38f77f}
+      \strng{bibnamehash}{96a4fe59f1e619108d89f3698f38f77f}
+      \strng{authorbibnamehash}{96a4fe59f1e619108d89f3698f38f77f}
+      \strng{authornamehash}{96a4fe59f1e619108d89f3698f38f77f}
+      \strng{authorfullhash}{96a4fe59f1e619108d89f3698f38f77f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{number}{1}
+      \field{title}{A review of assessing the accuracy of classifications of remotely sensed data}
+      \field{volume}{37}
+      \field{year}{1991}
+      \field{pages}{35\bibrangedash 46}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/0034-4257(91)90048-B
+      \endverb
+    \endentry
+    \entry{Costanza2014}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=08cb5238d0a6387d7d92ea7e16b4c2b2}{%
+           family={Costanza},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3193f45ac24783c278392922f15972c2}{%
+           family={Groot},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a25511dc2a4241530d88d03b0fbdfce1}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9be6deeec790198572b6f8556238d40}{%
+           family={Ploeg},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e21e3eff5183805d0e51f5e7dd67762d}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={S.\bibnamedelimi J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64af4137500feeb440e272c866218127}{%
+           family={Kubiszewski},
+           familyi={K\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73b2596015650df9d80fb3d956211699}{%
+           family={Farber},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b23685b35bd3457d142fa1ed0dce0e96}{%
+           family={Turner},
+           familyi={T\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{17c8d9dd745676412e45277e5e12bb50}
+      \strng{fullhash}{3e0b2b4cd3d5ef87cbdd51edb6df175a}
+      \strng{bibnamehash}{3e0b2b4cd3d5ef87cbdd51edb6df175a}
+      \strng{authorbibnamehash}{3e0b2b4cd3d5ef87cbdd51edb6df175a}
+      \strng{authornamehash}{17c8d9dd745676412e45277e5e12bb50}
+      \strng{authorfullhash}{3e0b2b4cd3d5ef87cbdd51edb6df175a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Glob. Environ. Change}
+      \field{title}{Changes in the global value of ecosystem services}
+      \field{volume}{26}
+      \field{year}{2014}
+      \field{pages}{152\bibrangedash 158}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.gloenvcha.2014.04.002
+      \endverb
+    \endentry
+    \entry{Drusch2012}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa78c408c3592ad67061e3edbb7609d8}{%
+           family={Drusch},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5e9c811aad7a4a7f94e967c7c9948736}
+      \strng{fullhash}{5e9c811aad7a4a7f94e967c7c9948736}
+      \strng{bibnamehash}{5e9c811aad7a4a7f94e967c7c9948736}
+      \strng{authorbibnamehash}{5e9c811aad7a4a7f94e967c7c9948736}
+      \strng{authornamehash}{5e9c811aad7a4a7f94e967c7c9948736}
+      \strng{authorfullhash}{5e9c811aad7a4a7f94e967c7c9948736}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{title}{{Sentinel-2}: {ESA}'s Optical High-Resolution Mission for {GMES} Operational Services}
+      \field{volume}{120}
+      \field{year}{2012}
+      \field{pages}{25\bibrangedash 36}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.rse.2011.11.026
+      \endverb
+    \endentry
+    \entry{Fagan2020}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b3e1f76f9b808debfeabf627f5a09c33}{%
+           family={Fagan},
+           familyi={F\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{254c21d5e8023215ff41a13164c9e3be}
+      \strng{fullhash}{254c21d5e8023215ff41a13164c9e3be}
+      \strng{bibnamehash}{254c21d5e8023215ff41a13164c9e3be}
+      \strng{authorbibnamehash}{254c21d5e8023215ff41a13164c9e3be}
+      \strng{authornamehash}{254c21d5e8023215ff41a13164c9e3be}
+      \strng{authorfullhash}{254c21d5e8023215ff41a13164c9e3be}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nat. Sustain.}
+      \field{title}{Land cover dynamics following a deforestation ban in northern {Costa Rica}}
+      \field{volume}{3}
+      \field{year}{2020}
+      \field{pages}{234\bibrangedash 243}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1038/s41893-020-0487-9
+      \endverb
+    \endentry
+    \entry{Foody2002}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=335e776e246fb7b7caa0dbcc3bf66992}{%
+           family={Foody},
+           familyi={F\bibinitperiod},
+           given={G.\bibnamedelimi M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{fullhash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{bibnamehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{authorbibnamehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{authornamehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{authorfullhash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{number}{1}
+      \field{title}{Status of land cover classification accuracy assessment}
+      \field{volume}{80}
+      \field{year}{2002}
+      \field{pages}{185\bibrangedash 201}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/S0034-4257(01)00295-4
+      \endverb
+    \endentry
+    \entry{Foody2020}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=335e776e246fb7b7caa0dbcc3bf66992}{%
+           family={Foody},
+           familyi={F\bibinitperiod},
+           given={G.\bibnamedelimi M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{fullhash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{bibnamehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{authorbibnamehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{authornamehash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \strng{authorfullhash}{335e776e246fb7b7caa0dbcc3bf66992}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{title}{Explaining the unsuitability of the kappa coefficient in the assessment and comparison of the accuracy of thematic maps obtained by image classification}
+      \field{volume}{239}
+      \field{year}{2020}
+      \field{pages}{111630}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rse.2019.111630
+      \endverb
+    \endentry
+    \entry{Fotheringham2002}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4d7f87b2a9739a941de23c97921123a2}{%
+           family={Fotheringham},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edefca6e33c847c5bbf396288bc9b787}{%
+           family={Brunsdon},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7855dbc9f9ba67b15053bb00c6e53466}{%
+           family={Charlton},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chichester}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{f4a986537d2edf903d9f0c48b7ffa6c2}
+      \strng{fullhash}{ea419dad293f23a28a5d572f6361a844}
+      \strng{bibnamehash}{ea419dad293f23a28a5d572f6361a844}
+      \strng{authorbibnamehash}{ea419dad293f23a28a5d572f6361a844}
+      \strng{authornamehash}{f4a986537d2edf903d9f0c48b7ffa6c2}
+      \strng{authorfullhash}{ea419dad293f23a28a5d572f6361a844}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geographically Weighted Regression: The Analysis of Spatially Varying Relationships}
+      \field{year}{2002}
+    \endentry
+    \entry{Funk2015}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7dc0cb84394009690c38315ff802dd6d}{%
+           family={Funk},
+           familyi={F\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08f6760956f50943b7713da3114e88b6}
+      \strng{fullhash}{08f6760956f50943b7713da3114e88b6}
+      \strng{bibnamehash}{08f6760956f50943b7713da3114e88b6}
+      \strng{authorbibnamehash}{08f6760956f50943b7713da3114e88b6}
+      \strng{authornamehash}{08f6760956f50943b7713da3114e88b6}
+      \strng{authorfullhash}{08f6760956f50943b7713da3114e88b6}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sci. Data}
+      \field{title}{The climate hazards infrared precipitation with stations---a new environmental record for monitoring extremes}
+      \field{volume}{2}
+      \field{year}{2015}
+      \field{pages}{150066}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/sdata.2015.66
+      \endverb
+    \endentry
+    \entry{Getis1992}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a49f89056cc68713d4318ef5111e951f}{%
+           family={Getis},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f64e8d2de30f89c2c874fcef25f9145}{%
+           family={Ord},
+           familyi={O\bibinitperiod},
+           given={J.\bibnamedelimi K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e3054d7bc9a600ad0ea3c975cad8a20}
+      \strng{fullhash}{7e3054d7bc9a600ad0ea3c975cad8a20}
+      \strng{bibnamehash}{7e3054d7bc9a600ad0ea3c975cad8a20}
+      \strng{authorbibnamehash}{7e3054d7bc9a600ad0ea3c975cad8a20}
+      \strng{authornamehash}{7e3054d7bc9a600ad0ea3c975cad8a20}
+      \strng{authorfullhash}{7e3054d7bc9a600ad0ea3c975cad8a20}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geogr. Anal.}
+      \field{number}{3}
+      \field{title}{The analysis of spatial association by use of distance statistics}
+      \field{volume}{24}
+      \field{year}{1992}
+      \field{pages}{189\bibrangedash 206}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/j.1538-4632.1992.tb00261.x
+      \endverb
+    \endentry
+    \entry{Gorelick2017}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bb8ea88a7b3cc03d047b6c6a30032b06}{%
+           family={Gorelick},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4b640eb4292f51ed39ca4fdcf377ded4}
+      \strng{fullhash}{4b640eb4292f51ed39ca4fdcf377ded4}
+      \strng{bibnamehash}{4b640eb4292f51ed39ca4fdcf377ded4}
+      \strng{authorbibnamehash}{4b640eb4292f51ed39ca4fdcf377ded4}
+      \strng{authornamehash}{4b640eb4292f51ed39ca4fdcf377ded4}
+      \strng{authorfullhash}{4b640eb4292f51ed39ca4fdcf377ded4}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{title}{{Google Earth Engine}: Planetary-scale geospatial analysis for everyone}
+      \field{volume}{202}
+      \field{year}{2017}
+      \field{pages}{18\bibrangedash 27}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.rse.2017.06.031
+      \endverb
+    \endentry
+    \entry{Halmy2015}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d8d4ebd6f6545e969e3992a877edbef4}{%
+           family={Halmy},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi W.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=988956894c621906665dc4a135bb96a3}{%
+           family={Gessler},
+           familyi={G\bibinitperiod},
+           given={P.\bibnamedelimi E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae83d2fe554e6e9f8f996c44c3c251df}{%
+           family={Hicke},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e5e5e8d92c137ae8489e8d3081e2bbe}{%
+           family={Salem},
+           familyi={S\bibinitperiod},
+           given={B.\bibnamedelimi B.},
+           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{668cb2bfa3277f818a409ff21af14334}
+      \strng{fullhash}{5fe4298bca8c5df782fa8d8119e3dcaa}
+      \strng{bibnamehash}{5fe4298bca8c5df782fa8d8119e3dcaa}
+      \strng{authorbibnamehash}{5fe4298bca8c5df782fa8d8119e3dcaa}
+      \strng{authornamehash}{668cb2bfa3277f818a409ff21af14334}
+      \strng{authorfullhash}{5fe4298bca8c5df782fa8d8119e3dcaa}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Appl. Geogr.}
+      \field{title}{Land use/land cover change detection and prediction in the north-western coastal desert of {Egypt} using {Markov-CA}}
+      \field{volume}{63}
+      \field{year}{2015}
+      \field{pages}{101\bibrangedash 112}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.apgeog.2015.06.015
+      \endverb
+    \endentry
+    \entry{Hansen2013}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=422594e5f60d912a5ab789b83ddf1e70}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=651986f638938115f9ecd98a26761c3a}{%
+           family={Potapov},
+           familyi={P\bibinitperiod},
+           given={P.\bibnamedelimi V.},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b828a090c6588854e1966050ff54bf8}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9bbcf05badc48f1f3a68a6bd491fdab}{%
+           family={Hancher},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec3d78eb2f8db5c26b6d769d529aa9a7}{%
+           family={Turubanova},
+           familyi={T\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be6810cf65032dfd6446cf0cf8aa1ab4}{%
+           family={Tyukavina},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{27a73aa8ffc4a61e433994698b8cae20}
+      \strng{fullhash}{905a72b6b349f1af482f65ed6f0e1110}
+      \strng{bibnamehash}{905a72b6b349f1af482f65ed6f0e1110}
+      \strng{authorbibnamehash}{905a72b6b349f1af482f65ed6f0e1110}
+      \strng{authornamehash}{27a73aa8ffc4a61e433994698b8cae20}
+      \strng{authorfullhash}{905a72b6b349f1af482f65ed6f0e1110}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6160}
+      \field{title}{High-resolution global maps of 21st-century forest cover change}
+      \field{volume}{342}
+      \field{year}{2013}
+      \field{pages}{850\bibrangedash 853}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1244693
+      \endverb
+    \endentry
+    \entry{Holdridge1967}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=71c764c69026847b3dafd41ed5ac6e9b}{%
+           family={Holdridge},
+           familyi={H\bibinitperiod},
+           given={L.\bibnamedelimi R.},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Tropical Science Center}%
+      }
+      \strng{namehash}{71c764c69026847b3dafd41ed5ac6e9b}
+      \strng{fullhash}{71c764c69026847b3dafd41ed5ac6e9b}
+      \strng{bibnamehash}{71c764c69026847b3dafd41ed5ac6e9b}
+      \strng{authorbibnamehash}{71c764c69026847b3dafd41ed5ac6e9b}
+      \strng{authornamehash}{71c764c69026847b3dafd41ed5ac6e9b}
+      \strng{authorfullhash}{71c764c69026847b3dafd41ed5ac6e9b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Life Zone Ecology}
+      \field{year}{1967}
+    \endentry
+    \entry{IDEAM2018}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0f6374fd24d0d5a683d02271fa0eac56}{%
+           family={{IDEAM}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Instituto de Hidrologı́a, Meteorologı́a y Estudios Ambientales}%
+      }
+      \strng{namehash}{0f6374fd24d0d5a683d02271fa0eac56}
+      \strng{fullhash}{0f6374fd24d0d5a683d02271fa0eac56}
+      \strng{bibnamehash}{0f6374fd24d0d5a683d02271fa0eac56}
+      \strng{authorbibnamehash}{0f6374fd24d0d5a683d02271fa0eac56}
+      \strng{authornamehash}{0f6374fd24d0d5a683d02271fa0eac56}
+      \strng{authorfullhash}{0f6374fd24d0d5a683d02271fa0eac56}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Resultados monitoreo deforestación 2017}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+    \entry{IPCC2006}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=676f7b9b8e5bb30500c01e2385e59174}{%
+           family={{IPCC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=e4574a971a272a84a09fca9283ed4b24}{%
+           family={Eggleston},
+           familyi={E\bibinitperiod},
+           given={H.\bibnamedelimi S.},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c5ff905dc903c0fc2cae1cfda80b3fbb}{%
+           family={Buendia},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=78e984e52e1320538ff52f87a0ee7483}{%
+           family={Miwa},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa73af7259334039dbd4d24060481887}{%
+           family={Ngara},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=79e0821b523fd767d18db7049ab4e5d1}{%
+           family={Tanabe},
+           familyi={T\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hayama, Japan}%
+      }
+      \list{publisher}{1}{%
+        {Institute for Global Environmental Strategies (IGES)}%
+      }
+      \strng{namehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{fullhash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{bibnamehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{authorbibnamehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{authornamehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{authorfullhash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{editorbibnamehash}{37994006e42fbbdb37575cc5fdf8b284}
+      \strng{editornamehash}{418e1ddff87ced08a7c2ce3d9740e716}
+      \strng{editorfullhash}{37994006e42fbbdb37575cc5fdf8b284}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IPCC Guidelines}
+      \field{title}{2006 {IPCC} Guidelines for National Greenhouse Gas Inventories, Volume 4: Agriculture, Forestry and Other Land Use}
+      \field{year}{2006}
+    \endentry
+    \entry{Li2023}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ef065b28c31984323fd6d3483d29aafd}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{fullhash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{bibnamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authorbibnamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authornamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authorfullhash}{dc73eb82d413aea5c979b3637814969e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ecol. Indic.}
+      \field{title}{Integrating {Google Earth Engine} and {InVEST} for mapping ecosystem services}
+      \field{volume}{150}
+      \field{year}{2023}
+      \field{pages}{110374}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ecolind.2023.110374
+      \endverb
+    \endentry
+    \entry{Moran1950}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=89abbf201fed5e8a1a1b30418bed35cc}{%
+           family={Moran},
+           familyi={M\bibinitperiod},
+           given={P.\bibnamedelimi A.\bibnamedelimi P.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{89abbf201fed5e8a1a1b30418bed35cc}
+      \strng{fullhash}{89abbf201fed5e8a1a1b30418bed35cc}
+      \strng{bibnamehash}{89abbf201fed5e8a1a1b30418bed35cc}
+      \strng{authorbibnamehash}{89abbf201fed5e8a1a1b30418bed35cc}
+      \strng{authornamehash}{89abbf201fed5e8a1a1b30418bed35cc}
+      \strng{authorfullhash}{89abbf201fed5e8a1a1b30418bed35cc}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{number}{1--2}
+      \field{title}{Notes on continuous stochastic phenomena}
+      \field{volume}{37}
+      \field{year}{1950}
+      \field{pages}{17\bibrangedash 23}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1093/biomet/37.1-2.17
+      \endverb
+    \endentry
+    \entry{MurilloSandoval2021}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=0bc4ca9b6d72b841bdedcdf399403d5b}{%
+           family={Murillo-Sandoval},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0902c063c8b4720bd5181f4d31ff2342}{%
+           family={Gjerdseth},
+           familyi={G\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4810e8d227f1c27637fc3e2482a09cf}{%
+           family={Correa-Ayram},
+           familyi={C\bibinithyphendelim A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b83f60ed57bf45b5f9fe8c28ded3fc80}{%
+           family={Wrathall},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70b8f1ae9a5945a1934942fe6b78c5c9}{%
+           family={Van\bibnamedelimb Den\bibnamedelima Hoek},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a84258a5d5aa5da5b036002da5428f8}{%
+           family={Davalos},
+           familyi={D\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=433c6e47b68e13833a485cb1ab581953}{%
+           family={Kennedy},
+           familyi={K\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ea59509a462df09ebf2041d1984c76a3}
+      \strng{fullhash}{a906dcd42dc58a2fc8522a6d83f8f9fb}
+      \strng{bibnamehash}{a906dcd42dc58a2fc8522a6d83f8f9fb}
+      \strng{authorbibnamehash}{a906dcd42dc58a2fc8522a6d83f8f9fb}
+      \strng{authornamehash}{ea59509a462df09ebf2041d1984c76a3}
+      \strng{authorfullhash}{a906dcd42dc58a2fc8522a6d83f8f9fb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Glob. Environ. Change}
+      \field{title}{No peace for the forest: Rapid, widespread land changes in the {Andes-Amazon} region following the {Colombian} civil war}
+      \field{volume}{69}
+      \field{year}{2021}
+      \field{pages}{102283}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.gloenvcha.2021.102283
+      \endverb
+    \endentry
+    \entry{Negret2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=aaeea20d3abb6d06d286f3000febfe24}{%
+           family={Negret},
+           familyi={N\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a0d8fe9e2eff3cfcedc7af541ab99ff}{%
+           family={Sonter},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7ca6e60e44ffa2d93bf6c044d6d7b5c}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi E.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f55b18f2130535bb92f50bd39638bc37}{%
+           family={Possingham},
+           familyi={P\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c8dfb9b6d535484a7fa97cdffe5c13b6}
+      \strng{fullhash}{211b688df21bd8ddbc3740ddd9fe1788}
+      \strng{bibnamehash}{211b688df21bd8ddbc3740ddd9fe1788}
+      \strng{authorbibnamehash}{211b688df21bd8ddbc3740ddd9fe1788}
+      \strng{authornamehash}{c8dfb9b6d535484a7fa97cdffe5c13b6}
+      \strng{authorfullhash}{211b688df21bd8ddbc3740ddd9fe1788}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biol. Conserv.}
+      \field{title}{Emerging evidence that armed conflict and coca cultivation influence deforestation patterns}
+      \field{volume}{239}
+      \field{year}{2019}
+      \field{pages}{108176}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.biocon.2019.07.021
+      \endverb
+    \endentry
+    \entry{Olofsson2014}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8ba7ff6b86e8234a26ca2089a961257e}{%
+           family={Olofsson},
+           familyi={O\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=335e776e246fb7b7caa0dbcc3bf66992}{%
+           family={Foody},
+           familyi={F\bibinitperiod},
+           given={G.\bibnamedelimi M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95dba7edb6033ed20354381a9148e82a}{%
+           family={Herold},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32626129e68ea757a1b20c3a938a65e2}{%
+           family={Stehman},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=725ca04040acb6646c9616d3ecc782ca}{%
+           family={Woodcock},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=017201930867398eb15337834532cb9b}{%
+           family={Wulder},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f3c816f9ee208c04680a326200a7390e}
+      \strng{fullhash}{296f517632cdc182bbae32e7c71a67cc}
+      \strng{bibnamehash}{296f517632cdc182bbae32e7c71a67cc}
+      \strng{authorbibnamehash}{296f517632cdc182bbae32e7c71a67cc}
+      \strng{authornamehash}{f3c816f9ee208c04680a326200a7390e}
+      \strng{authorfullhash}{296f517632cdc182bbae32e7c71a67cc}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{title}{Good practices for estimating area and assessing accuracy of land change}
+      \field{volume}{148}
+      \field{year}{2014}
+      \field{pages}{42\bibrangedash 57}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.rse.2014.02.015
+      \endverb
+    \endentry
+    \entry{Oshan2019}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e3137bfa707f2bec8fa80d185df3db4b}{%
+           family={Oshan},
+           familyi={O\bibinitperiod},
+           given={T.\bibnamedelimi M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae6f64f7b429f6425fbe070323390f1b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85f0e38b45e89e8bc262323a95a7da93}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aeeedb1b8c5e421f65f0e25503881140}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={L.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4d7f87b2a9739a941de23c97921123a2}{%
+           family={Fotheringham},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{526de980c92e8c97223c58e9c04a04fc}
+      \strng{fullhash}{57d7f7db65527ec1af590aff69810063}
+      \strng{bibnamehash}{57d7f7db65527ec1af590aff69810063}
+      \strng{authorbibnamehash}{57d7f7db65527ec1af590aff69810063}
+      \strng{authornamehash}{526de980c92e8c97223c58e9c04a04fc}
+      \strng{authorfullhash}{57d7f7db65527ec1af590aff69810063}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ISPRS Int. J. Geo-Inf.}
+      \field{number}{6}
+      \field{title}{mgwr: A {Python} implementation of multiscale geographically weighted regression for investigating process spatial heterogeneity and scale}
+      \field{volume}{8}
+      \field{year}{2019}
+      \field{pages}{269}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ijgi8060269
+      \endverb
+    \endentry
+    \entry{Pacheco2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7accb6acda1e0d7c78d42a3a22cf95ac}{%
+           family={Pacheco},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7accb6acda1e0d7c78d42a3a22cf95ac}
+      \strng{fullhash}{7accb6acda1e0d7c78d42a3a22cf95ac}
+      \strng{bibnamehash}{7accb6acda1e0d7c78d42a3a22cf95ac}
+      \strng{authorbibnamehash}{7accb6acda1e0d7c78d42a3a22cf95ac}
+      \strng{authornamehash}{7accb6acda1e0d7c78d42a3a22cf95ac}
+      \strng{authorfullhash}{7accb6acda1e0d7c78d42a3a22cf95ac}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environ. Hist.}
+      \field{number}{4}
+      \field{title}{Agrarian change, cattle ranching and deforestation: Assessing their linkages in {Southern Para}}
+      \field{volume}{15}
+      \field{year}{2009}
+      \field{pages}{493\bibrangedash 520}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.3197/096734009X12532652872072
+      \endverb
+    \endentry
+    \entry{Phalke2020}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0c16bb364e23d40149a0eab1af2aef71}{%
+           family={Phalke},
+           familyi={P\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0025c45752321f84a2fe3552869e3ad5}
+      \strng{fullhash}{0025c45752321f84a2fe3552869e3ad5}
+      \strng{bibnamehash}{0025c45752321f84a2fe3552869e3ad5}
+      \strng{authorbibnamehash}{0025c45752321f84a2fe3552869e3ad5}
+      \strng{authornamehash}{0025c45752321f84a2fe3552869e3ad5}
+      \strng{authorfullhash}{0025c45752321f84a2fe3552869e3ad5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ISPRS J. Photogramm. Remote Sens.}
+      \field{title}{Mapping croplands of {Europe}, {Middle East}, {Russia}, and {Central Asia} using {Landsat}, {Random Forest}, and {Google Earth Engine}}
+      \field{volume}{167}
+      \field{year}{2020}
+      \field{pages}{104\bibrangedash 122}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.isprsjprs.2020.06.022
+      \endverb
+    \endentry
+    \entry{Pontius2008}{article}{}
+      \name{author}{20}{}{%
+        {{un=0,uniquepart=base,hash=ad3449ea523257057807ac4fedd17f24}{%
+           family={Pontius},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0,
+           suffix={Jr.},
+           suffixi={J\bibinitperiod},
+           suffixun=0}}%
+        {{un=0,uniquepart=base,hash=5f2bb74119973ba46d23855b062c7c1d}{%
+           family={Boersma},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efd3ffc49a39eb60d18de901dbd44dc4}{%
+           family={Castella},
+           familyi={C\bibinitperiod},
+           given={J.-C.},
+           giveni={J\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f7976c65ee132659d8e8a5d255e0a23}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0328bfd38e3831fbc314fd76b5e8e7fa}{%
+           family={Nijs},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b54b284ad75862f0fe1e57976beb09ec}{%
+           family={Dietzel},
+           familyi={D\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abbdcd9172361305dfe7b36d98b9c59a}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb008601bf2725322dba059431ae4542}{%
+           family={Fotsing},
+           familyi={F\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a880fc750e895abf72e6bcf670395f2}{%
+           family={Goldstein},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba42ee75bcacc254bc49fbf41d284949}{%
+           family={Kok},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b2879720fda8b7124cbf4938d04cb7d}{%
+           family={Koomen},
+           familyi={K\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07d9ffcf2b2fd5b4cf588f66e58fd4c2}{%
+           family={Lippitt},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14a54824cd50c1b0580f47444ac263c5}{%
+           family={McConnell},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=82f89fb37b86b7f083578f03ac14334b}{%
+           family={Mohd\bibnamedelima Sood},
+           familyi={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a4510c4df549965201694d895bb36e8}{%
+           family={Pijanowski},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecfe0e20c8a3ad9ce5737c44cf3f3c56}{%
+           family={Pithadia},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6db968f0d9c9a745522cd9eb8ce35e49}{%
+           family={Sweeney},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6300a48509978cf96c5928cbe08b3f91}{%
+           family={Trung},
+           familyi={T\bibinitperiod},
+           given={T.\bibnamedelimi N.},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cc80355177149d9318a6d131c72bd2a}{%
+           family={Veldkamp},
+           familyi={V\bibinitperiod},
+           given={A.\bibnamedelimi T.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41afd59d47e4b2e535625d5769d97c50}{%
+           family={Verburg},
+           familyi={V\bibinitperiod},
+           given={P.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{279f1ada9dbbb52481d383a42b6a83b3}
+      \strng{fullhash}{3bb4a3d56c036ed1039e554044469d37}
+      \strng{bibnamehash}{3bb4a3d56c036ed1039e554044469d37}
+      \strng{authorbibnamehash}{3bb4a3d56c036ed1039e554044469d37}
+      \strng{authornamehash}{279f1ada9dbbb52481d383a42b6a83b3}
+      \strng{authorfullhash}{3bb4a3d56c036ed1039e554044469d37}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. Reg. Sci.}
+      \field{number}{1}
+      \field{title}{Comparing the input, output, and validation maps for several models of land change}
+      \field{volume}{42}
+      \field{year}{2008}
+      \field{pages}{11\bibrangedash 37}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1007/s00168-007-0138-2
+      \endverb
+    \endentry
+    \entry{Pontius2011}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ad3449ea523257057807ac4fedd17f24}{%
+           family={Pontius},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0,
+           suffix={Jr.},
+           suffixi={J\bibinitperiod},
+           suffixun=0}}%
+        {{un=0,uniquepart=base,hash=a45b328640a8b33a11329d4676bfdc9a}{%
+           family={Millones},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d158d8a4e1c448798706d90882152fa4}
+      \strng{fullhash}{d158d8a4e1c448798706d90882152fa4}
+      \strng{bibnamehash}{d158d8a4e1c448798706d90882152fa4}
+      \strng{authorbibnamehash}{d158d8a4e1c448798706d90882152fa4}
+      \strng{authornamehash}{d158d8a4e1c448798706d90882152fa4}
+      \strng{authorfullhash}{d158d8a4e1c448798706d90882152fa4}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. J. Remote Sens.}
+      \field{number}{15}
+      \field{title}{Death to {Kappa}: Birth of quantity disagreement and allocation disagreement for accuracy assessment}
+      \field{volume}{32}
+      \field{year}{2011}
+      \field{pages}{4407\bibrangedash 4429}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1080/01431161.2011.552923
+      \endverb
+    \endentry
+    \entry{Prem2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0131dc729f06bbd8909bace397198b94}{%
+           family={Prem},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c8ad274583d1c16100f9d8e0dcefe8f}{%
+           family={Saavedra},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=499041d148189820c3e563130d6d9b51}{%
+           family={Vargas},
+           familyi={V\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13256c1ab857de51f71408019dd59459}
+      \strng{fullhash}{1b4b6dd71f18bfc767d56ca331bddc36}
+      \strng{bibnamehash}{1b4b6dd71f18bfc767d56ca331bddc36}
+      \strng{authorbibnamehash}{1b4b6dd71f18bfc767d56ca331bddc36}
+      \strng{authornamehash}{13256c1ab857de51f71408019dd59459}
+      \strng{authorfullhash}{1b4b6dd71f18bfc767d56ca331bddc36}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Dev.}
+      \field{title}{End-of-conflict deforestation: Evidence from {Colombia}'s peace agreement}
+      \field{volume}{129}
+      \field{year}{2020}
+      \field{pages}{104852}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.worlddev.2019.104852
+      \endverb
+    \endentry
+    \entry{Puyravaud2003}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bcfbfd361998393c931c49c53569a5ba}{%
+           family={Puyravaud},
+           familyi={P\bibinitperiod},
+           given={J.-P.},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bcfbfd361998393c931c49c53569a5ba}
+      \strng{fullhash}{bcfbfd361998393c931c49c53569a5ba}
+      \strng{bibnamehash}{bcfbfd361998393c931c49c53569a5ba}
+      \strng{authorbibnamehash}{bcfbfd361998393c931c49c53569a5ba}
+      \strng{authornamehash}{bcfbfd361998393c931c49c53569a5ba}
+      \strng{authorfullhash}{bcfbfd361998393c931c49c53569a5ba}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{For. Ecol. Manage.}
+      \field{number}{1--3}
+      \field{title}{Standardizing the calculation of the annual rate of deforestation}
+      \field{volume}{177}
+      \field{year}{2003}
+      \field{pages}{593\bibrangedash 596}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/S0378-1127(02)00335-3
+      \endverb
+    \endentry
+    \entry{Restrepo2006}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3f593c6f25c99a48e6a6bb5eda34407d}{%
+           family={Restrepo},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=492f6d45a3d047b155f6545a02939495}{%
+           family={Syvitski},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6afc4024db3309abbae62596cdec64ab}
+      \strng{fullhash}{6afc4024db3309abbae62596cdec64ab}
+      \strng{bibnamehash}{6afc4024db3309abbae62596cdec64ab}
+      \strng{authorbibnamehash}{6afc4024db3309abbae62596cdec64ab}
+      \strng{authornamehash}{6afc4024db3309abbae62596cdec64ab}
+      \strng{authorfullhash}{6afc4024db3309abbae62596cdec64ab}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ambio}
+      \field{number}{2}
+      \field{title}{Assessing the effect of natural controls and land use change on sediment yield in a major {Andean} river: The {Magdalena} drainage basin, {Colombia}}
+      \field{volume}{35}
+      \field{year}{2006}
+      \field{pages}{65\bibrangedash 74}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1579/0044-7447(2006)35[65:ATEONC]2.0.CO;2
+      \endverb
+    \endentry
+    \entry{RuizAgudelo2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=399d92905a7cc19bedfbd74f5f0b62e8}{%
+           family={Ruiz-Agudelo},
+           familyi={R\bibinithyphendelim A\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39ef997bacad54d6b5aa46f928659b8e}{%
+           family={Suarez},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84198017fd1fe0cd0188c157b4a53379}{%
+           family={Gutierrez-Bonilla},
+           familyi={G\bibinithyphendelim B\bibinitperiod},
+           given={F.\bibnamedelimi de\bibnamedelima P.},
+           giveni={F\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3dfa7025539b21d60582385800aa5f4f}{%
+           family={Cortes-Gomez},
+           familyi={C\bibinithyphendelim G\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cedca49c673065156125ba4ffd19c9e3}
+      \strng{fullhash}{b34d103a0f61b39e64ceb5ba45bd51f4}
+      \strng{bibnamehash}{b34d103a0f61b39e64ceb5ba45bd51f4}
+      \strng{authorbibnamehash}{b34d103a0f61b39e64ceb5ba45bd51f4}
+      \strng{authornamehash}{cedca49c673065156125ba4ffd19c9e3}
+      \strng{authorfullhash}{b34d103a0f61b39e64ceb5ba45bd51f4}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Environ. Econ. Policy}
+      \field{number}{3}
+      \field{title}{The economic valuation of ecosystem services in {Colombia}: Challenges, gaps and future pathways}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{285\bibrangedash 304}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/21606544.2022.2134218
+      \endverb
+    \endentry
+    \entry{MODIS_ET}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d9f9efbe524f5aeaef29c10ee04e057}{%
+           family={{Running, S. and Mu, Q. and Zhao, M. and Moreno, A.}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d9f9efbe524f5aeaef29c10ee04e057}
+      \strng{fullhash}{8d9f9efbe524f5aeaef29c10ee04e057}
+      \strng{bibnamehash}{8d9f9efbe524f5aeaef29c10ee04e057}
+      \strng{authorbibnamehash}{8d9f9efbe524f5aeaef29c10ee04e057}
+      \strng{authornamehash}{8d9f9efbe524f5aeaef29c10ee04e057}
+      \strng{authorfullhash}{8d9f9efbe524f5aeaef29c10ee04e057}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{NASA EOSDIS Land Processes Distributed Active Archive Center}
+      \field{title}{{MODIS/Terra Net Evapotranspiration 8-Day L4 Global 500m SIN Grid V061}}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.5067/MODIS/MOD16A2.061
+      \endverb
+    \endentry
+    \entry{SanchezCuervo2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bc0953a2bf940d88191716bf06c51d7b}{%
+           family={Sánchez-Cuervo},
+           familyi={S\bibinithyphendelim C\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4c378b3883dd5c0554efe31f9e6cb96}{%
+           family={Aide},
+           familyi={A\bibinitperiod},
+           given={T.\bibnamedelimi M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5e47fc99eee5c19f6ff08d12101d640a}
+      \strng{fullhash}{5e47fc99eee5c19f6ff08d12101d640a}
+      \strng{bibnamehash}{5e47fc99eee5c19f6ff08d12101d640a}
+      \strng{authorbibnamehash}{5e47fc99eee5c19f6ff08d12101d640a}
+      \strng{authornamehash}{5e47fc99eee5c19f6ff08d12101d640a}
+      \strng{authorfullhash}{5e47fc99eee5c19f6ff08d12101d640a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ecosystems}
+      \field{title}{Consequences of the armed conflict, forced human displacement, and land abandonment on forest cover change in {Colombia}}
+      \field{volume}{16}
+      \field{year}{2013}
+      \field{pages}{1016\bibrangedash 1035}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s10021-013-9667-y
+      \endverb
+    \endentry
+    \entry{Sharp2020}{report}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=71e801040830bde96937c76b74a30bcb}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {The Natural Capital Project, Stanford University}%
+      }
+      \strng{namehash}{1088e468ea08193246a883f5e8b79f30}
+      \strng{fullhash}{1088e468ea08193246a883f5e8b79f30}
+      \strng{bibnamehash}{1088e468ea08193246a883f5e8b79f30}
+      \strng{authorbibnamehash}{1088e468ea08193246a883f5e8b79f30}
+      \strng{authornamehash}{1088e468ea08193246a883f5e8b79f30}
+      \strng{authorfullhash}{1088e468ea08193246a883f5e8b79f30}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{InVEST} User's Guide}
+      \field{type}{techreport}
+      \field{year}{2020}
+    \endentry
+    \entry{Sierra2017}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=55e3dea9754c32f3aeb3ae2c73742df3}{%
+           family={Sierra},
+           familyi={S\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a627a285cc40ca31cc8d850d8a93052d}{%
+           family={Mahecha},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=796def3545b472eb11a3ce36a5a28184}{%
+           family={Poveda},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97a4366d8d447d21aa5debcb3762e4db}{%
+           family={Alvarez-Davila},
+           familyi={A\bibinithyphendelim D\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80a2182bde814bc6695e628ed41322c0}{%
+           family={Gutierrez-Velez},
+           familyi={G\bibinithyphendelim V\bibinitperiod},
+           given={V.\bibnamedelimi H.},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a73bf1bf3acd08511913ce20972d321}{%
+           family={Reu},
+           familyi={R\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02701b8586fde908e639e036a8465558}
+      \strng{fullhash}{8ff112fa8bf1730e08e3697044155202}
+      \strng{bibnamehash}{8ff112fa8bf1730e08e3697044155202}
+      \strng{authorbibnamehash}{8ff112fa8bf1730e08e3697044155202}
+      \strng{authornamehash}{02701b8586fde908e639e036a8465558}
+      \strng{authorfullhash}{8ff112fa8bf1730e08e3697044155202}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environ. Sci. Policy}
+      \field{title}{Monitoring ecological change during rapid socio-economic and political transitions: {Colombian} ecosystems in the post-conflict era}
+      \field{volume}{76}
+      \field{year}{2017}
+      \field{pages}{40\bibrangedash 49}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.envsci.2017.06.011
+      \endverb
+    \endentry
+    \entry{Stehman2019}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=32626129e68ea757a1b20c3a938a65e2}{%
+           family={Stehman},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=335e776e246fb7b7caa0dbcc3bf66992}{%
+           family={Foody},
+           familyi={F\bibinitperiod},
+           given={G.\bibnamedelimi M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1f0c36f8a25ee0040adc10d8065c160}
+      \strng{fullhash}{b1f0c36f8a25ee0040adc10d8065c160}
+      \strng{bibnamehash}{b1f0c36f8a25ee0040adc10d8065c160}
+      \strng{authorbibnamehash}{b1f0c36f8a25ee0040adc10d8065c160}
+      \strng{authornamehash}{b1f0c36f8a25ee0040adc10d8065c160}
+      \strng{authorfullhash}{b1f0c36f8a25ee0040adc10d8065c160}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{title}{Key issues in rigorous accuracy assessment of land cover products}
+      \field{volume}{231}
+      \field{year}{2019}
+      \field{pages}{111199}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rse.2019.05.018
+      \endverb
+    \endentry
+    \entry{TapiaArmijos2019}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7b0ea536a034fe1677e7c89fb7a0e7fc}{%
+           family={Tapia-Armijos},
+           familyi={T\bibinithyphendelim A\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c4bb53cae5dc46a6cdc2bf246e289ede}
+      \strng{fullhash}{c4bb53cae5dc46a6cdc2bf246e289ede}
+      \strng{bibnamehash}{c4bb53cae5dc46a6cdc2bf246e289ede}
+      \strng{authorbibnamehash}{c4bb53cae5dc46a6cdc2bf246e289ede}
+      \strng{authornamehash}{c4bb53cae5dc46a6cdc2bf246e289ede}
+      \strng{authorfullhash}{c4bb53cae5dc46a6cdc2bf246e289ede}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Appl. Geogr.}
+      \field{title}{Drivers of deforestation in the basin of the {Ecuadorian Amazon}}
+      \field{volume}{106}
+      \field{year}{2019}
+      \field{pages}{145\bibrangedash 156}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.apgeog.2019.03.005
+      \endverb
+    \endentry
+    \entry{Verburg2002}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=41afd59d47e4b2e535625d5769d97c50}{%
+           family={Verburg},
+           familyi={V\bibinitperiod},
+           given={P.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=322421d43f80c7532f7d6cbe6e0b8177}{%
+           family={Soepboer},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8daac0fbedb8cde49bce6db5f3fe99c0}{%
+           family={Veldkamp},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86300457b00f7b3c82d5de3d6d045fc8}{%
+           family={Limpiada},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65bafa3cd1bb3b2917e3671a85ab64cc}{%
+           family={Espaldon},
+           familyi={E\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a80d6bda93f36d361e1f4f2e018464a}{%
+           family={Mastura},
+           familyi={M\bibinitperiod},
+           given={S.\bibnamedelimi S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ab980f10c77e1494767b12ae1b0245ff}
+      \strng{fullhash}{3ce3c91c9f394ef946a6cad4c453090a}
+      \strng{bibnamehash}{3ce3c91c9f394ef946a6cad4c453090a}
+      \strng{authorbibnamehash}{3ce3c91c9f394ef946a6cad4c453090a}
+      \strng{authornamehash}{ab980f10c77e1494767b12ae1b0245ff}
+      \strng{authorfullhash}{3ce3c91c9f394ef946a6cad4c453090a}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environ. Manage.}
+      \field{number}{3}
+      \field{title}{Modeling the spatial dynamics of regional land use: The {CLUE-S} model}
+      \field{volume}{30}
+      \field{year}{2002}
+      \field{pages}{391\bibrangedash 405}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s00267-002-2630-x
+      \endverb
+    \endentry
+    \entry{Wulder2022}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=017201930867398eb15337834532cb9b}{%
+           family={Wulder},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13541ca5c6a468a882c8b92d830e9fb1}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={D.\bibnamedelimi P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebfd5e12a4e3f1ea8ceb8541bf4ea60f}{%
+           family={Radeloff},
+           familyi={R\bibinitperiod},
+           given={V.\bibnamedelimi C.},
+           giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4305b9363c5db7371fe5d72c4250edaf}{%
+           family={Loveland},
+           familyi={L\bibinitperiod},
+           given={T.\bibnamedelimi R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61c5422c8519ed3df3f23bb63d992872}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=131cc4df4fcc94a2b26f6ab082b1d0bc}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6689bff1d9d9f0ee7da953d9f328423e}
+      \strng{fullhash}{4023574fca37cc052dbd07453d546ba8}
+      \strng{bibnamehash}{4023574fca37cc052dbd07453d546ba8}
+      \strng{authorbibnamehash}{4023574fca37cc052dbd07453d546ba8}
+      \strng{authornamehash}{6689bff1d9d9f0ee7da953d9f328423e}
+      \strng{authorfullhash}{4023574fca37cc052dbd07453d546ba8}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{title}{Fifty years of {Landsat} science and impacts}
+      \field{volume}{280}
+      \field{year}{2022}
+      \field{pages}{113195}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rse.2022.113195
+      \endverb
+    \endentry
+    \entry{Zhang2023}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=32e563370422457790db030ab2c13183}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{fullhash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{bibnamehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{authorbibnamehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{authornamehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{authorfullhash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sens. Environ.}
+      \field{title}{Optimal parameters for {Random Forest} classification in {Google Earth Engine}}
+      \field{volume}{298}
+      \field{year}{2023}
+      \field{pages}{113777}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rse.2023.113777
+      \endverb
+    \endentry
+    \entry{Zhao2022}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38e8ff4c80350640f046288e1e06461d}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0c57afc442678f06b3b8fa872f7df5bb}
+      \strng{fullhash}{0c57afc442678f06b3b8fa872f7df5bb}
+      \strng{bibnamehash}{0c57afc442678f06b3b8fa872f7df5bb}
+      \strng{authorbibnamehash}{0c57afc442678f06b3b8fa872f7df5bb}
+      \strng{authornamehash}{0c57afc442678f06b3b8fa872f7df5bb}
+      \strng{authorfullhash}{0c57afc442678f06b3b8fa872f7df5bb}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Front. Environ. Sci.}
+      \field{title}{Trajectory analysis of land use change and ecosystem services}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{1038752}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fenvs.2022.1038752
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

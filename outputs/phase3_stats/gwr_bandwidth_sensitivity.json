@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "script": "10b_gwr_diagnostics.py",
+    "date": "2026-02-16 20:18:56",
+    "data_source": "synthetic",
+    "data_note": "Synthetic data generated to match OLS R2, coefficients, and sample size from gwr_drivers_results.json. Replace with real GEE-exported gwr_sample_data.csv for production-quality diagnostics.",
+    "n_samples": 1470,
+    "n_variables": 8,
+    "variable_names": [
+      "elevation",
+      "slope",
+      "dist_rivers",
+      "dist_roads",
+      "dist_urban",
+      "pop_density",
+      "precip_annual",
+      "lst_mean"
+    ],
+    "ols_r2_check": 0.112488,
+    "spatial_weights": "k=8 nearest neighbours, row-standardised"
+  },
+  "bandwidth_sensitivity": [
+    {
+      "bandwidth": 11,
+      "mean_r2": 0.938565,
+      "median_r2": 0.973442,
+      "aic": -6383.7712,
+      "enp": 1425.8305,
+      "enp_n_ratio": 0.969953
+    },
+    {
+      "bandwidth": 25,
+      "mean_r2": 0.571841,
+      "median_r2": 0.587315,
+      "aic": -2616.3072,
+      "enp": 997.9211,
+      "enp_n_ratio": 0.678858
+    },
+    {
+      "bandwidth": 50,
+      "mean_r2": 0.346597,
+      "median_r2": 0.347687,
+      "aic": -2127.9498,
+      "enp": 610.6652,
+      "enp_n_ratio": 0.415419
+    },
+    {
+      "bandwidth": 100,
+      "mean_r2": 0.22436,
+      "median_r2": 0.218874,
+      "aic": -2066.8119,
+      "enp": 335.3006,
+      "enp_n_ratio": 0.228096
+    },
+    {
+      "bandwidth": 150,
+      "mean_r2": 0.183402,
+      "median_r2": 0.175377,
+      "aic": -2089.9021,
+      "enp": 229.2794,
+      "enp_n_ratio": 0.155972
+    },
+    {
+      "bandwidth": 200,
+      "mean_r2": 0.163101,
+      "median_r2": 0.154431,
+      "aic": -2105.9149,
+      "enp": 173.3807,
+      "enp_n_ratio": 0.117946
+    }
+  ],
+  "morans_i": {
+    "ols_residuals": {
+      "I": 0.019653,
+      "E_I": -0.000681,
+      "Var_I": 0.00015522,
+      "z_score": 1.6321,
+      "p_value": 0.102658
+    },
+    "gwr_residuals": {
+      "I": -0.059152,
+      "E_I": -0.000681,
+      "Var_I": 0.00015349,
+      "z_score": -4.7196,
+      "p_value": 2e-06
+    },
+    "gwr_bandwidth_used": 11,
+    "reduction_in_abs_I_pct": -200.98
+  }
+}

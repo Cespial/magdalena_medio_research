@@ -1,0 +1,510 @@
+{
+  "T1_T2": {
+    "years": "2013-2016",
+    "years_between": 3,
+    "transitions": {
+      "1->1": {
+        "from": "Bosque denso",
+        "to": "Bosque denso",
+        "area_ha": 639472.2
+      },
+      "1->2": {
+        "from": "Bosque denso",
+        "to": "Bosque secundario",
+        "area_ha": 51491.1
+      },
+      "1->3": {
+        "from": "Bosque denso",
+        "to": "Pasturas",
+        "area_ha": 23124.7
+      },
+      "1->6": {
+        "from": "Bosque denso",
+        "to": "Urbano",
+        "area_ha": 196.8
+      },
+      "2->1": {
+        "from": "Bosque secundario",
+        "to": "Bosque denso",
+        "area_ha": 172201.3
+      },
+      "2->2": {
+        "from": "Bosque secundario",
+        "to": "Bosque secundario",
+        "area_ha": 1042317.9
+      },
+      "2->3": {
+        "from": "Bosque secundario",
+        "to": "Pasturas",
+        "area_ha": 568844.4
+      },
+      "2->5": {
+        "from": "Bosque secundario",
+        "to": "Agua",
+        "area_ha": 98.5
+      },
+      "2->6": {
+        "from": "Bosque secundario",
+        "to": "Urbano",
+        "area_ha": 164052.7
+      },
+      "3->1": {
+        "from": "Pasturas",
+        "to": "Bosque denso",
+        "area_ha": 64053.2
+      },
+      "3->2": {
+        "from": "Pasturas",
+        "to": "Bosque secundario",
+        "area_ha": 4156.8
+      },
+      "3->3": {
+        "from": "Pasturas",
+        "to": "Pasturas",
+        "area_ha": 435103.0
+      },
+      "3->6": {
+        "from": "Pasturas",
+        "to": "Urbano",
+        "area_ha": 3453.7
+      },
+      "5->3": {
+        "from": "Agua",
+        "to": "Pasturas",
+        "area_ha": 98.4
+      },
+      "5->5": {
+        "from": "Agua",
+        "to": "Agua",
+        "area_ha": 17278.1
+      },
+      "5->6": {
+        "from": "Agua",
+        "to": "Urbano",
+        "area_ha": 2754.1
+      },
+      "6->1": {
+        "from": "Urbano",
+        "to": "Bosque denso",
+        "area_ha": 13272.1
+      },
+      "6->2": {
+        "from": "Urbano",
+        "to": "Bosque secundario",
+        "area_ha": 24699.9
+      },
+      "6->3": {
+        "from": "Urbano",
+        "to": "Pasturas",
+        "area_ha": 69050.1
+      },
+      "6->5": {
+        "from": "Urbano",
+        "to": "Agua",
+        "area_ha": 98.5
+      },
+      "6->6": {
+        "from": "Urbano",
+        "to": "Urbano",
+        "area_ha": 369614.5
+      }
+    },
+    "change_rates": {
+      "1": {
+        "name": "Bosque denso",
+        "area_t1_ha": 714284.8,
+        "area_t2_ha": 888998.8,
+        "net_change_ha": 174714.0,
+        "pct_change": 24.46,
+        "annual_rate_pct": 7.294
+      },
+      "2": {
+        "name": "Bosque secundario",
+        "area_t1_ha": 1947514.8,
+        "area_t2_ha": 1122665.7,
+        "net_change_ha": -824849.1,
+        "pct_change": -42.35,
+        "annual_rate_pct": -18.362
+      },
+      "3": {
+        "name": "Pasturas",
+        "area_t1_ha": 506766.7,
+        "area_t2_ha": 1096220.6,
+        "net_change_ha": 589453.9,
+        "pct_change": 116.32,
+        "annual_rate_pct": 25.719
+      },
+      "4": {
+        "name": "Cultivos",
+        "area_t1_ha": 0,
+        "area_t2_ha": 0,
+        "net_change_ha": 0,
+        "pct_change": 0,
+        "annual_rate_pct": 0
+      },
+      "5": {
+        "name": "Agua",
+        "area_t1_ha": 20130.6,
+        "area_t2_ha": 17475.1,
+        "net_change_ha": -2655.5,
+        "pct_change": -13.19,
+        "annual_rate_pct": -4.715
+      },
+      "6": {
+        "name": "Urbano",
+        "area_t1_ha": 476735.1,
+        "area_t2_ha": 540071.8,
+        "net_change_ha": 63336.7,
+        "pct_change": 13.29,
+        "annual_rate_pct": 4.158
+      },
+      "7": {
+        "name": "Suelo desnudo",
+        "area_t1_ha": 0,
+        "area_t2_ha": 0,
+        "net_change_ha": 0,
+        "pct_change": 0,
+        "annual_rate_pct": 0
+      }
+    }
+  },
+  "T2_T3": {
+    "years": "2016-2020",
+    "years_between": 4,
+    "transitions": {
+      "1->1": {
+        "from": "Bosque denso",
+        "to": "Bosque denso",
+        "area_ha": 529387.4
+      },
+      "1->2": {
+        "from": "Bosque denso",
+        "to": "Bosque secundario",
+        "area_ha": 65702.2
+      },
+      "1->3": {
+        "from": "Bosque denso",
+        "to": "Pasturas",
+        "area_ha": 293909.1
+      },
+      "2->1": {
+        "from": "Bosque secundario",
+        "to": "Bosque denso",
+        "area_ha": 99551.0
+      },
+      "2->2": {
+        "from": "Bosque secundario",
+        "to": "Bosque secundario",
+        "area_ha": 508656.9
+      },
+      "2->3": {
+        "from": "Bosque secundario",
+        "to": "Pasturas",
+        "area_ha": 505497.8
+      },
+      "2->6": {
+        "from": "Bosque secundario",
+        "to": "Urbano",
+        "area_ha": 8960.0
+      },
+      "3->1": {
+        "from": "Pasturas",
+        "to": "Bosque denso",
+        "area_ha": 27380.2
+      },
+      "3->2": {
+        "from": "Pasturas",
+        "to": "Bosque secundario",
+        "area_ha": 75483.5
+      },
+      "3->3": {
+        "from": "Pasturas",
+        "to": "Pasturas",
+        "area_ha": 983904.3
+      },
+      "3->6": {
+        "from": "Pasturas",
+        "to": "Urbano",
+        "area_ha": 9452.5
+      },
+      "5->2": {
+        "from": "Agua",
+        "to": "Bosque secundario",
+        "area_ha": 295.5
+      },
+      "5->3": {
+        "from": "Agua",
+        "to": "Pasturas",
+        "area_ha": 98.5
+      },
+      "5->5": {
+        "from": "Agua",
+        "to": "Agua",
+        "area_ha": 16982.6
+      },
+      "5->6": {
+        "from": "Agua",
+        "to": "Urbano",
+        "area_ha": 98.5
+      },
+      "6->2": {
+        "from": "Urbano",
+        "to": "Bosque secundario",
+        "area_ha": 291228.7
+      },
+      "6->3": {
+        "from": "Urbano",
+        "to": "Pasturas",
+        "area_ha": 54578.8
+      },
+      "6->5": {
+        "from": "Urbano",
+        "to": "Agua",
+        "area_ha": 836.2
+      },
+      "6->6": {
+        "from": "Urbano",
+        "to": "Urbano",
+        "area_ha": 193428.2
+      }
+    },
+    "change_rates": {
+      "1": {
+        "name": "Bosque denso",
+        "area_t1_ha": 888998.7,
+        "area_t2_ha": 656318.6,
+        "net_change_ha": -232680.1,
+        "pct_change": -26.17,
+        "annual_rate_pct": -7.586
+      },
+      "2": {
+        "name": "Bosque secundario",
+        "area_t1_ha": 1122665.7,
+        "area_t2_ha": 941366.8,
+        "net_change_ha": -181298.9,
+        "pct_change": -16.15,
+        "annual_rate_pct": -4.403
+      },
+      "3": {
+        "name": "Pasturas",
+        "area_t1_ha": 1096220.5,
+        "area_t2_ha": 1837988.5,
+        "net_change_ha": 741768.0,
+        "pct_change": 67.67,
+        "annual_rate_pct": 12.92
+      },
+      "4": {
+        "name": "Cultivos",
+        "area_t1_ha": 0,
+        "area_t2_ha": 0,
+        "net_change_ha": 0,
+        "pct_change": 0,
+        "annual_rate_pct": 0
+      },
+      "5": {
+        "name": "Agua",
+        "area_t1_ha": 17475.1,
+        "area_t2_ha": 17818.8,
+        "net_change_ha": 343.7,
+        "pct_change": 1.97,
+        "annual_rate_pct": 0.487
+      },
+      "6": {
+        "name": "Urbano",
+        "area_t1_ha": 540071.9,
+        "area_t2_ha": 211939.2,
+        "net_change_ha": -328132.7,
+        "pct_change": -60.76,
+        "annual_rate_pct": -23.385
+      },
+      "7": {
+        "name": "Suelo desnudo",
+        "area_t1_ha": 0,
+        "area_t2_ha": 0,
+        "net_change_ha": 0,
+        "pct_change": 0,
+        "annual_rate_pct": 0
+      }
+    }
+  },
+  "T3_T4": {
+    "years": "2020-2024",
+    "years_between": 4,
+    "transitions": {
+      "1->1": {
+        "from": "Bosque denso",
+        "to": "Bosque denso",
+        "area_ha": 451508.0
+      },
+      "1->2": {
+        "from": "Bosque denso",
+        "to": "Bosque secundario",
+        "area_ha": 199.0
+      },
+      "1->3": {
+        "from": "Bosque denso",
+        "to": "Pasturas",
+        "area_ha": 204611.6
+      },
+      "2->1": {
+        "from": "Bosque secundario",
+        "to": "Bosque denso",
+        "area_ha": 778462.8
+      },
+      "2->2": {
+        "from": "Bosque secundario",
+        "to": "Bosque secundario",
+        "area_ha": 4534.9
+      },
+      "2->3": {
+        "from": "Bosque secundario",
+        "to": "Pasturas",
+        "area_ha": 27132.3
+      },
+      "2->5": {
+        "from": "Bosque secundario",
+        "to": "Agua",
+        "area_ha": 105204.0
+      },
+      "2->6": {
+        "from": "Bosque secundario",
+        "to": "Urbano",
+        "area_ha": 26032.7
+      },
+      "3->1": {
+        "from": "Pasturas",
+        "to": "Bosque denso",
+        "area_ha": 1023081.9
+      },
+      "3->2": {
+        "from": "Pasturas",
+        "to": "Bosque secundario",
+        "area_ha": 74628.2
+      },
+      "3->3": {
+        "from": "Pasturas",
+        "to": "Pasturas",
+        "area_ha": 695967.8
+      },
+      "3->5": {
+        "from": "Pasturas",
+        "to": "Agua",
+        "area_ha": 43916.6
+      },
+      "3->6": {
+        "from": "Pasturas",
+        "to": "Urbano",
+        "area_ha": 393.9
+      },
+      "5->5": {
+        "from": "Agua",
+        "to": "Agua",
+        "area_ha": 17818.8
+      },
+      "6->1": {
+        "from": "Urbano",
+        "to": "Bosque denso",
+        "area_ha": 105251.6
+      },
+      "6->2": {
+        "from": "Urbano",
+        "to": "Bosque secundario",
+        "area_ha": 9531.7
+      },
+      "6->3": {
+        "from": "Urbano",
+        "to": "Pasturas",
+        "area_ha": 6011.6
+      },
+      "6->5": {
+        "from": "Urbano",
+        "to": "Agua",
+        "area_ha": 64688.4
+      },
+      "6->6": {
+        "from": "Urbano",
+        "to": "Urbano",
+        "area_ha": 26456.0
+      }
+    },
+    "change_rates": {
+      "1": {
+        "name": "Bosque denso",
+        "area_t1_ha": 656318.6,
+        "area_t2_ha": 2358304.3,
+        "net_change_ha": 1701985.7,
+        "pct_change": 259.32,
+        "annual_rate_pct": 31.976
+      },
+      "2": {
+        "name": "Bosque secundario",
+        "area_t1_ha": 941366.7,
+        "area_t2_ha": 88893.8,
+        "net_change_ha": -852472.9,
+        "pct_change": -90.56,
+        "annual_rate_pct": -58.997
+      },
+      "3": {
+        "name": "Pasturas",
+        "area_t1_ha": 1837988.4,
+        "area_t2_ha": 933723.3,
+        "net_change_ha": -904265.1,
+        "pct_change": -49.2,
+        "annual_rate_pct": -16.931
+      },
+      "4": {
+        "name": "Cultivos",
+        "area_t1_ha": 0,
+        "area_t2_ha": 0,
+        "net_change_ha": 0,
+        "pct_change": 0,
+        "annual_rate_pct": 0
+      },
+      "5": {
+        "name": "Agua",
+        "area_t1_ha": 17818.8,
+        "area_t2_ha": 231627.8,
+        "net_change_ha": 213809.0,
+        "pct_change": 1199.91,
+        "annual_rate_pct": 64.122
+      },
+      "6": {
+        "name": "Urbano",
+        "area_t1_ha": 211939.3,
+        "area_t2_ha": 52882.6,
+        "net_change_ha": -159056.7,
+        "pct_change": -75.05,
+        "annual_rate_pct": -34.706
+      },
+      "7": {
+        "name": "Suelo desnudo",
+        "area_t1_ha": 0,
+        "area_t2_ha": 0,
+        "net_change_ha": 0,
+        "pct_change": 0,
+        "annual_rate_pct": 0
+      }
+    }
+  },
+  "hansen_gfc": {
+    "pre_acuerdo": {
+      "label": "T1: Pre-acuerdo (conflicto activo)",
+      "loss_ha": 64820.2
+    },
+    "transicion": {
+      "label": "T2: Transicion (post-cese al fuego)",
+      "loss_ha": 94222.8
+    },
+    "post_acuerdo_1": {
+      "label": "T3: Post-acuerdo temprano",
+      "loss_ha": 81097.8
+    },
+    "post_acuerdo_2": {
+      "label": "T4: Post-acuerdo reciente",
+      "loss_ha": 47097.9
+    }
+  },
+  "hansen_treecover2000": {
+    "treecover2000": 69.69535392327239
+  }
+}

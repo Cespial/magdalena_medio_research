@@ -1,0 +1,157 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\definecolor{reviewer}{rgb}{0.0, 0.0, 0.6}
+\definecolor{response}{rgb}{0.0, 0.4, 0.0}
+
+\newcommand{\reviewer}[1]{\textcolor{reviewer}{\textbf{Reviewer:} #1}}
+\newcommand{\response}[1]{\textcolor{response}{\textbf{Response:} #1}}
+
+\title{Response to Reviewers\\[6pt]
+\normalsize Manuscript: Post-conflict land use transitions and ecosystem service loss\\
+in Colombia's Magdalena Medio}
+\author{Cristian Espinal}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+We thank the reviewer for the thorough and constructive evaluation. The recommendations have substantially strengthened the manuscript. Below we address each point systematically, with changes tracked in the revised manuscript.
+
+\section*{Critical Issues}
+
+\subsection*{1. Classification accuracy (57--66\% OA) below 85\% threshold}
+
+\reviewer{The classification accuracy is below the 85\% threshold commonly cited for operational LULC mapping. This undermines confidence in the quantitative results.}
+
+\response{We agree that the moderate classification accuracy requires careful treatment. Rather than re-running the GEE classification (which would not guarantee improved accuracy given the inherent challenge of 7-class discrimination in heterogeneous tropical landscapes), we implemented the methodologically rigorous approach endorsed by the remote sensing community:}
+
+\begin{itemize}
+\item \textbf{Olofsson et al.\ (2014) stratified area estimators} with 95\% confidence intervals now underpin \emph{all} area estimates. This framework explicitly accounts for classification errors by weighting confusion matrix entries by mapped-class proportions.
+\item Two zero-area classes (Croplands, Bare soil) were dropped, yielding an effective \textbf{5-class system} that improves the signal-to-noise ratio.
+\item All area figures in the manuscript now report \textbf{estimate $\pm$ 95\% CI} rather than raw pixel-counted areas.
+\item Adjusted overall accuracies are 63.0\%, 60.4\%, 57.6\%, and 65.2\% for T1--T4.
+\end{itemize}
+
+\noindent \textit{Changes:} Methods Section~3.2, Results Table~1, Results Table~2, all area figures throughout manuscript.
+
+\subsection*{2. Resolve temporal inconsistencies in forest area trends}
+
+\reviewer{The non-monotonic pattern in dense forest (increase T2$\rightarrow$T3) is inconsistent with reported deforestation trends.}
+
+\response{The Olofsson 95\% CIs directly address this concern. Dense forest estimates for T2 [840,000--1,172,000~ha] and T3 [837,000--1,215,000~ha] have substantially overlapping confidence intervals, confirming that the apparent T2$\rightarrow$T3 increase \textbf{falls within estimation uncertainty} and should not be interpreted as real forest gain. We attribute this to the transition from Landsat-8-only composites (T1--T2) to Landsat-8/Sentinel-2 fusion composites (T3--T4). This is now explicitly discussed in Section~5.1.}
+
+\subsection*{3. Validate CA-Markov projections; ecologically implausible transitions}
+
+\reviewer{The transition matrix contains ecologically impossible transitions (e.g., SFor$\rightarrow$DFor = 62.4\%, Urb$\rightarrow$DFor = 25.5\%). The BAU projection of 60.9\% dense forest by 2040 is absurd.}
+
+\response{We fully agree. The raw transition matrix reflected classification errors propagating into apparent transitions. We implemented:}
+
+\begin{itemize}
+\item \textbf{Ecological constraints}: 5 corrections applied (SFor$\rightarrow$DFor capped at 5\%, Urb$\rightarrow$forest set to 0, Past$\rightarrow$DFor capped at 5\%, Urb$\rightarrow$Wat capped at 5\%). Excess probability redistributed to diagonal (persistence). References: Van Oort (2005), Pontius \& Lippitt (2006).
+\item \textbf{Hindcast validation}: Two temporal cross-validations (T1$\rightarrow$T2 rates predict T3: OA=0.94, FOM=0.89; T2$\rightarrow$T3 rates predict T4: OA=0.86, FOM=0.76).
+\item \textbf{Corrected projections}: BAU 2040 now shows continued dense forest decline ($-$5\%), not the previous absurd 60.9\% recovery. Conservation scenario achieves $+$15\% recovery.
+\end{itemize}
+
+\noindent \textit{Changes:} Methods Section~3.7, Results Section~4.7, Table~3 (scenarios), Table~S9 (supplementary), new Table~S9 hindcast validation.
+
+\subsection*{4. Reconcile with Hansen GFC data}
+
+\reviewer{Hansen GFC data shows monotonically decreasing forest loss, contradicting the classification results.}
+
+\response{Hansen GFC is now presented as an \textbf{independent deforestation magnitude indicator} for binary forest loss, while our classification provides \textbf{multi-class transition analysis}. Key reconciliation points:}
+
+\begin{itemize}
+\item Hansen captures only permanent loss (canopy $>$25\% to non-forest); our classification captures bidirectional transitions among 5 classes.
+\item The T3$\rightarrow$T4 dense forest decline in our Olofsson estimates is consistent with Hansen trends.
+\item Scale differences are expected given the methodological differences.
+\end{itemize}
+
+\noindent \textit{Changes:} New paragraph in Discussion Section~5.1.
+
+\section*{Moderate Issues}
+
+\subsection*{6. Replace Kappa with Quantity/Allocation Disagreement}
+
+\reviewer{Kappa has been widely criticized as uninformative.}
+
+\response{Replaced throughout. We now report \textbf{Quantity Disagreement (QD)} and \textbf{Allocation Disagreement (AD)} following Pontius \& Millones (2011), verified as QD~$+$~AD~$=$~1~$-$~OA$_{\text{adj}}$ for all periods. New references: Pontius \& Millones (2011), Foody (2020).}
+
+\noindent \textit{Changes:} Table~1 (replaced $\kappa$ column with QD and AD columns), Abstract, Methods Section~3.2.
+
+\subsection*{7. Use Tier~2 carbon values for Colombia}
+
+\reviewer{IPCC Tier~1 defaults are too generic for Colombia.}
+
+\response{Replaced with \textbf{IPCC Tier~2 values calibrated for Colombia} (Alvarez et al.\ 2012): Dense forest 231~$\pm$~21 Mg~C~ha$^{-1}$, Secondary forest 127~$\pm$~16, Pastures 44~$\pm$~8. Each pool now carries standard errors for uncertainty propagation.}
+
+\noindent \textit{Changes:} \texttt{gee\_config.py} CARBON\_POOLS, Table~S5, Methods Section~3.5.1.
+
+\subsection*{8. Formal error propagation for carbon estimates}
+
+\reviewer{Carbon estimates lack uncertainty quantification.}
+
+\response{Implemented formal error propagation combining area uncertainty (from Olofsson SE) and carbon density uncertainty (from pool-level SE):}
+
+\begin{equation*}
+\text{Var}(C_i) = c_i^2 \, \text{Var}(A_i) + A_i^2 \, \text{Var}(c_i) + \text{Var}(A_i) \, \text{Var}(c_i)
+\end{equation*}
+
+\response{Carbon stocks now reported as $436 \pm 73$~Tg~C (2013) to $345 \pm 69$~Tg~C (2024). Net changes include 95\% CIs. New script: \texttt{scripts/08b\_carbon\_uncertainty.py}.}
+
+\subsection*{9. Consider MGWR for GWR overfitting}
+
+\reviewer{GWR with small bandwidth may overfit.}
+
+\response{We now report \textbf{ENP = 845} (ENP/$n$ = 0.575), acknowledging substantial local fitting. Bandwidth sensitivity analysis at 6 scales (11--200 neighbors) confirms genuine spatial non-stationarity even at larger bandwidths (mean $R^2 > 0.14$ at $k = 200$ vs.\ OLS 0.143). We explicitly recommend MGWR (Oshan et al.\ 2019) for future work. New Table~S12.}
+
+\section*{Writing and Structure Issues}
+
+\subsection*{10. Complete incomplete references}
+
+\response{Fixed 6 incomplete references (Ahmed2025, Botero2023, Fagan2020, Zhang2023, CastroNunez2022, TapiaArmijos2019) with full metadata. Added 7 new references (Alvarez2012, Oshan2019, VanOort2005, Stehman2019, Foody2020, PontiusLippitt2006, MODIS\_ET).}
+
+\subsection*{11. Reduce significant figures}
+
+\response{All area figures now reported in thousands with appropriate precision ($\times 10^3$~ha $\pm$ 95\% CI). Carbon in Tg~C with propagated CIs. Percentages to 1 decimal.}
+
+\subsection*{5.2 Water yield methodology inconsistency}
+
+\reviewer{Methods say ``60\% of precipitation'' but should describe actual methodology.}
+
+\response{This was a manuscript error---the script already used MODIS MOD16A2 ET. Fixed in Methods Section~3.5.2, Table~S7, and Discussion Section~5.5.}
+
+\subsection*{14. Discuss illegality and field data limitations}
+
+\response{Added new limitation item acknowledging that persistence of illegal armed groups and illicit economies limits field verification access, constraining ground-truth collection and Tier~3 carbon measurements. See Discussion Section~5.5.}
+
+\section*{Summary of Changes}
+
+\begin{center}
+\begin{tabular}{clp{8cm}}
+\hline
+\# & Recommendation & Action Taken \\
+\hline
+1 & Olofsson estimators & Implemented with 95\% CIs for all area estimates \\
+2 & Temporal inconsistency & Resolved via overlapping CIs + Hansen reconciliation \\
+3 & CA-Markov validation & Ecologically constrained matrix + hindcast validation \\
+4 & Hansen reconciliation & New discussion paragraph \\
+5 & Water yield fix & Corrected to MODIS MOD16A2 ET \\
+6 & Replace Kappa & QD/AD (Pontius \& Millones 2011) \\
+7 & Tier 2 carbon & Alvarez et al.\ (2012) for Colombia \\
+8 & Error propagation & Formal variance propagation with 95\% CIs \\
+9 & MGWR recommendation & ENP reported, bandwidth sensitivity, future work \\
+10 & Complete references & 6 fixed + 7 new \\
+11 & Significant figures & Rounded throughout \\
+12 & Sensitivity analysis & GWR bandwidth sensitivity (Table S12) \\
+13 & Classification uncertainty & RF probability maps exported; noted in methods \\
+14 & Illegality/field data & New limitations paragraph \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}
